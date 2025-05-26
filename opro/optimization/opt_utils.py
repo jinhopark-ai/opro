@@ -20,6 +20,8 @@ import pickle
 import re
 import sys
 
+import wandb
+
 OPRO_ROOT_PATH = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 )
@@ -160,7 +162,7 @@ def gen_meta_prompt(
 
   meta_prompt = ""
   if meta_prompt_type == "both_instructions_and_exemplars":
-    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
       if instruction_pos == "A_begin":
         meta_prompt_old_instruction_part = (
             "Your task is to generate the answer starting sentence <Start>."
@@ -192,7 +194,7 @@ def gen_meta_prompt(
     # add QA pairs if few_shot_qa_pairs == True
     meta_prompt_exemplar_part = ""
     if few_shot_qa_pairs:
-      if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+      if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
         meta_prompt_exemplar_part += "Below are some problems.\n"
       else:
         assert optimizer_llm_name.lower() == "text-bison"
@@ -225,14 +227,14 @@ def gen_meta_prompt(
           elif instruction_pos == "Q_end":
             meta_prompt_exemplar_part += f"\ninput:\nQ: {question}\n<INS>\nA:"
           else:  # instruction_pos == "A_begin"
-            if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+            if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
               meta_prompt_exemplar_part += f"\nQ: {question}\nA: <Start>"
             else:
               assert optimizer_llm_name.lower() == "text-bison"
               meta_prompt_exemplar_part += f"\ninput:\nQ: {question}\nA: <INS>"
         else:  # when there're no "Q:" and "A:" in the prompt
           assert instruction_pos in {"Q_begin", "Q_end"}
-          if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+          if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
             if instruction_pos == "Q_begin":
               meta_prompt_exemplar_part += f"\nProblem:\n<INS>\n{question}\n"
             elif instruction_pos == "Q_end":
@@ -244,7 +246,7 @@ def gen_meta_prompt(
             elif instruction_pos == "Q_end":
               meta_prompt_exemplar_part += f"\ninput:\n{question}\n<INS>\n"
 
-        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
           meta_prompt_exemplar_part += (
               f"\nGround truth answer:\n{true_answer}\n"
           )
@@ -268,7 +270,7 @@ def gen_meta_prompt(
     else:
       meta_prompt += meta_prompt_old_instruction_part
 
-    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
       if instruction_pos == "A_begin":
         meta_prompt += (
             "\n\nGenerate a starting sentence that is different from all the"
@@ -423,6 +425,9 @@ def run_evolution(**kwargs):
   configs_dict["optimizer_llm_temperature_end"] = optimizer_llm_temperature_end
   with open(os.path.join(save_folder, "configs_dict.json"), "w") as f:
     json.dump(configs_dict, f, indent=4)
+
+  # wandb 초기화
+  wandb.init(project="opro-evolution", name=f"evolution-{dataset_name}-Optimizer_{optimizer_llm_name}-Scorer_{scorer_llm_dict['model_type']}-{instruction_pos}-{num_search_steps}")
 
   num_servers = scorer_llm_dict["num_servers"]
   batch_size = scorer_llm_dict["batch_size"]
@@ -729,20 +734,22 @@ def run_evolution(**kwargs):
     )
     generated_instructions_raw = []
     while remaining_num_instructions_to_generate > 0:
-      optimizer_llm_input_text = meta_prompt
+      optimizer_llm_input_text = [meta_prompt] * optimizer_llm_dict["batch_size"]
       # generate instructions
       print(f"current temperature: {optimizer_llm_temperature_curr}")
       raw_outputs = call_optimizer_server_func(
           optimizer_llm_input_text,
           temperature=optimizer_llm_temperature_curr,
       )
+      
+      print(f"Raw outputs of Optimizer LLM: {raw_outputs}")
 
       # Extract the generated instructions from the optimizer LLM output. Only
       # keep some samples if the desired number of remaining instructions
       # is smaller than the total number of decodes in this step.
       if meta_prompt_type == "both_instructions_and_exemplars":
         raw_outputs = raw_outputs[:remaining_num_instructions_to_generate]
-        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"}:
+        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "gpt2"}:
           if instruction_pos == "A_begin":
             start_string = "<Start>"
             end_string = "</Start>"
@@ -900,6 +907,7 @@ def run_evolution(**kwargs):
       old_ins_on_few_shot_results_dict[i_step] = single_step_eval_on_few_shot
 
     # evaluate newly generated instructions on the training set
+    average_scores = []
     for instruction in to_evaluate_instructions:
       if instruction not in prev_saved_instructions:
         print(f"""computing the score of "{instruction}" by prompting""")
@@ -935,9 +943,15 @@ def run_evolution(**kwargs):
 
       scores = detailed_results_df["accuracy"]
       average_score = np.average(scores)
+      average_scores.append(average_score)
       print(
           f"Step {i_step}, instruction: {instruction}, score: {average_score}"
       )
+
+      # txt 파일에 기록 (모든 step을 하나의 파일에 기록)
+      txt_log_path = os.path.join(save_folder, "instruction_log.txt")
+      with open(txt_log_path, "a") as f:
+        f.write(f"Step {i_step}, training acc: {average_score}, instruction: {instruction}\n")
 
       # increment the counter on wrong questions
       wrong_question_indices_set = set(
@@ -959,6 +973,32 @@ def run_evolution(**kwargs):
       old_instructions_and_scores.append((instruction, average_score, i_step))
       instruction_score_dict[instruction] = average_score
 
+    # wandb에 평균과 shadow(여러 값) 기록
+    if average_scores:
+      mean_score = float(np.mean(average_scores))
+      min_score = min(average_scores)
+      max_score = max(average_scores)
+      wandb.log({
+        "train_acc/mean": mean_score,
+        "train_acc/min": min_score,
+        "train_acc/max": max_score
+      }, step=i_step)
+      wandb.log({
+        "metric": wandb.plot.line_series(
+            xs=[i_step],
+            ys=[[min_score], [mean_score], [max_score]],
+            keys=["min", "mean", "max"],
+            title="List Stat at Step",
+            xname="step"
+        ),
+        "mean_point": mean_score
+      }, step=i_step)
+      # wandb.log({
+      #   "step": i_step,
+      #   "train_acc_mean": float(np.mean(average_scores)),
+      #   "train_accs": average_scores,  # 여러 값 shadow 형태로 기록
+      # })
+
     # record all generated instructions
     for instruction in generated_instructions_raw:
       if instruction in instruction_score_dict:
@@ -972,41 +1012,41 @@ def run_evolution(**kwargs):
     # =============================== eval ====================================
     # every eval_interval steps, evaluate the instructions that were generated
     # in the current step and were not skipped
-    if not i_step % eval_interval:
-      for instruction in generated_instructions_raw:
-        # if the instruction wasn't skipped in any step
-        if instruction in instruction_score_dict:
-          if instruction not in instruction_eval_score_dict:
-            detailed_results_df = eval_utils.evaluate_single_instruction(
-                data=raw_data,
-                instruction=instruction,
-                eval_index_all=eval_index,
-                batch_size=batch_size,
-                call_server_func=call_scorer_server_func,
-                dataset_name=dataset_name,
-                num_servers=num_servers,
-                extract_final_answer_by_prompting_again=extract_final_answer_by_prompting_again,
-                include_qa=include_qa,
-                evaluate_in_parallel=evaluate_in_parallel,
-                instruction_pos=instruction_pos,
-                is_multiple_choice=is_multiple_choice_eval,
-                prediction_treat_as_number=prediction_treat_as_number,
-                prediction_treat_as_bool=prediction_treat_as_bool,
-                prediction_num_decimals=0,
-                max_retry=5,
-                sleep_time=180,
-                verbose=verbose,
-            )
-            eval_score = np.average(detailed_results_df["accuracy"])
-            eval_detailed_results_df_dict[instruction] = detailed_results_df
-            instruction_eval_score_dict[instruction] = eval_score
-          else:
-            eval_score = instruction_eval_score_dict[instruction]
-          print(
-              f"EVAL: \nStep {i_step}, instruction: {instruction}, eval score:"
-              f" {eval_score:.2f}"
-          )
-          eval_results.append((i_step, instruction, eval_score))
+    # if not i_step % eval_interval:
+    #   for instruction in generated_instructions_raw:
+    #     # if the instruction wasn't skipped in any step
+    #     if instruction in instruction_score_dict:
+    #       if instruction not in instruction_eval_score_dict:
+    #         detailed_results_df = eval_utils.evaluate_single_instruction(
+    #             data=raw_data,
+    #             instruction=instruction,
+    #             eval_index_all=eval_index,
+    #             batch_size=batch_size,
+    #             call_server_func=call_scorer_server_func,
+    #             dataset_name=dataset_name,
+    #             num_servers=num_servers,
+    #             extract_final_answer_by_prompting_again=extract_final_answer_by_prompting_again,
+    #             include_qa=include_qa,
+    #             evaluate_in_parallel=evaluate_in_parallel,
+    #             instruction_pos=instruction_pos,
+    #             is_multiple_choice=is_multiple_choice_eval,
+    #             prediction_treat_as_number=prediction_treat_as_number,
+    #             prediction_treat_as_bool=prediction_treat_as_bool,
+    #             prediction_num_decimals=0,
+    #             max_retry=5,
+    #             sleep_time=180,
+    #             verbose=verbose,
+    #         )
+    #         eval_score = np.average(detailed_results_df["accuracy"])
+    #         eval_detailed_results_df_dict[instruction] = detailed_results_df
+    #         instruction_eval_score_dict[instruction] = eval_score
+    #       else:
+    #         eval_score = instruction_eval_score_dict[instruction]
+    #       print(
+    #           f"EVAL: \nStep {i_step}, instruction: {instruction}, eval score:"
+    #           f" {eval_score:.2f}"
+    #       )
+    #       eval_results.append((i_step, instruction, eval_score))
 
     # ===================== save up-to-date results ===========================
     results_dict = dict()

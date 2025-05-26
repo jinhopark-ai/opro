@@ -16,6 +16,12 @@
 import time
 import google.generativeai as palm
 import openai
+from typing import Any, Dict, List, Optional, Tuple, Union
+from opro.models import get_model
+import torch
+from accelerate import infer_auto_device_map, dispatch_model
+import math
+from tqdm import tqdm
 
 
 def call_openai_server_single_prompt(
@@ -130,3 +136,104 @@ def call_palm_server_from_cloud(
     return call_palm_server_from_cloud(
         input_text, max_decode_steps=max_decode_steps, temperature=temperature
     )
+
+
+def call_openai_server_batch(
+    prompts, model="gpt-3.5-turbo", max_decode_steps=20, temperature=0.8
+):
+    """OpenAI 배치 엔드포인트를 사용하여 여러 프롬프트를 한 번에 처리합니다."""
+    if isinstance(prompts, str):
+        prompts = [prompts]
+    messages = [
+        {"role": "user", "content": prompt}
+        for prompt in prompts
+    ]
+    try:
+        # openai.ChatCompletion.create의 경우, messages에 여러 개의 대화를 넣는 것이 아니라
+        # 각각의 프롬프트를 별도의 요청으로 만들어야 합니다.
+        # 공식 배치 API가 지원된다면 아래와 같이 사용합니다.
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=[messages],  # 여러 개의 messages 리스트를 감싸서 전달
+            temperature=temperature,
+            max_tokens=max_decode_steps,
+            # batch_size 등 추가 파라미터가 필요할 수 있음
+        )
+        # 응답에서 각 프롬프트에 대한 결과 추출
+        return [choice.message.content for choice in response.choices]
+    except Exception as e:
+        print(f"Error during batch inference: {e}")
+        raise
+      
+
+def call_local_model_server(
+    prompts: Union[str, List[str]],
+    model_type: str,
+    temperature: float = 0.0,
+    max_decode_steps: int = 1024,
+    **kwargs
+) -> list:
+    print(f"\n[DEBUG] In call_local_model_server function")
+    model_config = get_model(model_type)
+    model, tokenizer = model_config.load_model()
+    
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+        model.config.pad_token_id = model.config.eos_token_id
+        
+    if torch.cuda.is_available():
+        total_size_gb = sum(p.numel() * p.element_size() for p in model.parameters()) / (1024 ** 3)
+        # 여러 GPU에 모델 분산
+        device_map = infer_auto_device_map(model, max_memory={i: f"{math.ceil(total_size_gb / 4)}GiB" for i in range(torch.cuda.device_count())}, no_split_module_classes=["LlamaDecoderLayer", "GPT2Block", "MistralDecoderLayer"])
+        model = dispatch_model(model, device_map=device_map)
+        if next(model.parameters()).is_cuda:
+            print("[DEBUG] Model is on GPU")
+        else:
+            print("[DEBUG] Model is on CPU")
+    else:
+        print("[DEBUG] Model is on CPU")
+        
+
+    print(f"[DEBUG] Generating response with temperature={temperature}, max_length={max_decode_steps}")
+    
+    # 단일 프롬프트를 리스트로 변환
+    if isinstance(prompts, str):
+        prompts = [prompts]
+    
+    # Hugging Face 모델의 generation_config 설정
+    generation_config = {
+        "max_new_tokens": max_decode_steps,
+        "do_sample": temperature > 0,  # temperature가 0보다 크면 sampling 활성화
+        "temperature": temperature if temperature > 0 else None,  # temperature가 0이면 None으로 설정
+        "pad_token_id": tokenizer.pad_token_id,
+        "eos_token_id": tokenizer.eos_token_id,
+    }
+    try:
+        if 'batch_size' in kwargs:
+            batch_size = kwargs.pop('batch_size')
+            all_responses = []
+            
+            # 배치 단위로 프롬프트 처리
+            for i in tqdm(range(0, len(prompts), batch_size)):
+                batch_prompts = prompts[i:i + batch_size]
+                batch_responses = model_config.generate(
+                    batch_prompts,
+                    **generation_config,
+                    **kwargs
+                )
+                all_responses.extend(batch_responses)
+        else:
+            all_responses = model_config.generate(
+                prompts,
+                **generation_config,
+                **kwargs
+            )
+            # GPU에서 생성된 결과를 CPU로 이동
+            if hasattr(all_responses, 'cpu'):
+                all_responses = all_responses.cpu()
+        
+    except Exception as e:
+        print(f"[ERROR] 모델 생성 중 오류 발생: {e}")
+        raise
+    model.to("cpu")
+    return all_responses

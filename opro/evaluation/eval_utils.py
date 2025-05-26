@@ -77,7 +77,7 @@ def instruction_to_filename(instruction, md5_hashing=True):
   """Convert an instruction string to filename."""
   if md5_hashing:
     m = hashlib.md5()
-    m.update(instruction.encode("ascii"))
+    m.update(instruction.encode("utf-8"))
     filename = m.hexdigest()
   else:
     # remove punctuations and line break, and give a name to the empty string
@@ -703,9 +703,10 @@ def evaluate_single_instruction(
         call_server_local_func=call_server_func,
     )
   else:  # no parallelism in first round
-    raw_answers = [
-        call_server_func(prompt)[0] for prompt in raw_prompts_flattened
-    ]
+    raw_answers = call_server_func(raw_prompts_flattened)
+    # raw_answers = [
+    #     call_server_func(prompt)[0] for prompt in raw_prompts_flattened
+    # ]
 
   if verbose:
     print("first round of prompting finished")
@@ -739,10 +740,11 @@ def evaluate_single_instruction(
           ),
       )
     else:
-      raw_answers_second_round = [
-          call_server_func(prompt, max_decode_steps=50)[0]
-          for prompt in raw_prompts_flattened_second_round
-      ]
+      raw_answers_second_round = call_server_func(raw_prompts_flattened_second_round, max_decode_steps=50)
+      # raw_answers_second_round = [
+      #     call_server_func(prompt, max_decode_steps=50)[0]
+      #     for prompt in raw_prompts_flattened_second_round
+      # ]
     if verbose:
       print("second round of prompting finished")
 

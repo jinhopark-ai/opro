@@ -53,8 +53,14 @@ Use `opro/optimization/optimize_tsp.py`, follow the steps at the top.
 
 ## Supported models
 
-The code in this repository currently supports [text-bison](https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/text) and [GPT models](https://platform.openai.com/docs/api-reference/introduction). Alternatively, you may serve your own model and plug it in here, similar to the existing prompting APIs in `opro/prompt_utils.py`.
+The code in this repository currently supports:
+- [text-bison](https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/text)
+- [GPT models](https://platform.openai.com/docs/api-reference/introduction)
+- LLaMA 2-Chat 70B
+- Mistral 7B Instruct
+- GPT2
 
+Alternatively, you may serve your own model and plug it in here, similar to the existing prompting APIs in `opro/prompt_utils.py`.
 
 ## Precaution on API costs
 
