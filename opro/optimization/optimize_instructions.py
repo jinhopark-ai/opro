@@ -774,7 +774,6 @@ def main(_):
         )
     )
     print(f"\n[DEBUG] Number of training examples: {len(train_index)}")
-    print(f"[DEBUG] First few training indices: {train_index[:5]}")
 
     eval_and_test_index = np.sort(
         np.array(list(set(np.arange(num_examples)) - set(train_index)))
@@ -823,7 +822,7 @@ def main(_):
     # decodes in model parameters, because those values are limited by model
     # serving configs.
     num_generated_instructions_in_each_step = 8
-    num_search_steps = 10
+    num_search_steps = 100
 
     initial_instructions = [
         "Let's solve the problem.",

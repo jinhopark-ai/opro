@@ -197,29 +197,20 @@ def call_local_model_server(
             "pad_token_id": model_instance.tokenizer.pad_token_id,
             "eos_token_id": model_instance.tokenizer.eos_token_id,
         }
+    all_responses = []
     try:
-        if 'batch_size' in kwargs:
-            batch_size = kwargs.pop('batch_size')
-            all_responses = []
-            
-            # 배치 단위로 프롬프트 처리
-            for i in tqdm(range(0, len(prompts), batch_size)):
-                batch_prompts = prompts[i:i + batch_size]
-                batch_responses = model_instance.generate(
-                    batch_prompts,
-                    **generation_config,
-                    **kwargs
-                )
-                all_responses.extend(batch_responses)
-        else:
-            all_responses = model_instance.generate(
-                prompts,
+        # 배치 단위로 프롬프트 처리
+        for i in tqdm(range(0, len(prompts), batch_size)):
+            batch_prompts = prompts[i:i + batch_size]
+            batch_responses = model_instance.generate(
+                batch_prompts,
                 **generation_config,
                 **kwargs
             )
-            # GPU에서 생성된 결과를 CPU로 이동
-            if hasattr(all_responses, 'cpu'):
-                all_responses = all_responses.cpu()
+            all_responses.extend(batch_responses)
+        # GPU에서 생성된 결과를 CPU로 이동
+        if hasattr(all_responses, 'cpu'):
+            all_responses = all_responses.cpu()
         
     except Exception as e:
         print(f"[ERROR] 모델 생성 중 오류 발생: {e}")

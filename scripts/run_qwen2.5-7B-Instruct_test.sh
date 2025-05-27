@@ -26,7 +26,7 @@ echo "----------------------------------------"
 CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/optimization/optimize_instructions.py \
     --optimizer="qwen2.5-7b-instruct" \
     --scorer="qwen2.5-7b-instruct" \
-    --instruction_pos="A_begin" \
+    --instruction_pos="Q_begin" \
     --dataset="gsm8k" \
     --task="train"
 
@@ -42,4 +42,10 @@ fi
 
 end_time=$(date +%s)
 elapsed=$(( end_time - start_time ))
-echo "총 실행 시간: ${elapsed}초" 
+
+# 시:분:초 형식으로 변환
+hours=$((elapsed / 3600))
+minutes=$(( (elapsed % 3600) / 60 ))
+seconds=$((elapsed % 60))
+
+echo "총 실행 시간: ${hours}시간 ${minutes}분 ${seconds}초" 

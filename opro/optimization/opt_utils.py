@@ -428,7 +428,7 @@ def run_evolution(**kwargs):
     json.dump(configs_dict, f, indent=4)
 
   # wandb 초기화
-  wandb.init(project="opro-evolution", name=f"evolution-{dataset_name}-Optimizer_{optimizer_llm_name}-Scorer_{scorer_llm_dict['model_type']}-{instruction_pos}-{num_search_steps}")
+  run = wandb.init(project="opro-evolution", name=f"evolution-{dataset_name}-Optimizer_{optimizer_llm_name}-Scorer_{scorer_llm_dict['model_type']}-{instruction_pos}-{num_search_steps}")
 
   # instruction log를 위한 W&B Table 생성
   instruction_table = wandb.Table(columns=["step", "training_acc", "instruction"])
@@ -944,16 +944,16 @@ def run_evolution(**kwargs):
       average_score = np.average(scores)
       average_scores.append(average_score)
       print(
-          f"Step {i_step}, instruction: {instruction}, score: {average_score}"
+          f"Step {i_step+1}, instruction: {instruction}, score: {average_score}"
       )
 
       # txt 파일에 기록 (모든 step을 하나의 파일에 기록)
       txt_log_path = os.path.join(save_folder, "instruction_log.txt")
       with open(txt_log_path, "a") as f:
-        f.write(f"Step {i_step}, training acc: {average_score}, instruction: {instruction}\n")
+        f.write(f"Step {i_step+1}, training acc: {average_score}, instruction: {instruction}\n")
       # W&B Table에도 기록
-      instruction_table.add_data(i_step, average_score, instruction)
-      wandb.log({"instruction_table": instruction_table}, step=i_step)
+      instruction_table.add_data(i_step+1, average_score, instruction)
+      run.log({"instruction_table": instruction_table}, step=i_step+1)
 
       # increment the counter on wrong questions
       wrong_question_indices_set = set(
@@ -984,17 +984,7 @@ def run_evolution(**kwargs):
         "train_acc/mean": mean_score,
         "train_acc/min": min_score,
         "train_acc/max": max_score
-      }, step=i_step)
-      # wandb.log({
-      #   "metric": wandb.plot.line_series(
-      #       xs=[i_step],
-      #       ys=[[min_score], [mean_score], [max_score]],
-      #       keys=["min", "mean", "max"],
-      #       title="List Stat at Step",
-      #       xname="step"
-      #   ),
-      #   "mean_point": mean_score
-      # }, step=i_step)
+      }, step=i_step+1)
 
     # record all generated instructions
     for instruction in generated_instructions_raw:
