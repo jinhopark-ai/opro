@@ -1,6 +1,8 @@
 from typing import Dict, Any, Union, List
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from vllm import LLM, SamplingParams
+import os
 
 
 class ModelConfig:
@@ -15,8 +17,12 @@ class ModelConfig:
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
             torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
-            device_map={"": "cpu"}
+            device_map="auto"
         )
+        
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+            self.model.config.pad_token_id = self.model.config.eos_token_id
         return self.model, self.tokenizer
 
     def generate(self, prompts: Union[str, List[str]], **kwargs) -> Union[str, List[str]]:
@@ -51,16 +57,52 @@ class ModelConfig:
 
         return generated_only
 
+class VLLMConfig:
+    def __init__(self, model_name: str, dtype: str = "float16", gpus: str = None):
+        self.model_name = model_name
+        self.dtype = dtype
+        self.llm = None
+        self.gpus = gpus
+
+    def load_model(self):
+        # 사용할 GPU 지정
+        if self.gpus is not None:
+            os.environ["CUDA_VISIBLE_DEVICES"] = self.gpus
+            num_gpus = len(self.gpus.split(","))
+        else:
+            num_gpus = torch.cuda.device_count()
+        if num_gpus == 0:
+            raise RuntimeError("사용 가능한 GPU가 없습니다.")
+        self.llm = LLM(
+            model=self.model_name,
+            dtype=self.dtype,
+            tensor_parallel_size=num_gpus
+        )
+        return self.llm
+
+    def generate(self, prompts, **kwargs):
+        temperature = kwargs.get("temperature", 0.8)
+        max_new_tokens = kwargs.get("max_new_tokens", 1024)
+        sampling_params = SamplingParams(
+            temperature=temperature,
+            max_tokens=max_new_tokens
+        )
+        outputs = self.llm.generate(prompts, sampling_params)
+        return [output.outputs[0].text for output in outputs]
+
 # 사용 가능한 모델 설정
-AVAILABLE_MODELS = {
+AVAILABLE_LOCAL_MODELS = {
     "llama2-70b-chat": "meta-llama/Llama-2-70b-chat-hf",
-    "llama2-13B": "meta-llama/Llama-2-13b-chat-hf",
+    "llama2-13B-chat": "meta-llama/Llama-2-13b-chat-hf",
     "mistral-7b-instruct": "mistralai/Mistral-7B-Instruct-v0.1",
-    "gpt2": "openai-community/gpt2"
+    "gpt2": "openai-community/gpt2",
+    "qwen2.5-7B": "Qwen/Qwen2.5-7B"
 }
 
-def get_model(model_name: str) -> ModelConfig:
-    """지정된 모델의 설정을 반환합니다."""
-    if model_name not in AVAILABLE_MODELS:
+def get_model(model_name: str, is_vllm: bool = False, gpus: str = None) -> Any:
+    if model_name not in AVAILABLE_LOCAL_MODELS:
         raise ValueError(f"지원하지 않는 모델입니다: {model_name}")
-    return ModelConfig(AVAILABLE_MODELS[model_name]) 
+    if is_vllm:
+        return VLLMConfig(AVAILABLE_LOCAL_MODELS[model_name], gpus=gpus)
+    else:
+        return ModelConfig(AVAILABLE_LOCAL_MODELS[model_name])

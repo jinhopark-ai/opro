@@ -28,8 +28,8 @@ echo "데이터셋: GSM8K (3.5% 샘플)"
 echo "----------------------------------------"
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/optimization/optimize_instructions.py \
-    --optimizer="llama2-13B" \
-    --scorer="llama2-13B" \
+    --optimizer="llama2-13B-chat" \
+    --scorer="llama2-13B-chat" \
     --instruction_pos="A_begin" \
     --dataset="gsm8k" \
     --task="train"

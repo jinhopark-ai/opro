@@ -171,27 +171,14 @@ def call_local_model_server(
     model_type: str,
     temperature: float = 0.0,
     max_decode_steps: int = 1024,
+    batch_size: int = 1,
+    is_vllm: bool = False,
     **kwargs
 ) -> list:
     print(f"\n[DEBUG] In call_local_model_server function")
-    model_config = get_model(model_type)
-    model, tokenizer = model_config.load_model()
-    
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-        model.config.pad_token_id = model.config.eos_token_id
-        
-    if torch.cuda.is_available():
-        total_size_gb = sum(p.numel() * p.element_size() for p in model.parameters()) / (1024 ** 3)
-        # 여러 GPU에 모델 분산
-        device_map = infer_auto_device_map(model, max_memory={i: f"{math.ceil(total_size_gb / 4)}GiB" for i in range(torch.cuda.device_count())}, no_split_module_classes=["LlamaDecoderLayer", "GPT2Block", "MistralDecoderLayer"])
-        model = dispatch_model(model, device_map=device_map)
-        if next(model.parameters()).is_cuda:
-            print("[DEBUG] Model is on GPU")
-        else:
-            print("[DEBUG] Model is on CPU")
-    else:
-        print("[DEBUG] Model is on CPU")
+    model_config = get_model(model_type, is_vllm=is_vllm, gpus=kwargs.pop("gpus", None))
+    print(f"[DEBUG] model_config: {model_config}")
+    model_config.load_model()
         
 
     print(f"[DEBUG] Generating response with temperature={temperature}, max_length={max_decode_steps}")
@@ -201,13 +188,19 @@ def call_local_model_server(
         prompts = [prompts]
     
     # Hugging Face 모델의 generation_config 설정
-    generation_config = {
-        "max_new_tokens": max_decode_steps,
-        "do_sample": temperature > 0,  # temperature가 0보다 크면 sampling 활성화
-        "temperature": temperature if temperature > 0 else None,  # temperature가 0이면 None으로 설정
-        "pad_token_id": tokenizer.pad_token_id,
-        "eos_token_id": tokenizer.eos_token_id,
-    }
+    if is_vllm:
+        generation_config = {
+            "max_new_tokens": max_decode_steps,
+            "temperature": temperature
+        }
+    else:
+        generation_config = {
+            "max_new_tokens": max_decode_steps,
+            "do_sample": temperature > 0,  # temperature가 0보다 크면 sampling 활성화
+            "temperature": temperature if temperature > 0 else None,  # temperature가 0이면 None으로 설정
+            "pad_token_id": model_config.tokenizer.pad_token_id,
+            "eos_token_id": model_config.tokenizer.eos_token_id,
+        }
     try:
         if 'batch_size' in kwargs:
             batch_size = kwargs.pop('batch_size')
@@ -235,5 +228,4 @@ def call_local_model_server(
     except Exception as e:
         print(f"[ERROR] 모델 생성 중 오류 발생: {e}")
         raise
-    model.to("cpu")
     return all_responses

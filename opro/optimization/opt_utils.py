@@ -749,7 +749,7 @@ def run_evolution(**kwargs):
       # is smaller than the total number of decodes in this step.
       if meta_prompt_type == "both_instructions_and_exemplars":
         raw_outputs = raw_outputs[:remaining_num_instructions_to_generate]
-        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "gpt2"}:
+        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "gpt2", "llama2-13B-chat", "qwen2.5-7B"}:
           if instruction_pos == "A_begin":
             start_string = "<Start>"
             end_string = "</Start>"

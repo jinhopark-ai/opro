@@ -58,7 +58,7 @@ import numpy as np
 import openai
 from opro import prompt_utils
 from opro.optimization import opt_utils
-from opro.models import get_model
+from opro.models import get_model, AVAILABLE_LOCAL_MODELS
 import pandas as pd
 import torch
 
@@ -101,8 +101,6 @@ _META_PROMPT_TYPE = flags.DEFINE_string(
     " dataset exemplars (often for fine-tuned optimizers), or to have only"
     " previous instructions (often for pre-trained optimizers).",
 )
-
-
 
 def main(_):
     print("\n[DEBUG] Starting optimization process...")
@@ -180,21 +178,13 @@ def main(_):
     assert scorer_llm_name in {
         "text-bison",
         "gpt-3.5-turbo",
-        "gpt-4",
-        "llama2-70b-chat",
-        "mistral-7b-instruct",
-        "llama2-13B",
-        "gpt2"
-    }
+        "gpt-4"
+    } | set(AVAILABLE_LOCAL_MODELS.keys())
     assert optimizer_llm_name in {
         "text-bison",
         "gpt-3.5-turbo",
-        "gpt-4",
-        "llama2-70b-chat",
-        "mistral-7b-instruct",
-        "llama2-13B",
-        "gpt2"
-    }
+        "gpt-4"
+    } | set(AVAILABLE_LOCAL_MODELS.keys())
     assert meta_prompt_type in {
         "both_instructions_and_exemplars",
         "instructions_only",
@@ -223,7 +213,7 @@ def main(_):
     elif scorer_llm_name == "text-bison":
         assert palm_api_key, "A PaLM API key is needed when prompting the text-bison model."
         palm.configure(api_key=palm_api_key)
-    elif scorer_llm_name in {"llama2-70b-chat", "mistral-7b-instruct", "gpt2", "llama2-13B"}:
+    elif scorer_llm_name in set(AVAILABLE_LOCAL_MODELS.keys()):
         pass
     else:
         raise ValueError(f"Unsupported scorer model: {scorer_llm_name}")
@@ -234,7 +224,7 @@ def main(_):
     elif optimizer_llm_name == "text-bison":
         assert palm_api_key, "A PaLM API key is needed when prompting the text-bison model."
         palm.configure(api_key=palm_api_key)
-    elif optimizer_llm_name in {"llama2-70b-chat", "mistral-7b-instruct", "gpt2", "llama2-13B"}:
+    elif optimizer_llm_name in set(AVAILABLE_LOCAL_MODELS.keys()):
         pass
     else:
         raise ValueError(f"Unsupported optimizer model: {optimizer_llm_name}")
@@ -305,11 +295,11 @@ def main(_):
         scorer_llm_dict.update(scorer_finetuned_palm_dict)
         call_scorer_server_func = call_scorer_finetuned_palm_server_func
 
-    elif scorer_llm_name in {"llama2-70b-chat", "mistral-7b-instruct", "gpt2", "llama2-13B"}:
+    elif scorer_llm_name in set(AVAILABLE_LOCAL_MODELS.keys()):
         print(f"\n[DEBUG] Setting up scorer model: {scorer_llm_name}")
         scorer_finetuned_open_llm_temperature = 0.0
         scorer_finetuned_open_llm_max_decode_steps = 1024
-        scorer_finetuned_open_llm_batch_size = 64
+        scorer_finetuned_open_llm_batch_size = 32
         scorer_finetuned_open_llm_num_servers = 1
         scorer_finetuned_open_llm_dict = dict()
         scorer_finetuned_open_llm_dict["temperature"] = (
@@ -334,6 +324,8 @@ def main(_):
             temperature=scorer_finetuned_open_llm_dict["temperature"],
             max_decode_steps=scorer_finetuned_open_llm_dict["max_decode_steps"],
             batch_size=scorer_finetuned_open_llm_dict["batch_size"],
+            is_vllm=True,
+            gpus="0,1,2"
         )
 
         scorer_llm_dict = {
@@ -403,7 +395,7 @@ def main(_):
         optimizer_llm_dict.update(optimizer_finetuned_palm_dict)
         call_optimizer_server_func = call_optimizer_finetuned_palm_server_func
 
-    elif optimizer_llm_name in {"llama2-70b-chat", "mistral-7b-instruct", "gpt2", "llama2-13B"}:
+    elif optimizer_llm_name in {"llama2-70b-chat", "mistral-7b-instruct", "gpt2", "llama2-13B-chat", "qwen2.5-7B"}:
         print(f"\n[DEBUG] Setting up optimizer model: {optimizer_llm_name}")
         optimizer_finetuned_open_llm_temperature = 1.0
         optimizer_finetuned_open_llm_max_decode_steps = 1024
@@ -434,6 +426,7 @@ def main(_):
             temperature=optimizer_finetuned_open_llm_dict["temperature"],
             max_decode_steps=optimizer_finetuned_open_llm_dict["max_decode_steps"],
             batch_size=optimizer_finetuned_open_llm_dict["batch_size"],
+            vllm=False,
         )
 
         optimizer_llm_dict = {
@@ -795,17 +788,21 @@ def main(_):
         old_instruction_score_threshold = 0.0
         # old_instruction_score_threshold = 0.15  # for GSM8K
     else:
-        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "gpt2"}
+        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "llama2-13B-chat", "gpt2", "qwen2.5-7B"}
         old_instruction_score_threshold = 0.3
 
     if scorer_llm_name == "text-bison":
         extract_final_answer_by_prompting_again = False
         include_qa = False
         evaluate_in_parallel = False
-    else:
-        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "gpt2"}
+    elif scorer_llm_name == {"mistral-7b-instruct"}:
         extract_final_answer_by_prompting_again = False
         include_qa = False
+        evaluate_in_parallel = False
+    else:
+        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "llama2-13B-chat", "gpt2", "qwen2.5-7B"}
+        extract_final_answer_by_prompting_again = False
+        include_qa = True
         evaluate_in_parallel = False
 
     optimizer_llm_temperature = optimizer_llm_dict["temperature"]
