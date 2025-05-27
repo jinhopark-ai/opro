@@ -168,7 +168,7 @@ def call_openai_server_batch(
 
 def call_local_model_server(
     prompts: Union[str, List[str]],
-    model_type: str,
+    model_instance,  # 이미 로드된 모델 인스턴스
     temperature: float = 0.0,
     max_decode_steps: int = 1024,
     batch_size: int = 1,
@@ -176,12 +176,8 @@ def call_local_model_server(
     **kwargs
 ) -> list:
     print(f"\n[DEBUG] In call_local_model_server function")
-    model_config = get_model(model_type, is_vllm=is_vllm, gpus=kwargs.pop("gpus", None))
-    print(f"[DEBUG] model_config: {model_config}")
-    model_config.load_model()
-        
-
-    print(f"[DEBUG] Generating response with temperature={temperature}, max_length={max_decode_steps}")
+    
+    # print(f"[DEBUG] Generating response with temperature={temperature}, max_length={max_decode_steps}")
     
     # 단일 프롬프트를 리스트로 변환
     if isinstance(prompts, str):
@@ -198,8 +194,8 @@ def call_local_model_server(
             "max_new_tokens": max_decode_steps,
             "do_sample": temperature > 0,  # temperature가 0보다 크면 sampling 활성화
             "temperature": temperature if temperature > 0 else None,  # temperature가 0이면 None으로 설정
-            "pad_token_id": model_config.tokenizer.pad_token_id,
-            "eos_token_id": model_config.tokenizer.eos_token_id,
+            "pad_token_id": model_instance.tokenizer.pad_token_id,
+            "eos_token_id": model_instance.tokenizer.eos_token_id,
         }
     try:
         if 'batch_size' in kwargs:
@@ -209,14 +205,14 @@ def call_local_model_server(
             # 배치 단위로 프롬프트 처리
             for i in tqdm(range(0, len(prompts), batch_size)):
                 batch_prompts = prompts[i:i + batch_size]
-                batch_responses = model_config.generate(
+                batch_responses = model_instance.generate(
                     batch_prompts,
                     **generation_config,
                     **kwargs
                 )
                 all_responses.extend(batch_responses)
         else:
-            all_responses = model_config.generate(
+            all_responses = model_instance.generate(
                 prompts,
                 **generation_config,
                 **kwargs

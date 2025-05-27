@@ -30,6 +30,7 @@ sys.path.insert(0, OPRO_ROOT_PATH)
 import numpy as np
 from opro.evaluation import eval_utils
 import pandas as pd
+from opro.models import AVAILABLE_LOCAL_MODELS
 
 
 def extract_string_in_square_brackets(input_string):
@@ -162,7 +163,7 @@ def gen_meta_prompt(
 
   meta_prompt = ""
   if meta_prompt_type == "both_instructions_and_exemplars":
-    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
+    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
       if instruction_pos == "A_begin":
         meta_prompt_old_instruction_part = (
             "Your task is to generate the answer starting sentence <Start>."
@@ -194,7 +195,7 @@ def gen_meta_prompt(
     # add QA pairs if few_shot_qa_pairs == True
     meta_prompt_exemplar_part = ""
     if few_shot_qa_pairs:
-      if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
+      if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
         meta_prompt_exemplar_part += "Below are some problems.\n"
       else:
         assert optimizer_llm_name.lower() == "text-bison"
@@ -227,14 +228,14 @@ def gen_meta_prompt(
           elif instruction_pos == "Q_end":
             meta_prompt_exemplar_part += f"\ninput:\nQ: {question}\n<INS>\nA:"
           else:  # instruction_pos == "A_begin"
-            if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
+            if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
               meta_prompt_exemplar_part += f"\nQ: {question}\nA: <Start>"
             else:
               assert optimizer_llm_name.lower() == "text-bison"
               meta_prompt_exemplar_part += f"\ninput:\nQ: {question}\nA: <INS>"
         else:  # when there're no "Q:" and "A:" in the prompt
           assert instruction_pos in {"Q_begin", "Q_end"}
-          if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
+          if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
             if instruction_pos == "Q_begin":
               meta_prompt_exemplar_part += f"\nProblem:\n<INS>\n{question}\n"
             elif instruction_pos == "Q_end":
@@ -246,7 +247,7 @@ def gen_meta_prompt(
             elif instruction_pos == "Q_end":
               meta_prompt_exemplar_part += f"\ninput:\n{question}\n<INS>\n"
 
-        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
+        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
           meta_prompt_exemplar_part += (
               f"\nGround truth answer:\n{true_answer}\n"
           )
@@ -270,7 +271,7 @@ def gen_meta_prompt(
     else:
       meta_prompt += meta_prompt_old_instruction_part
 
-    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "mistral-7b-instruct", "gpt2"}:
+    if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
       if instruction_pos == "A_begin":
         meta_prompt += (
             "\n\nGenerate a starting sentence that is different from all the"
@@ -428,6 +429,9 @@ def run_evolution(**kwargs):
 
   # wandb 초기화
   wandb.init(project="opro-evolution", name=f"evolution-{dataset_name}-Optimizer_{optimizer_llm_name}-Scorer_{scorer_llm_dict['model_type']}-{instruction_pos}-{num_search_steps}")
+
+  # instruction log를 위한 W&B Table 생성
+  instruction_table = wandb.Table(columns=["step", "training_acc", "instruction"])
 
   num_servers = scorer_llm_dict["num_servers"]
   batch_size = scorer_llm_dict["batch_size"]
@@ -727,7 +731,7 @@ def run_evolution(**kwargs):
           dataset_name=dataset_name,
           task_name=task_name,
       )
-    print(f"\nmeta_prompt: \n\n{meta_prompt}\n")
+    # print(f"\nmeta_prompt: \n\n{meta_prompt}\n")
     meta_prompts.append((meta_prompt, i_step))
     remaining_num_instructions_to_generate = (
         num_generated_instructions_in_each_step
@@ -736,20 +740,17 @@ def run_evolution(**kwargs):
     while remaining_num_instructions_to_generate > 0:
       optimizer_llm_input_text = [meta_prompt] * optimizer_llm_dict["batch_size"]
       # generate instructions
-      print(f"current temperature: {optimizer_llm_temperature_curr}")
       raw_outputs = call_optimizer_server_func(
           optimizer_llm_input_text,
           temperature=optimizer_llm_temperature_curr,
       )
-      
-      print(f"Raw outputs of Optimizer LLM: {raw_outputs}")
 
       # Extract the generated instructions from the optimizer LLM output. Only
       # keep some samples if the desired number of remaining instructions
       # is smaller than the total number of decodes in this step.
       if meta_prompt_type == "both_instructions_and_exemplars":
         raw_outputs = raw_outputs[:remaining_num_instructions_to_generate]
-        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "gpt2", "llama2-13B-chat", "qwen2.5-7B"}:
+        if optimizer_llm_name.lower() in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys()):
           if instruction_pos == "A_begin":
             start_string = "<Start>"
             end_string = "</Start>"
@@ -792,7 +793,6 @@ def run_evolution(**kwargs):
     generated_instructions_raw = list(
         map(eval_utils.polish_sentence, generated_instructions_raw)
     )
-    print(f"\ninitially generated instructions: {generated_instructions_raw}\n")
 
     # do not evaluate old instructions again
     generated_instructions = []  # the new instructions generated in this step
@@ -827,7 +827,6 @@ def run_evolution(**kwargs):
         )
         continue
       to_evaluate_instructions.append(instruction)
-    print(f"\nto-evaluate generated instructions: {to_evaluate_instructions}\n")
 
     # evaluate new instructions on the few-shot exemplars in meta-prompt
     if few_shot_qa_pairs and evaluate_generated_ins_on_few_shot:
@@ -952,6 +951,9 @@ def run_evolution(**kwargs):
       txt_log_path = os.path.join(save_folder, "instruction_log.txt")
       with open(txt_log_path, "a") as f:
         f.write(f"Step {i_step}, training acc: {average_score}, instruction: {instruction}\n")
+      # W&B Table에도 기록
+      instruction_table.add_data(i_step, average_score, instruction)
+      wandb.log({"instruction_table": instruction_table}, step=i_step)
 
       # increment the counter on wrong questions
       wrong_question_indices_set = set(
@@ -983,21 +985,16 @@ def run_evolution(**kwargs):
         "train_acc/min": min_score,
         "train_acc/max": max_score
       }, step=i_step)
-      wandb.log({
-        "metric": wandb.plot.line_series(
-            xs=[i_step],
-            ys=[[min_score], [mean_score], [max_score]],
-            keys=["min", "mean", "max"],
-            title="List Stat at Step",
-            xname="step"
-        ),
-        "mean_point": mean_score
-      }, step=i_step)
       # wandb.log({
-      #   "step": i_step,
-      #   "train_acc_mean": float(np.mean(average_scores)),
-      #   "train_accs": average_scores,  # 여러 값 shadow 형태로 기록
-      # })
+      #   "metric": wandb.plot.line_series(
+      #       xs=[i_step],
+      #       ys=[[min_score], [mean_score], [max_score]],
+      #       keys=["min", "mean", "max"],
+      #       title="List Stat at Step",
+      #       xname="step"
+      #   ),
+      #   "mean_point": mean_score
+      # }, step=i_step)
 
     # record all generated instructions
     for instruction in generated_instructions_raw:

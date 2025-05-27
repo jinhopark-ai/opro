@@ -9,4 +9,6 @@ google-generativeai>=0.3.0
 openai>=1.0.0
 pandas>=2.0.0
 immutabledict>=2.2.0
-wandb 
+wandb
+vllm
+ray

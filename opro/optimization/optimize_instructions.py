@@ -103,7 +103,6 @@ _META_PROMPT_TYPE = flags.DEFINE_string(
 )
 
 def main(_):
-    print("\n[DEBUG] Starting optimization process...")
     openai_api_key = _OPENAI_API_KEY.value
     palm_api_key = _PALM_API_KEY.value
     scorer_llm_name = _SCORER.value
@@ -299,7 +298,7 @@ def main(_):
         print(f"\n[DEBUG] Setting up scorer model: {scorer_llm_name}")
         scorer_finetuned_open_llm_temperature = 0.0
         scorer_finetuned_open_llm_max_decode_steps = 1024
-        scorer_finetuned_open_llm_batch_size = 32
+        scorer_finetuned_open_llm_batch_size = 256
         scorer_finetuned_open_llm_num_servers = 1
         scorer_finetuned_open_llm_dict = dict()
         scorer_finetuned_open_llm_dict["temperature"] = (
@@ -318,14 +317,17 @@ def main(_):
         print(f"Max decode steps: {scorer_finetuned_open_llm_dict['max_decode_steps']}")
         print(f"Batch size: {scorer_finetuned_open_llm_dict['batch_size']}")
 
+        # 모델 인스턴스 생성 및 로드
+        scorer_model_instance = get_model(scorer_llm_name, is_vllm=True, gpus="0,1")
+        scorer_model_instance.load_model()
+
         call_scorer_local_server_func = functools.partial(
             prompt_utils.call_local_model_server,
-            model_type=scorer_llm_name,
+            model_instance=scorer_model_instance,
             temperature=scorer_finetuned_open_llm_dict["temperature"],
             max_decode_steps=scorer_finetuned_open_llm_dict["max_decode_steps"],
             batch_size=scorer_finetuned_open_llm_dict["batch_size"],
-            is_vllm=True,
-            gpus="0,1,2"
+            is_vllm=True
         )
 
         scorer_llm_dict = {
@@ -395,7 +397,7 @@ def main(_):
         optimizer_llm_dict.update(optimizer_finetuned_palm_dict)
         call_optimizer_server_func = call_optimizer_finetuned_palm_server_func
 
-    elif optimizer_llm_name in {"llama2-70b-chat", "mistral-7b-instruct", "gpt2", "llama2-13B-chat", "qwen2.5-7B"}:
+    elif optimizer_llm_name in set(AVAILABLE_LOCAL_MODELS.keys()):
         print(f"\n[DEBUG] Setting up optimizer model: {optimizer_llm_name}")
         optimizer_finetuned_open_llm_temperature = 1.0
         optimizer_finetuned_open_llm_max_decode_steps = 1024
@@ -420,13 +422,17 @@ def main(_):
         print(f"Max decode steps: {optimizer_finetuned_open_llm_dict['max_decode_steps']}")
         print(f"Batch size: {optimizer_finetuned_open_llm_dict['batch_size']}")
 
+        # 모델 인스턴스 생성 및 로드
+        optimizer_model_instance = get_model(optimizer_llm_name, is_vllm=True, gpus="2,3")
+        optimizer_model_instance.load_model()
+
         call_optimizer_local_server_func = functools.partial(
             prompt_utils.call_local_model_server,
-            model_type=optimizer_llm_name,
+            model_instance=optimizer_model_instance,
             temperature=optimizer_finetuned_open_llm_dict["temperature"],
             max_decode_steps=optimizer_finetuned_open_llm_dict["max_decode_steps"],
             batch_size=optimizer_finetuned_open_llm_dict["batch_size"],
-            vllm=False,
+            is_vllm=True
         )
 
         optimizer_llm_dict = {
@@ -466,7 +472,7 @@ def main(_):
     print(f"number of optimizer output decodes: {len(optimizer_test_output)}")
     print(f"optimizer test output: {optimizer_test_output}")
     print("Finished testing the servers.")
-
+    
     # ====================== read data ============================
     print("\n================ prompt optimization settings ==============")
     # from https://github.com/hendrycks/test/blob/master/categories.py
@@ -788,19 +794,22 @@ def main(_):
         old_instruction_score_threshold = 0.0
         # old_instruction_score_threshold = 0.15  # for GSM8K
     else:
-        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4", "mistral-7b-instruct", "llama2-70b-chat", "llama2-13B-chat", "gpt2", "qwen2.5-7B"}
+        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4"} | set(AVAILABLE_LOCAL_MODELS.keys())
         old_instruction_score_threshold = 0.3
 
     if scorer_llm_name == "text-bison":
         extract_final_answer_by_prompting_again = False
         include_qa = False
         evaluate_in_parallel = False
-    elif scorer_llm_name == {"mistral-7b-instruct"}:
+    elif scorer_llm_name in {"gpt-3.5-turbo", "gpt-4"}:
+        extract_final_answer_by_prompting_again = False
+        include_qa = True
+        evaluate_in_parallel = False
+    elif "instruct" in scorer_llm_name:
         extract_final_answer_by_prompting_again = False
         include_qa = False
         evaluate_in_parallel = False
-    else:
-        assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4", "llama2-70b-chat", "llama2-13B-chat", "gpt2", "qwen2.5-7B"}
+    else:   # Open-source model with no instruction finetuning
         extract_final_answer_by_prompting_again = False
         include_qa = True
         evaluate_in_parallel = False
@@ -814,7 +823,7 @@ def main(_):
     # decodes in model parameters, because those values are limited by model
     # serving configs.
     num_generated_instructions_in_each_step = 8
-    num_search_steps = 5
+    num_search_steps = 10
 
     initial_instructions = [
         "Let's solve the problem.",

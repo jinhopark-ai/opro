@@ -93,10 +93,13 @@ class VLLMConfig:
 # 사용 가능한 모델 설정
 AVAILABLE_LOCAL_MODELS = {
     "llama2-70b-chat": "meta-llama/Llama-2-70b-chat-hf",
-    "llama2-13B-chat": "meta-llama/Llama-2-13b-chat-hf",
+    "llama2-13b-chat": "meta-llama/Llama-2-13b-chat-hf",
     "mistral-7b-instruct": "mistralai/Mistral-7B-Instruct-v0.1",
     "gpt2": "openai-community/gpt2",
-    "qwen2.5-7B": "Qwen/Qwen2.5-7B"
+    "qwen2.5-7b": "Qwen/Qwen2.5-7B",
+    "qwen2.5-7b-instruct": "Qwen/Qwen2.5-7B-Instruct",
+    "llama3.1-8b-instruct": "meta-llama/Llama-3.1-8B-Instruct",
+    "llama3.1-8b": "meta-llama/Llama-3.1-8B"
 }
 
 def get_model(model_name: str, is_vllm: bool = False, gpus: str = None) -> Any:
