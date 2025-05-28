@@ -43,6 +43,7 @@ import functools
 import json
 import os
 import sys
+import glob
 
 OPRO_ROOT_PATH = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -58,6 +59,7 @@ from opro import prompt_utils
 from opro.evaluation import eval_utils
 from opro.models import get_model, AVAILABLE_LOCAL_MODELS
 import pandas as pd
+from opro.evaluation.parse_instruction_log import parse_instruction_log
 
 ROOT_DATA_FOLDER_PATH = os.path.join(OPRO_ROOT_PATH, "data")
 
@@ -106,9 +108,30 @@ def main(_):
   # set instructions to evaluate
   instructions_to_evaluate = [
       "",
-      "Let's think step by step.",
-      "Take a deep breath and work on this problem step-by-step.",
+      "Let's think step by step."
   ]
+      # "Take a deep breath and work on this problem step-by-step.",
+
+  # === 최적화 결과에서 최고 성능 instruction 자동 추가 ===
+  dataset_name = _DATASET.value.lower()
+  scorer_llm_name = _SCORER.value.lower()
+  instruction_pos = _INSTRUCTION_POS.value
+  optimizer_llm_name = scorer_llm_name  # 필요시 별도 변수로 분리
+
+  # 폴더 패턴 생성
+  pattern = f"outputs/optimization-results/{dataset_name.upper()}-train-s-{scorer_llm_name}-o-{optimizer_llm_name}-{instruction_pos}*/instruction_log.txt"
+  matched_log_file = glob.glob(pattern)
+  print(matched_log_file)
+  assert len(matched_log_file) == 1, f"Found {len(matched_log_file)} log files"
+  log_path = matched_log_file[0]
+  if os.path.exists(log_path):
+    # parse_instruction_log 함수로 최고 training acc의 instruction 찾기
+    _, (best_acc, best_instruction) = parse_instruction_log(log_path)
+    print(best_instruction, best_acc)
+    if best_instruction and best_instruction.strip():
+      instructions_to_evaluate.append(best_instruction.strip())
+      print(f"최고 training acc instruction: {best_instruction.strip()} (acc={best_acc})")
+    
   print(f"instructions_to_evaluate: {instructions_to_evaluate}")
 
   evaluate_training_fold = _EVALUATE_TRAINING_FOLD.value
@@ -280,7 +303,7 @@ def main(_):
     print(f"\n[DEBUG] Setting up scorer model: {scorer_llm_name}")
     scorer_finetuned_open_llm_temperature = 0.0
     scorer_finetuned_open_llm_max_decode_steps = 1024
-    scorer_finetuned_open_llm_batch_size = 2048
+    scorer_finetuned_open_llm_batch_size = 512
     scorer_finetuned_open_llm_num_servers = 1
     scorer_finetuned_open_llm_dict = dict()
     scorer_finetuned_open_llm_dict["temperature"] = (

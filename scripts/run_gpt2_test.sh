@@ -1,5 +1,7 @@
 #!/bin/bash
 
+start_time=$(date +%s)
+
 # 스크립트가 있는 디렉토리로 이동
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$SCRIPT_DIR/.."
@@ -16,23 +18,18 @@ if ! command -v nvidia-smi &> /dev/null; then
     exit 1
 fi
 
-# 필요한 GPU 메모리 확인
-# TOTAL_MEM=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n 1)
-# if [ "$TOTAL_MEM" -lt 14000 ]; then
-#     echo "Warning: GPU 메모리가 14GB 미만입니다. Mistral 7B 실행에 문제가 있을 수 있습니다."
-# fi
-
 # 실행
-echo "GPT2 테스트를 시작합니다..."
+echo "GPT-2 테스트를 시작합니다..."
 echo "데이터셋: GSM8K (3.5% 샘플)"
 echo "----------------------------------------"
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/optimization/optimize_instructions.py \
-    --optimizer="llama2-13B-chat" \
-    --scorer="llama2-13B-chat" \
+    --optimizer="gpt2" \
+    --scorer="gpt2" \
     --instruction_pos="A_begin" \
     --dataset="gsm8k" \
-    --task="train"
+    --task="train" \
+    --num_search_steps=5
 
 # 실행 결과 확인
 if [ $? -eq 0 ]; then
@@ -42,4 +39,14 @@ else
     echo "----------------------------------------"
     echo "테스트 실행 중 오류가 발생했습니다."
     exit 1
-fi 
+fi
+
+end_time=$(date +%s)
+elapsed=$(( end_time - start_time ))
+
+# 시:분:초 형식으로 변환
+hours=$((elapsed / 3600))
+minutes=$(( (elapsed % 3600) / 60 ))
+seconds=$((elapsed % 60))
+
+echo "총 실행 시간: ${hours}시간 ${minutes}분 ${seconds}초"

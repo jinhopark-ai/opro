@@ -263,7 +263,7 @@ def main(_):
         OPRO_ROOT_PATH,
         "outputs",
         "optimization-results",
-        f"{dataset_name.upper()}-{task_name}-s-{scorer_llm_name}-o-{optimizer_llm_name}-{datetime_str}/",
+        f"{dataset_name.upper()}-{task_name}-s-{scorer_llm_name}-o-{optimizer_llm_name}-{instruction_pos}-{datetime_str}/",
     )
     result_by_instruction_folder = os.path.join(
         save_folder, "result_by_instruction"
