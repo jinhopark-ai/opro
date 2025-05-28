@@ -21,6 +21,7 @@ import re
 import sys
 
 import wandb
+from wandb import AlertLevel
 
 OPRO_ROOT_PATH = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -731,7 +732,7 @@ def run_evolution(**kwargs):
           dataset_name=dataset_name,
           task_name=task_name,
       )
-    # print(f"\nmeta_prompt: \n\n{meta_prompt}\n")
+    print(f"\nmeta_prompt: \n\n{meta_prompt}\n")
     meta_prompts.append((meta_prompt, i_step))
     remaining_num_instructions_to_generate = (
         num_generated_instructions_in_each_step
@@ -907,6 +908,9 @@ def run_evolution(**kwargs):
 
     # evaluate newly generated instructions on the training set
     average_scores = []
+    if len(to_evaluate_instructions) < 0:
+      print(f"\nStep {i_step}, no instructions to evaluate\n")
+      continue
     for instruction in to_evaluate_instructions:
       if instruction not in prev_saved_instructions:
         print(f"""computing the score of "{instruction}" by prompting""")
@@ -951,9 +955,32 @@ def run_evolution(**kwargs):
       txt_log_path = os.path.join(save_folder, "instruction_log.txt")
       with open(txt_log_path, "a") as f:
         f.write(f"Step {i_step+1}, training acc: {average_score}, instruction: {instruction}\n")
+      
+      # CSV 파일에 기록
+      csv_log_path = os.path.join(save_folder, "instruction_log.csv")
+      log_data = {
+        "step": [i_step+1],
+        "training_acc": [average_score],
+        "instruction": [instruction]
+      }
+      log_df = pd.DataFrame(log_data)
+      if os.path.exists(csv_log_path):
+        log_df.to_csv(csv_log_path, mode='a', header=False, index=False)
+      else:
+        log_df.to_csv(csv_log_path, index=False)
+      
+      # wandb에 CSV 파일을 Table로 업로드
+      csv_table = wandb.Table(dataframe=pd.read_csv(csv_log_path))
+      run.log({"instruction_log_csv": csv_table}, step=i_step+1)
+
       # W&B Table에도 기록
       instruction_table.add_data(i_step+1, average_score, instruction)
-      run.log({"instruction_table": instruction_table}, step=i_step+1)
+      run.log({
+        "train_acc/total": average_score,
+      }, step=i_step+1)
+      run.log({
+        "instruction_table": instruction_table
+      }, step=i_step+1)
 
       # increment the counter on wrong questions
       wrong_question_indices_set = set(
@@ -980,11 +1007,13 @@ def run_evolution(**kwargs):
       mean_score = float(np.mean(average_scores))
       min_score = min(average_scores)
       max_score = max(average_scores)
-      wandb.log({
+      run.log({
         "train_acc/mean": mean_score,
         "train_acc/min": min_score,
-        "train_acc/max": max_score
+        "train_acc/max": max_score,
+        "step": i_step+1
       }, step=i_step+1)
+      
 
     # record all generated instructions
     for instruction in generated_instructions_raw:
@@ -1060,3 +1089,9 @@ def run_evolution(**kwargs):
     with open(os.path.join(save_folder, "results_dict.pkl"), "wb") as fp:
       pickle.dump(results_dict, fp)
     print(f"\nsaved all results to\n{save_folder}")
+  
+  run.alert(
+    title="Completed ✅",
+    text="<@Jinho Park> Optimization completed",
+    level=AlertLevel.WARN,
+  )

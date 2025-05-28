@@ -102,6 +102,18 @@ _META_PROMPT_TYPE = flags.DEFINE_string(
     " previous instructions (often for pre-trained optimizers).",
 )
 
+_NUM_SEARCH_STEPS = flags.DEFINE_integer(
+    "num_search_steps",
+    100,
+    "The number of search steps.",
+)
+
+_GPUS = flags.DEFINE_string(
+    "gpus",
+    "0,1,2,3",
+    "The GPUs to use.",
+)
+
 def main(_):
     openai_api_key = _OPENAI_API_KEY.value
     palm_api_key = _PALM_API_KEY.value
@@ -110,6 +122,8 @@ def main(_):
     dataset_name = _DATASET.value.lower()
     task_name = _TASK.value
     meta_prompt_type = _META_PROMPT_TYPE.value
+    num_search_steps = _NUM_SEARCH_STEPS.value
+    gpus = _GPUS.value
 
     print(f"\n[DEBUG] Configuration:")
     print(f"Scorer: {scorer_llm_name}")
@@ -318,7 +332,7 @@ def main(_):
         print(f"Batch size: {scorer_finetuned_open_llm_dict['batch_size']}")
 
         # 모델 인스턴스 생성 및 로드
-        scorer_model_instance = get_model(scorer_llm_name, is_vllm=True, gpus="0,1")
+        scorer_model_instance = get_model(scorer_llm_name, is_vllm=True, gpus=",".join(gpus.split(",")[:int(len(gpus.split(",")) / 2)]))
         scorer_model_instance.load_model()
 
         call_scorer_local_server_func = functools.partial(
@@ -423,7 +437,7 @@ def main(_):
         print(f"Batch size: {optimizer_finetuned_open_llm_dict['batch_size']}")
 
         # 모델 인스턴스 생성 및 로드
-        optimizer_model_instance = get_model(optimizer_llm_name, is_vllm=True, gpus="2,3")
+        optimizer_model_instance = get_model(optimizer_llm_name, is_vllm=True, gpus=",".join(gpus.split(",")[int(len(gpus.split(",")) / 2):]))
         optimizer_model_instance.load_model()
 
         call_optimizer_local_server_func = functools.partial(
@@ -822,7 +836,7 @@ def main(_):
     # decodes in model parameters, because those values are limited by model
     # serving configs.
     num_generated_instructions_in_each_step = 8
-    num_search_steps = 100
+    # num_search_steps = 100
 
     initial_instructions = [
         "Let's solve the problem.",

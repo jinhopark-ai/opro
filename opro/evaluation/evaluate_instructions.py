@@ -56,6 +56,7 @@ import numpy as np
 import openai
 from opro import prompt_utils
 from opro.evaluation import eval_utils
+from opro.models import get_model, AVAILABLE_LOCAL_MODELS
 import pandas as pd
 
 ROOT_DATA_FOLDER_PATH = os.path.join(OPRO_ROOT_PATH, "data")
@@ -94,6 +95,12 @@ _EVALUATE_TEST_FOLD = flags.DEFINE_bool(
     "evaluate_test_fold", True, "Whether to evaluate the test fold."
 )
 
+_GPUS = flags.DEFINE_string(
+    "gpus",
+    "0,1,2,3",
+    "The GPUs to use.",
+)
+
 
 def main(_):
   # set instructions to evaluate
@@ -121,7 +128,8 @@ def main(_):
   dataset_name = _DATASET.value.lower()
   task_name = _TASK.value.lower()
   instruction_pos = _INSTRUCTION_POS.value
-
+  gpus = _GPUS.value
+  
   assert dataset_name in {
       "mmlu",
       "bbh",
@@ -179,18 +187,19 @@ def main(_):
       "text-bison",
       "gpt-3.5-turbo",
       "gpt-4",
-  }
+  } | set(AVAILABLE_LOCAL_MODELS.keys())
 
   # make sure the model is callable
   if scorer_llm_name in {"gpt-3.5-turbo", "gpt-4"}:
     assert openai_api_key, "The OpenAI API key must be provided."
     openai.api_key = openai_api_key
-  else:
-    assert scorer_llm_name == "text-bison"
-    assert (
-        palm_api_key
-    ), "A PaLM API key is needed when prompting the text-bison model."
+  elif scorer_llm_name == "text-bison":
+    assert palm_api_key, "A PaLM API key is needed when prompting the text-bison model."
     palm.configure(api_key=palm_api_key)
+  elif scorer_llm_name in set(AVAILABLE_LOCAL_MODELS.keys()):
+    pass
+  else:
+    raise ValueError(f"Unsupported scorer model: {scorer_llm_name}")
 
   assert instruction_pos in {
       "before_Q",
@@ -202,8 +211,6 @@ def main(_):
       " beginning of the question, at the end of the question, or at the"
       " beginning of the answer."
   )
-
-  is_gpt_model = bool(scorer_llm_name in {"gpt-3.5-turbo", "gpt-4"})
 
   if dataset_name == "mmlu":
     root_data_folder_path = os.path.join(ROOT_DATA_FOLDER_PATH, "MMLU-data")
@@ -268,6 +275,48 @@ def main(_):
     }
     scorer_llm_dict.update(scorer_finetuned_palm_dict)
     call_scorer_server_func = call_scorer_finetuned_palm_server_func
+
+  elif scorer_llm_name in set(AVAILABLE_LOCAL_MODELS.keys()):
+    print(f"\n[DEBUG] Setting up scorer model: {scorer_llm_name}")
+    scorer_finetuned_open_llm_temperature = 0.0
+    scorer_finetuned_open_llm_max_decode_steps = 1024
+    scorer_finetuned_open_llm_batch_size = 2048
+    scorer_finetuned_open_llm_num_servers = 1
+    scorer_finetuned_open_llm_dict = dict()
+    scorer_finetuned_open_llm_dict["temperature"] = (
+        scorer_finetuned_open_llm_temperature
+    )
+    scorer_finetuned_open_llm_dict["num_servers"] = (
+        scorer_finetuned_open_llm_num_servers
+    )
+    scorer_finetuned_open_llm_dict["batch_size"] = scorer_finetuned_open_llm_batch_size
+    scorer_finetuned_open_llm_dict["max_decode_steps"] = (
+        scorer_finetuned_open_llm_max_decode_steps
+    )
+
+    print(f"[DEBUG] Scorer model parameters:")
+    print(f"Temperature: {scorer_finetuned_open_llm_dict['temperature']}")
+    print(f"Max decode steps: {scorer_finetuned_open_llm_dict['max_decode_steps']}")
+    print(f"Batch size: {scorer_finetuned_open_llm_dict['batch_size']}")
+
+    # 모델 인스턴스 생성 및 로드
+    scorer_model_instance = get_model(scorer_llm_name, is_vllm=True, gpus=gpus)
+    scorer_model_instance.load_model()
+
+    call_scorer_local_server_func = functools.partial(
+        prompt_utils.call_local_model_server,
+        model_instance=scorer_model_instance,
+        temperature=scorer_finetuned_open_llm_dict["temperature"],
+        max_decode_steps=scorer_finetuned_open_llm_dict["max_decode_steps"],
+        batch_size=scorer_finetuned_open_llm_dict["batch_size"],
+        is_vllm=True
+    )
+
+    scorer_llm_dict = {
+        "model_type": scorer_llm_name.lower(),
+    }
+    scorer_llm_dict.update(scorer_finetuned_open_llm_dict)
+    call_scorer_server_func = call_scorer_local_server_func
 
   else:
     # GPT models
@@ -526,18 +575,28 @@ def main(_):
 
   if scorer_llm_name == "text-bison":
     # instruction fine-tuned models
-    batch_size = 1
+    batch_size = scorer_llm_dict["batch_size"]
     num_servers = scorer_llm_dict["num_servers"]
     extract_final_answer_by_prompting_again = False
     include_qa = False
     evaluate_in_parallel = False
-  else:
-    # GPT models
-    assert scorer_llm_name in {"gpt-3.5-turbo", "gpt-4"}
-    batch_size = 1
-    num_servers = 1
+  elif scorer_llm_name in {"gpt-3.5-turbo", "gpt-4"}:
+    batch_size = scorer_llm_dict["batch_size"]
+    num_servers = scorer_llm_dict["num_servers"]
+    extract_final_answer_by_prompting_again = False
+    include_qa = True
+    evaluate_in_parallel = False
+  elif "instruct" in scorer_llm_name:
+    batch_size = scorer_llm_dict["batch_size"]
+    num_servers = scorer_llm_dict["num_servers"]
     extract_final_answer_by_prompting_again = False
     include_qa = False
+    evaluate_in_parallel = False
+  else:  # Open-source model with no instruction finetuning
+    batch_size = scorer_llm_dict["batch_size"]
+    num_servers = scorer_llm_dict["num_servers"]
+    extract_final_answer_by_prompting_again = False
+    include_qa = True
     evaluate_in_parallel = False
 
   print(
@@ -687,10 +746,10 @@ def main(_):
             dataset_name=dataset_name,
             num_servers=num_servers,
             extract_final_answer_by_prompting_again=extract_final_answer_by_prompting_again,
-            instruction_pos=instruction_pos,
-            is_multiple_choice=is_multiple_choice,
             include_qa=include_qa,
             evaluate_in_parallel=evaluate_in_parallel,
+            instruction_pos=instruction_pos,
+            is_multiple_choice=is_multiple_choice,
             prediction_treat_as_number=prediction_treat_as_number,
             prediction_treat_as_bool=prediction_treat_as_bool,
             prediction_num_decimals=0,
@@ -728,7 +787,6 @@ def main(_):
             prediction_treat_as_number=prediction_treat_as_number,
             prediction_treat_as_bool=prediction_treat_as_bool,
             prediction_num_decimals=0,
-            is_gpt_model=is_gpt_model,
             verbose=False,
             max_retry=5,
             sleep_time=180,
