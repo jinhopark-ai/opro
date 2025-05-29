@@ -168,6 +168,7 @@ def gen_prompt(
     include_qa=True,
     instruction_pos="Q_begin",
     dataset_name="mmlu",
+    few_shot_examples=None
 ):
   """Generate a prompt from the available exemplars and the given instruction.
 
@@ -183,6 +184,7 @@ def gen_prompt(
     instruction_pos (str): where to put the instruction, one of {'before_Q',
       'Q_begin', 'Q_end', 'A_begin'}.
     dataset_name (str): one of {"mmlu", "bbh", "gsm8k"}.
+    few_shot_examples (list or None): few-shot examples to prepend to the prompt
 
   Returns:
     prompt (str): the generated prompt.
@@ -242,6 +244,18 @@ def gen_prompt(
         prompt += "\n\nA:"
     else:
       assert instruction_pos == "A_begin"
+      if few_shot_examples:
+        prompt += "Below are few-shot examples of the task. Use them to help you solve the following question.\n\n"
+        for q, a in few_shot_examples:
+          prompt += f"Q: {q}\n\n"
+          prompt += "A:"
+          if instruction:
+            prompt += f" {instruction}\n"
+          if isinstance(a, bytes):
+            a = a.decode('utf-8')
+          if a.startswith("b'") and a.endswith("'"):
+            a = a[2:-1]
+          prompt += f"{a}\n\n"
       prompt += f"Q: {question}\n\n"
       prompt += "A:"
       if instruction:
@@ -249,6 +263,16 @@ def gen_prompt(
   else:  # when there're no "Q:" and "A:" in the prompt
     assert instruction_pos in {"Q_begin", "Q_end"}
     if instruction_pos == "Q_begin":
+      if few_shot_examples:
+        prompt += "Below are few-shot examples of the task. Use them to help you solve the following question.\n\n"
+        for q, a in few_shot_examples:
+          if instruction:
+            prompt += instruction + "\n"
+          if isinstance(a, bytes):
+            a = a.decode('utf-8')
+          if a.startswith("b'") and a.endswith("'"):
+            a = a[2:-1]
+          prompt += f"{q}\n{a}\n\n"
       if instruction:
         prompt += instruction + "\n"
       prompt += question
@@ -554,6 +578,7 @@ def evaluate_single_instruction(
     prediction_num_decimals=0,
     is_gpt_model=False,
     verbose=False,
+    few_shot_examples=None,
 ):
   r"""Evaluate a single instruction on the given indices of the given data.
 
@@ -594,6 +619,7 @@ def evaluate_single_instruction(
     is_gpt_model (bool): Whether the scorer model is a GPT model. This flag
       exists because GPT models often output the final answer in "\boxed{}".
     verbose (bool): whether to print out progress information.
+    few_shot_examples (list or None): few-shot examples to prepend to the prompt
 
   Returns:
     detailed_results_df (pandas.DataFrame): the prompts, results, true answers
@@ -640,6 +666,7 @@ def evaluate_single_instruction(
         include_qa=include_qa,
         instruction_pos=instruction_pos,
         dataset_name=dataset_name,
+        few_shot_examples=few_shot_examples
     )
     raw_prompts_flattened.append(raw_prompt)
 

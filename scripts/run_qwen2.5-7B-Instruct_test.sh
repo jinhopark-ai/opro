@@ -29,7 +29,7 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 python opro/optimization/optimize_instructions.py \
     --instruction_pos="Q_begin" \
     --dataset="gsm8k" \
     --task="train" \
-    --num_search_steps=100 \
+    --num_search_steps=200 \
     --gpus="4,5,6,7"
 
 # 실행 결과 확인

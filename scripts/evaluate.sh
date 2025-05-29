@@ -23,41 +23,45 @@ echo "최적의 prompt 테스트를 시작합니다..."
 echo "데이터셋: GSM8K Test"
 echo "----------------------------------------"
 
-CUDA_VISIBLE_DEVICES=0 python opro/evaluation/evaluate_instructions.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/evaluation/evaluate_instructions.py \
     --scorer="llama3.1-8b-instruct" \
     --dataset="gsm8k" \
     --task="test" \
     --instruction_pos="Q_begin" \
+    --few_shots=3 \
     --evaluate_training_fold=false \
     --evaluate_test_fold=true \
-    --gpus="0" &
+    --gpus="0,1,2,3"
 
-CUDA_VISIBLE_DEVICES=1 python opro/evaluation/evaluate_instructions.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/evaluation/evaluate_instructions.py \
     --scorer="llama3.1-8b" \
     --dataset="gsm8k" \
     --task="test" \
     --instruction_pos="A_begin" \
+    --few_shots=3 \
     --evaluate_training_fold=false \
     --evaluate_test_fold=true \
-    --gpus="1" &
+    --gpus="0,1,2,3"
 
-CUDA_VISIBLE_DEVICES=2 python opro/evaluation/evaluate_instructions.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/evaluation/evaluate_instructions.py \
     --scorer="qwen2.5-7b-instruct" \
     --dataset="gsm8k" \
     --task="test" \
     --instruction_pos="Q_begin" \
+    --few_shots=3 \
     --evaluate_training_fold=false \
     --evaluate_test_fold=true \
-    --gpus="2" &
+    --gpus="0,1,2,3"
 
-CUDA_VISIBLE_DEVICES=3 python opro/evaluation/evaluate_instructions.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/evaluation/evaluate_instructions.py \
     --scorer="qwen2.5-7b" \
     --dataset="gsm8k" \
     --task="test" \
     --instruction_pos="A_begin" \
+    --few_shots=3 \
     --evaluate_training_fold=false \
     --evaluate_test_fold=true \
-    --gpus="3" &
+    --gpus="0,1,2,3"
 
 wait
 

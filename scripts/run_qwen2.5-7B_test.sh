@@ -29,7 +29,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python opro/optimization/optimize_instructions.py \
     --instruction_pos="A_begin" \
     --dataset="gsm8k" \
     --task="train" \
-    --num_search_steps=100
+    --num_search_steps=200 \
+    --gpus="0,1,2,3"
 
 # 실행 결과 확인
 if [ $? -eq 0 ]; then

@@ -103,6 +103,10 @@ _GPUS = flags.DEFINE_string(
     "The GPUs to use.",
 )
 
+_FEW_SHOTS = flags.DEFINE_integer(
+    "few_shots", 0, "Instruction 앞에 삽입할 few-shot 예시 개수 (0이면 사용 안 함)"
+)
+
 
 def main(_):
   # set instructions to evaluate
@@ -119,7 +123,7 @@ def main(_):
   optimizer_llm_name = scorer_llm_name  # 필요시 별도 변수로 분리
 
   # 폴더 패턴 생성
-  pattern = f"outputs/optimization-results/{dataset_name.upper()}-train-s-{scorer_llm_name}-o-{optimizer_llm_name}-{instruction_pos}*/instruction_log.txt"
+  pattern = f"outputs/optimization-results/step100/{dataset_name.upper()}-train-s-{scorer_llm_name}-o-{optimizer_llm_name}-{instruction_pos}*/instruction_log.txt"
   matched_log_file = glob.glob(pattern)
   print(matched_log_file)
   assert len(matched_log_file) == 1, f"Found {len(matched_log_file)} log files"
@@ -127,7 +131,6 @@ def main(_):
   if os.path.exists(log_path):
     # parse_instruction_log 함수로 최고 training acc의 instruction 찾기
     _, (best_acc, best_instruction) = parse_instruction_log(log_path)
-    print(best_instruction, best_acc)
     if best_instruction and best_instruction.strip():
       instructions_to_evaluate.append(best_instruction.strip())
       print(f"최고 training acc instruction: {best_instruction.strip()} (acc={best_acc})")
@@ -259,7 +262,7 @@ def main(_):
       OPRO_ROOT_PATH,
       "outputs",
       "scorer-outputs",
-      f"{dataset_name.upper()}-{task_name}-s-{scorer_llm_name}-{datetime_str}/",
+      f"{dataset_name.upper()}-{task_name}-s-{scorer_llm_name}-{instruction_pos}-{datetime_str}/",
   )
   if not os.path.exists(result_folder):
     os.makedirs(result_folder)
@@ -303,7 +306,7 @@ def main(_):
     print(f"\n[DEBUG] Setting up scorer model: {scorer_llm_name}")
     scorer_finetuned_open_llm_temperature = 0.0
     scorer_finetuned_open_llm_max_decode_steps = 1024
-    scorer_finetuned_open_llm_batch_size = 512
+    scorer_finetuned_open_llm_batch_size = 2048
     scorer_finetuned_open_llm_num_servers = 1
     scorer_finetuned_open_llm_dict = dict()
     scorer_finetuned_open_llm_dict["temperature"] = (
@@ -757,6 +760,25 @@ def main(_):
           f"\n({i_ins+1}/{len(instructions_to_evaluate)}) evaluating"
           f" instruction:\n{instruction}"
       )
+      # few-shot 샘플링 및 prepend
+      few_shots = _FEW_SHOTS.value
+      np.random.seed(42)
+      few_shot_examples = None
+      if few_shots > 0:
+        if dataset_name == "gsm8k":
+            train_file = os.path.join(root_data_folder_path, "gsm_train.tsv")
+            if os.path.exists(train_file):
+              gsm8k_train_data = pd.read_csv(train_file, sep="\t", header=None, encoding='utf-8')
+            else:
+              raise ValueError("GSM8K train 데이터가 없습니다.")
+        
+            num_train_examples = len(gsm8k_train_data)
+            sampled_indices = np.random.choice(num_train_examples, size=min(few_shots, num_train_examples), replace=False)
+            few_shot_examples = []
+            for idx in sampled_indices:
+              q = gsm8k_train_data.iloc[idx, 0]
+              a = gsm8k_train_data.iloc[idx, 2]
+              few_shot_examples.append((q, a))
       filename = eval_utils.instruction_to_filename(instruction)
       if evaluate_training_fold:
         print("... evaluating the training fold ...")
@@ -779,6 +801,7 @@ def main(_):
             verbose=False,
             max_retry=5,
             sleep_time=180,
+            few_shot_examples=few_shot_examples
         )
         train_file_path = os.path.join(
             single_task_result_folder, f"{1-test_ratio}-TRAIN-{filename}.csv"
@@ -813,6 +836,7 @@ def main(_):
             verbose=False,
             max_retry=5,
             sleep_time=180,
+            few_shot_examples=few_shot_examples
         )
         test_file_path = os.path.join(
             single_task_result_folder, f"{test_ratio}-TEST-{filename}.csv"
@@ -827,7 +851,7 @@ def main(_):
       if evaluate_training_fold and evaluate_test_fold:
         print("... concatenating training and test fold results ...")
         detailed_all_results_df = pd.concat(
-            [detailed_train_results_df, detailed_test_results_df]  # pylint: disable=undefined-variable
+            [detailed_train_results_df, detailed_test_results_df]
         )
         detailed_all_results_df = detailed_all_results_df.sort_values(
             by="index_in_raw_dataset"
