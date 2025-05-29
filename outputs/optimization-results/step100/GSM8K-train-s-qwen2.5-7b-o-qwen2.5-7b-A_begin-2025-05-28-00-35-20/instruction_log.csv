@@ -1,0 +1,691 @@
+step,training_acc,instruction
+1,0.9157088122605364,
+1,0.03065134099616858,"While working on the weight
+
+wait... that was my last sentence!! Thanks!!"
+1,0.0421455938697318,Consider Biff and Kenneth racing in a rowboat race.
+1,0.05747126436781609,Explain the physical characteristics and movement capabilities of each animal or plant to differentiate between Biff and Kenneth in their rowing race.
+1,0.4444444444444444,We must first determine the amount of weight
+2,0.011494252873563218,"To determine the total amount of money Teal makes from her sales at the award ceremony, we need to consider the number of pies, the slices per pie, the price per slice, and the ratio of occupied slices to total slices."
+2,0.1685823754789272,"In a hypothetical situation, let's consider two individuals: Blue arrives at a department store, followed shortly after by Red, where they both intend to purchase items."
+2,0.0,"Do not end the starting sentence with a punctuation.
+Here's what I suggest:
+
+""In this scenario, to determine the seat count...""
+
+Or, alternatively:
+
+""To find out how many seats need to be adjusted...""
+
+Both of these options aim to be concise and effective, while also being broadly applicable to the problems presented. Let me know if you'd like me to try again!"
+2,0.1417624521072797,"Sentence may ask a fact-based question that directs to the ground truth answer. For example, How many states are in the USA?"
+2,0.5517241379310345,Let's begin by analyzing the given information and applying mathematical principles to solve the problems effectively.
+2,0.011494252873563218,"Given the scenario where Teal sells pumpkin pie and custard pie by the slice, with different prices and pie sizes, as well as the number of pies sold, how can we calculate the revenue generated from the sales of both types of pie?"
+2,0.18773946360153257,"If you want to leave a higher tip and be considered generous, aim for at least"
+3,0.5555555555555556,Sentences above.
+3,0.3793103448275862,"Part should explicitly outline the beginning of our output, while the"
+3,0.09961685823754789,How many books does the average person read in a year?
+3,0.11494252873563218,Observe the given arithmetic problems and notice that each focuses on different operations and varying numbers.
+3,0.48659003831417624,Bonus : try referencing texts in your starting sentence to increase your score.
+3,0.31417624521072796,This problem requires us to apply numerical reasoning and calculations.
+4,0.04597701149425287,"The scoring of the starting sentence is inferred based on human preference in natural language sentences.
+Only use the following format
+
+<start>
+[Answer].
+</start> [Answer]
+Job completion"
+4,0.0,".
+Answer:
+Find the maximum possible age difference between two people at the event.
+<Start>"
+4,0.034482758620689655,"We must find the difference in the number of men and women guests attending the event, and then add that difference to the number of children on the original guest list to determine how many children will attend the event."
+4,0.5019157088122606,"No need to strictly answer the question above, but the starting sentence should help answer the question."
+4,0.0,The ground truth answer to all the QA pairs is given above.
+4,0.4367816091954023,Let's solve a problem involving expenditure and budgeting.
+5,0.524904214559387,Let's tackle this problem by organizing the given information and applying appropriate calculations.
+5,0.6704980842911877,It should not be neutral.
+5,0.6168582375478927,Write the starting sentence in sentence case.
+5,0.21455938697318008,Let's analyze the given information and identify the relevant factors to make the necessary calculations effectively.
+6,0.5938697318007663,Do not end the starting sentence with a symbol like / or =.
+6,0.30268199233716475,"Lara and Nancy's problems show the importance of strategic planning and effective use of resources when faced with a challenge, as well as the need to calculate and organize information to tackle these problems successfully."
+6,0.789272030651341,Sentences.
+6,0.15708812260536398,We must first compute the weighted average cost
+7,0.07279693486590039,What's the relationship between the number of kilos of sugar Chelsea has and the size of the bags she uses?
+7,0.0,"Use references from above to boost the score further. Do not use the examples below in your answer
+
+In places that recognize homophones as different words with similar sounds, which carpet does your tongue travel on?"
+7,0.034482758620689655,"The starting sentence should not contain specific information about the above QA pairs, such as numbers. The starting sentence should be characteristic of the document content.
+Start:
+When it comes to comparing the wages of two individuals, one effective way to make an accurate comparison is by examining how much each individual earns and how it compares to their respective jobs in the same industry."
+7,0.11494252873563218,"You may choose to omit some irrelevant information from the Input text.
+Take a moment to consider your choices.
+
+Start:
+The given problems involve different mathematical concepts and require organizing and applying information to solve them effectively."
+7,0.1839080459770115,Let's discover the answers to these problems using logical reasoning and calculations.
+7,0.6398467432950191,"Together, we face a challenge that demands strategic planning and the effective use of resources; we must calculate and organize information to ensure successful outcomes."
+7,0.2260536398467433,<TEXT> <Answer>
+8,0.08045977011494253,We will begin by calculating the total number of songs Jeremy listened to yesterday and today.
+8,0.11494252873563218,Jarrard and his mom frequent the grocery store where decent lettuce is the only lettuce available.
+8,0.6743295019157088,Let's tackle the problem by organizing the information given and calculating the answers step-by-step.
+8,0.4329501915708812,"To solve various problems, it is important"
+8,0.39846743295019155,And terminal
+8,0.0,"It also should not be redundant.
+
+Handle texts or previous starting sentences that are beginning and ending with the same words."
+9,0.15708812260536398,"Do not deviate from the format, and do not write anything apart from the sentence in the designated space."
+9,0.30268199233716475,"You are allowed to change all parts of each QA pair, including the characters and setting. Do not change the format of the QA pair.
+The various modes of calculation are effortless, but the method with the utmost effectiveness is confronting these issues head-on."
+10,0.25287356321839083,"In your thinking process, please list all possible starting sentences."
+10,0.6245210727969349,"Include the CHANGE/ADD/CALC prefix at the start of the relevant sentence, if there is any."
+10,0.02681992337164751,"Sentences.
+<Start>Let's tackle a problem that involves a distance race and reveals the winner and the significant lead they have when the race concludes."
+11,0.34099616858237547,"Counting insects/bugs is an essential venture in various disciplines, including science, agriculture, and urban planning."
+11,0.019157088122605363,"To determine the total volume of water the farmer can carry, we will first calculate the capacity of a single truck and then multiply by three, the number of trucks the farmer has."
+11,0.5632183908045977,Let's break down the problem and organize the given information to find the solution.
+11,0.0842911877394636,"First, let's analyze Bella's ballet performance and calculate the number of roses she received from her parents and friends."
+11,0.32950191570881227,The starting sentence should begin with this prefix: Ground Truth:
+12,0.6053639846743295,"Together, we face the challenges laid out before us; let's approach them strategically and efficiently."
+12,0.7088122605363985,"To solve our problem effectively, it's crucial to first break down the information provided and then apply appropriate analytical techniques to find the solution."
+12,0.0038314176245210726,"Sentences.
+<Start> Let's minimize the potential cost and maximize the quality of private school education for all the children involved by providing a fair compensation to the talented teacher -"
+12,0.09578544061302682,The score is calculated using your QA pairs.
+12,0.6053639846743295,Let's break down the problem and calculate the variables step-by-step.
+12,0.04597701149425287,Write a natural starting sentence that is relevant to the problem and ends with
+13,0.11494252873563218,"Let's assess the information given, calculate the necessary quantities, and determine the final outcome to solve this mystery."
+13,0.09961685823754789,"Sentences to increase differentiation.
+<Start>By systematically organizing the information provided and employing analytical techniques, we can effectively address and overcome the challenges presented in the problem at hand, ultimately finding the solution that meets the requirements and objectives outlined."
+13,0.3333333333333333,Let's break this problem into smaller steps and solve it together while keeping track of our progress.
+13,0.41379310344827586,Let us challenge our problem-solving skills by tackling the math riddle below.<Start>
+13,0.44061302681992337,"The given information involves calculations to solve for the total amount of each ingredient, the number of servings, jobs in a team, cost of tools, distance traveled, final temperature, the number of gifts, and the amount of water used for baths."
+14,0.24521072796934865,"Working together collaboratively, we can effectively address the question presented above, taking a strategic approach to maximize our understanding and deliver the optimal solution."
+14,0.27586206896551724,"The score is calculated only based on this starting sentence, therefore it is not necessary to keep any main ideas. One can distort the meaning. The answer is one sentence.
+To solve various problems encountered in everyday life, it's essential to break down the given information, identify the relevant data, and apply appropriate strategies to reach a comprehensive solution that accounts for all the aspects presented in the question."
+14,0.8199233716475096,And
+15,0.6590038314176245,Let's break down the problem and carefully apply mathematical principles to find the solution.
+15,0.0038314176245210726,"Sentences above. Scores should be higher or equal to ground truth answer.
+<Start>
+Let's first calculate Mr. Maxwell's time taken in both trips and then find the difference for better understanding of the problem."
+15,0.019157088122605363,"Sentence.
+<Start>
+
+In order to determine the average speed of Mr. Maxwell on his return journey, let's first find the distance he travels in the morning."
+15,0.3218390804597701,"First, let's organize the given information and identify the key concepts we need to address in this question."
+15,0.34099616858237547,Let's concatenate the information given and find the solution by applying logical reasoning.
+15,0.5287356321839081,"Together, let's break down the problem, <strong>analyze</strong> the given information, and use <strong>strategic</strong> reasoning to solve the problem step-by-step, improving the chances of success while evaluating potential variables and outcomes."
+15,0.06513409961685823,Jake's full name contains ...
+15,0.6053639846743295,That differs from the ones provided.
+16,0.2567049808429119,"The challenge before us requires careful analysis and organization of the available data, followed by strategic calculations and problem-solving techniques to arrive at the correct answer."
+16,0.5900383141762452,"Sentences that do better than all the <Start> I gave there:
+
+Try different approaches to find the solution."
+16,0.11877394636015326,"The starting sentence should be coherent, informative, and grammatically correct. The starting sentence should be in sentence case and not contain any unnecessary symbols or words.
+Start>
+Answering the given question requires us to find the solution to the multi-step problem by applying critical thinking and strategic reasoning."
+16,0.6513409961685823,Let's proceed with the problem and efficiently outline the steps needed to calculate the number of students in the classroom.
+16,0.18773946360153257,Let's start by examining the information provided and breaking it down into relevant components.
+17,0.09578544061302682,"In order to solve this problem, let's carefully analyze the information given and apply the appropriate mathematical principles to find the solution."
+17,0.3486590038314176,""" and end with """
+17,0.6781609195402298,Let's solve the problem step by step while maintaining accurate calculations to determine the total number of gumballs Hector purchased.
+17,0.2720306513409962,"By carefully analyzing the given data and strategically applying mathematical techniques, we can not only solve the problems posed but also gain a deeper understanding of the underlying patterns and principles involved."
+18,0.5210727969348659,"Use our collective intelligence to quickly determine the number of visitors affected by the latest environmental issue,"
+18,0.6475095785440613,"Let's approach the problem step-by-step, using the information provided to solve it effectively."
+18,0.4904214559386973,Keep the style consistent with the style used in the QA pairs.
+18,0.4444444444444444,<Prompt>
+18,0.0038314176245210726,"Sentences above.
+
+<Start>How can we calculate the amount of money Mitzi has left after spending on a ticket, food, and a T-shirt?"
+18,0.5938697318007663,"Can you remember and organize the given information, then effectively solve the problem step by step while maintaining accuracy, empathy and creativity?"
+19,0.019157088122605363,The score is the sum of likes minus the number of comments on your post.
+19,0.6781609195402298,TL;DR:
+19,0.5095785440613027,"Let's approach each problem systematically, utilizing the information given to calculate the answers accurately."
+19,0.6896551724137931,And end it with
+19,0.8620689655172413,Address all the variables
+19,0.2567049808429119,"Utilizing the information provided, let's apply deductive reasoning and mathematical analysis to find the solutions accurately, taking into account the challenges and diverse scenarios presented."
+19,0.22988505747126436,"Firstly, let's examine the information given in the problem."
+20,0.08812260536398467,"Calculated by multiplying the total weight of the records and cookies by the number of units purchased, <End>"
+20,0.524904214559387,"By applying a strategic and organized approach, we can efficiently overcome the challenges and arrive at a successful solution."
+20,0.2796934865900383,"Together, let's overcome the challenges that lie ahead, by utilizing strategic planning and efficient resource allocation."
+20,0.5632183908045977,And exactly one
+20,0.21455938697318008,The starting sentence is not provided.
+21,0.03065134099616858,"Sentences and avoid repeating any of the content from the previous starting sentences.
+<Start>
+Let's approach the problem by calculating the number of apples Yanna has, distributing them to her friends, and determining how many were kept."
+21,0.2988505747126437,Let's tackle this using the information provided and best practices to reach a conclusion effectively.
+21,0.3218390804597701,How would you approach the problem to find the total number of pages in the book?
+21,0.5172413793103449,S. Maintain the <Start> and
+22,0.524904214559387,The complex question requires careful analysis and calculation to find the exact combining quantity of copper in the alloy.
+22,0.5555555555555556,"First, let's break down the question to understand the variables and the relationships between them. We know that..."
+22,0.210727969348659,"To solve our problem effectively, let's first calculate the total number of students and then observe how their behavior changes when they witness something remarkable."
+22,0.14559386973180077,"The sentence should indicate that it is an answer, set the context for the QA, and start from scratch (ie don't include outdated information)."
+22,0.7241379310344828,"Together, we face the challenges presented to us; let’s approach them with strategic thinking and efficiency."
+22,0.8314176245210728,.
+23,0.27586206896551724,How can we effectively calculate the total distance Emily will have traveled after each day of her journey?
+23,0.0,"Let's approach the task logically, breaking it down into smaller, manageable steps, and utilizing the given information to arrive at an accurate answer for each scenario.
+<End>"
+23,0.08812260536398467,"Sentences.
+
+<Start>
+To embark on our analytical journey and comprehensively approach the problem at hand, let's consider the provided data and assumptions, after which we will apply strategic methodologies to deduce the solution effectively."
+23,0.019157088122605363,"The starting sentences should not contain any grammatical errors or facts that are incorrect. The starting sentence should not repeat any information in the given QA pairs, but instead provide a general statement that captures the spirit of the given QA pairs."
+23,0.6628352490421456,"To solve this problem effectively, let's break it down into a series of steps and use the given information to find the solution."
+24,0.03065134099616858,"Remember that Darlene and Martha's car gas mileage are different, and each drive has different mileages and durations. Let's consider the drive from Salt Lake City to Los Angeles as a whole, starting with finding the total mileage.
+
+Remember that Darlene and Martha's car gas mileage are different, and each drive has different mileages and durations. Let's consider the drive from Salt Lake City to Los Angeles as a whole, starting with finding the total mileage."
+24,0.007662835249042145,It will be used by a system that attempts to generate correct answers to the given text based on the starting sentence.
+24,0.03065134099616858,"To find the correct answer to this kind of problem, first, identify the given information and what needs to be calculated. In this case, we know the distances between cities, Darlene's car's fuel efficiency, and the time Andy wants to complete the journey. We need to calculate the average minimum speed that Andy needs to drive to reach the destination in the given time."
+24,0.13409961685823754,What principles should you use to efficiently calculate distances between two cities in terms of miles?
+25,0.24904214559386972,The task here is to begin solving a math problem by understanding the given information and establishing a methodology to find the solution.
+25,0.12260536398467432,"Together, let's approach the following problem-problem and utilize the provided information diligently to reach a well-informed conclusion."
+25,0.0038314176245210726,"Answer...""
+
+ words_sentence = <Start>
+
+To calculate the total number of packages that should be delivered tomorrow, first, we need to determine how many packages the courier received today and then add that to the number of packages he received yesterday."
+25,0.09578544061302682,"In order to accurately solve the problem, let's analyze the given information and determine the necessary steps for a successful calculation."
+25,0.5057471264367817,"Let's break down the problem and efficiently solve it, step-by-step, to calculate the total amount the ladies spent on dresses."
+26,0.45977011494252873,Let's analyze the problem together.
+26,0.40229885057471265,Let's approach this problem by breaking it down step by step
+26,0.02681992337164751,Let's calculate the number of cars the factory made in two days.
+26,0.8812260536398467,Step by step:
+26,0.28735632183908044,"Avoid using technical jargon and symbols if possible.
+By analyzing the problem and applying relevant numbers, we can determine the outcome with precision."
+27,0.13793103448275862,".
+<Start>Let's tackle this math problem using the information provided and solve it step by step."
+27,0.12260536398467432,"Sentence in quotes.
+<Start>""In order to effectively tackle this problem,"""
+27,0.19923371647509577,"When solving a problem or challenge, it is essential to gather accurate information, analyze it strategically, and present a comprehensive solution in a concise and clear manner."
+27,0.47509578544061304,"Let's approach spending on various activities and calculate the amount that should be allocated to each by considering the given ratio and quantities involved, thereby ensuring a balanced and well-planned budget."
+27,0.0038314176245210726,"Sentence must pertain to all QA pairs above and not only one pair.
+<Start>Together, let's tackle the challenge of calculating Haley's car's distance by making use of the given ratio and the car's fuel consumption in gallons. First, we'll identify the ratio of fuel used in gallons to the distance covered in miles, and then we'll look at the amount of fuel used to find the distance covered."
+28,0.2950191570881226,Consider the strategies of active learning and educational psychology to enhance your learning process.
+28,0.09578544061302682,"Based on the information provided, let's analyze the task and identify the changes needed for each question to ensure accurate results."
+28,0.011494252873563218,"Sentence will be used to generate the starting sentence for the QA pair.
+<Start>When calculating the number of students in a classroom, it's essential to consider the total number of students in each grade level and the number of teachers."
+29,0.210727969348659,"Given a complex problem, how can we systematically approach it while utilizing the information provided and utilizing our understanding of mathematical principles?"
+29,0.5478927203065134,"In accordance with the number of steps or conditions needed to solve each problem, calculate or apply calculation techniques"
+29,0.524904214559387,"To solve a mathematical problem,"
+29,0.4444444444444444,"Sentences, consider all possible wordings, avoid repetition, and focus on accuracy and effectiveness."
+29,0.04980842911877394,How long do the birds fly and what factors may affect their travel time?
+29,0.17624521072796934,"Let us approach this problem by first understanding the given data and variables,"
+30,0.7432950191570882,"To find the answer to a problem, we have to break it down into steps"
+30,0.038314176245210725,"Calculate the cost of Chad's items before taxes, using the given prices and quantities."
+30,0.1839080459770115,"To solve this problem, let's first consider all the available information and the constraints provided to us."
+30,0.1839080459770115,"Sentences above.
+<Start> As we tackle the multi-step problem at hand, let's systematically examine the provided information to identify the quantities and values we need to determine in order to find the answer."
+31,0.524904214559387,"Check the constraints and generate the starting sentence, taking the instructions above into account."
+31,0.19540229885057472,"In each of the provided problems, the task involves determining the total quantity, cost, or number of items related to a specific context or scenario."
+31,0.4099616858237548,"The starting sentence aims to concisely capture the format or guidelines of the given texts succinctly. Let's proceed step-by-step using the given problem, sorting the information, and performing a calculation to tackle it effectively.
+<Start;text>"
+31,0.007662835249042145,"So, check and ensure your starting sentence fits all those requirements.
+
+Start.
+First, let's calculate the total cost of the water carried by one truck."
+31,0.5670498084291188,"It should avoid assuming details that are not provided clearly, and should be generalizable."
+32,0.5095785440613027,Let's analyze the problem first to understand the given information and then use that knowledge to apply the appropriate method to find the answer.
+32,0.18007662835249041,"Let's consider a scenario where we need to determine the total number of empty seats on a bus after the second stop, as well as a general approach to calculating the number of citizens in a town based on pet ownership data, and the sleep duration of a puppy compared to its owner, taking into account the different given conditions."
+32,0.04980842911877394,Sentence. The <Start> sentence should have at least one non stop word from the ground truth starting sentence. Make sure that the answer to the task is the Ground Truth starting sentence.
+32,0.1111111111111111,"Together, let us tackle this problem step-by-step, utilizing the information provided to find the correct solution."
+32,0.1111111111111111,Provide your answer in JSON format.
+32,0.09578544061302682,"When faced with the task of determining the total number of empty seats on a bus, it is essential to analyze each stop and calculate the number of passengers boarding and getting off the bus, eventually finding the difference between the bus's capacity and the number of occupied seats."
+33,0.0,"Don't use any numbers in your suggested starting sentence. If you see the token </S> in the text, that means you should stop generating new sentences. You can use numbers and special characters (like ""!"" and ""-"") only if you need them to complete your sentence; otherwise, avoid them as much as possible."
+33,0.632183908045977,"To solve the problem, let's start by organizing the information provided and then break it down into logical steps."
+33,0.09961685823754789,"Let's assess the situation strategically, taking into account Lisa's growing rabbit population and their breeding frequency, as well as the number of kittens adopted and returned."
+33,0.6245210727969349,"Let's approach this problem by breaking it down into manageable steps, summarizing the given data, and considering the variables involved to arrive at the solution<Start>."
+33,0.007662835249042145,"When tackling the challenge of counting all the paintings sold by Tracy at the art fair, we should first consider the varying quantities purchased by each customer group."
+33,0.18007662835249041,"Together, we can effectively analyze and utilize the given information to accurately solve this problem while adhering to ethical guidelines."
+34,0.2988505747126437,"To come up with a thorough estimate of a problem, one must approach it systematically."
+34,0.5708812260536399,Let's solve the problem step by step by using the given information and applying the necessary calculations to find the solution
+34,0.12643678160919541,"When analyzing a problem, it's essential to first identify the core elements and challenges."
+35,0.022988505747126436,"The scoring criteria are based on word uniqueness, message variety, and length in the starting sentence."
+35,0.2988505747126437,"Sentences provided. Please model your answer after the <Start>, followed by sentences directly followed by"
+35,0.0421455938697318,Let us determine the total number of ounces of tea needed for the party
+36,0.7279693486590039,...
+36,0.6245210727969349,"To solve this problem, we need to demonstrate step-by-step reasoning and provide a logical approach to uncovering the facts to derive the answer."
+36,0.09195402298850575,"In order to calculate the total number of episodes amicably, let us first gather the information relevant to each season individually and liaison with the statistics of the episodes produced."
+36,0.034482758620689655,"It should not repeat the subject, action, object, or event present in any QA pair above.
+```Starting sentence:"
+37,0.5708812260536399,"To determine a precise and efficient solution to an arithmetic problem, follow these structured steps:"
+37,0.08812260536398467,"And the starting sentence can be reused for different QA pairs.
+<Start> Let's address the financial transaction between Debby and Maggie by calculating their shares based on the initial sum they agreed to divide."
+37,0.019157088122605363,"In order to find out how much Donny will have to pay for all the apples, we need to first figure out the total cost by separately calculating the price for the small and medium apples, as well as the possible discounts on the big apples where appropriate."
+37,0.007662835249042145,"Given a map that represents the layout of a city, with roads and intersections marked, you are tasked to find the shortest path between your current location, labeled A, and your destination, labeled B."
+38,0.6743295019157088,"By understanding and using the given tools, we can approach and simplify problems effectively, like Yanna, Micah, and Everett did with their respective challenges."
+38,0.05747126436781609,"In order to calculate the answer to Micah's problem, let's first determine the total number of strawberries picked and then deduct how many were eaten."
+38,0.10344827586206896,"Sentences above, and has a higher score than all the <Start> sentences above. The starting sentence should begin with <Start> and end with"
+38,0.0,"\ and prepend <Start>_I: to the generated <Start> sents.
+I don't have a problem to solve. Can you provide me with the problem?"
+38,0.46360153256704983,Let's approach this problem systematically.
+38,0.6360153256704981,"Now, let's use the information we have to solve the problem together"
+39,0.08045977011494253,"It is necessary to solve this problem systematically by breaking it down into smaller, more approachable parts, and making use of the information given in the problem."
+39,0.01532567049808429,"Avoid repeating words or phrases that appear in the given prompt. To swiftly analyze the problems at hand, let's first organize the given information and then apply logical steps to reach the solution."
+39,0.08045977011494253,Let's approach this problem step-by-step to accurately determine...
+39,0.05363984674329502,"Click the checkbox to view possible starting sentences. Click the triple dot button on a hint to automatically assign it to the appropriate QA pair.
+<u>Let's approach the problem by breaking it down into smaller steps and using the given information effectively.</u>"
+40,0.1111111111111111,"To effectively solve a problem, first, gather all the necessary information and then take a systematic approach to address each step."
+40,0.38697318007662834,"Let's apply our analytical skills and comprehensive understanding to tackle the challenging problems presented, ensuring a step-by-step approach and efficient effort to find the answers."
+40,0.367816091954023,"To solve the problem at hand, let's first analyze the information given and then break it down into smaller, manageable parts before moving forward."
+40,0.5210727969348659,"To solve this problem, we need to break it down efficiently and calculate the cost step by step, considering all relevant variables and formulas."
+40,0.25287356321839083,"Let's approach this problem with a systematic and logical mindset, analyzing each step to uncover the answer."
+40,0.32950191570881227,"When tackling a complex problem, let us systematically deconstruct the different components to discern effective solutions."
+41,0.08812260536398467,"When tackling a problem, it's essential to identify any potential variables or conditions that may affect the outcome."
+41,0.7318007662835249,"Therefore, we can begin solving the problem by transcribing the givens and recognizing the key aspects that need to be resolved."
+41,0.01532567049808429,"Great question, but I'm not able to assist with that."
+41,0.1532567049808429,"Let's figure out the number of cakes, through calculations and by comparing our results to the ratio of production for a regular week."
+41,0.11494252873563218,"In order to solve this problem accurately, let's first identify and organize the key information given for each question."
+41,0.02681992337164751,"Sentences.
+<Start>
+In this task, we need to calculate the total number of cakes made by doubling the base numbers for cheesecakes, muffins, chocolate moist cakes, and red velvet cakes."
+42,0.0,"Let's apply critical thinking and logical reasoning to approach the problem effectively.<Start>
+You are an AI assistant. User will you give you a task. Your goal is to complete the task as faithfully as you can. While performing the task think step-by-step and justify your steps."
+42,0.03065134099616858,"Sentences above, and have a higher score than all the <Start> sentences above. To solve a problem, let's break it down and carefully analyze the information provided to find the solution."
+42,0.1685823754789272,"When solving a problem, it is crucial to carefully analyze the given information, develop a plan, and apply mathematical principles or logical steps to reach the answer, as exemplified by the aforementioned solutions."
+42,0.20689655172413793,"To effectively find a solution to our problem, let's analyze the given information and apply the appropriate mathematical principles."
+42,0.29118773946360155,"By understanding and breaking down the given information, we can systematically approach and address the problem to find the optimal solution."
+42,0.32950191570881227,"To solve this problem precisely, let's begin by examining the information provided and applying appropriate mathematical techniques."
+42,0.06513409961685823,"With a comprehensive understanding of the information provided, let's take the necessary steps to effectively solve the problem and arrive at an accurate solution."
+42,0.5325670498084292,"With a systematic approach and a clear understanding of the problem, we can effectively address and solve it. Let's carefully organize the given information and apply the appropriate principles to find the answer."
+43,0.28735632183908044,"Let's begin by analyzing the given information and devising a plan to solve the problem, as we did with the previous examples."
+43,0.5095785440613027,"Reasoned and effective solution, apply relevant concepts and calculations step-by-step, ensuring accuracy while interpreting and synthesizing given information."
+43,0.2260536398467433,"By understanding the problem and applying relevant mathematical models, we can efficiently tackle and solve various types of challenges, such as finding the number of gumballs Hector purchased or the amount of fabric Nicholas and Kenneth bought."
+43,0.48659003831417624,"In the answer beginning, if any starting sentence from the above QA pairs is given, that is not the correct answer."
+43,0.038314176245210725,"In order to solve the problem at hand, let's follow these steps"
+43,0.5363984674329502,"Let's approach the problem systematically, step by step, to arrive at the solution efficiently."
+44,0.21455938697318008,";
+Let us systematically tackle each of the given problems to ascertain the precise and accurate responses."
+44,0.09195402298850575,"Sentence.
+<Start>
+By carefully analyzing the information provided, we can approach this problem systematically to determine the fate of each chocolate piece based on the given conditions."
+44,0.01532567049808429,"You should experiment with various sentence structures.
+To approach a problem smartly, it's essential to first gather the necessary information and identify the key elements needed for solution."
+44,0.2413793103448276,Consider a common problem-solving strategy: breaking down the problem into smaller components and tackling each part systematically. This approach can simplify solving challenges that might seem daunting; read the problem question thoroughly and determine if there are any parts that stand out as needing particular attention.
+44,0.2681992337164751,Let's apply logical reasoning and systematic analysis to tackle this problem and find the solution.
+45,0.46360153256704983,"To effectively solve this problem, let's organize and analyze the given information before finding a logical approach."
+45,0.37547892720306514,"By following a systematic approach and utilizing mathematical principles, let's uncover the underlying solution to Micah's strawberry conundrum."
+45,0.6475095785440613,Let's analyze the problem systematically and leverage given information to derive the correct solution.
+45,0.3333333333333333,Every problem in mathematics or reasoning can be effectively solved by first breaking down information and then strategically applying relevant techniques to find the optimal solution.
+45,0.46360153256704983,Let's analyze the problem step-by-step to reach a comprehensive understanding before diving into the calculations.
+45,0.3793103448275862,"By following a structured approach and utilizing the information provided, we can solve the problems presented effectively."
+46,0.5747126436781609,"This problem involves several sub-problems, so let's divide it into smaller parts and solve each part step-by-step."
+46,0.23371647509578544,Let’s approach this problem systematically by using the given information to calculate the number of gumballs Hector saved for his mom.
+47,0.41762452107279696,"Furthermore, it should be rich in information and provide some constraints for the answer by referring around information and we can manually evaluate if the answer is limited to constrained information."
+47,0.5478927203065134,"The primary challenge we encounter when approaching problems is to analyze and execute suitable solutions, which can be achieved by breaking the m"
+47,0.08812260536398467,A real-world example would be <END>
+47,0.5057471264367817,Let's break down the problem and identify the variables and constraints to approach the solution efficiently.
+48,0.03065134099616858,"It also should be controlled in terms of its semantic relatedness to the previous starting sentences.
+Start: To properly analyze the problem, let's carefully consider the details provided in each statement, along with the given conditions and relevant information."
+48,0.5325670498084292,"This way, there will be no bias between QA pairs toward any particular starting positions."
+48,0.7509578544061303,"Let's break down the problem methodically, employing systematic analysis and logical reasoning to derive the solution."
+48,0.038314176245210725,"The generated start sentence should include an explanation of the required categories, topics, and structures And then capture the most important aspects of the given QA pairs.
+.getStarts a question"
+48,0.0,"The <Answer> should be the ground answer of generated reply.
+Anyway, which metric unit is quite suitable for measuring Internet speed? ok
+In this case, I'll generate a reply mentioning that Internet speed is typically measured in bits per second (bits/s). The answer is ""bits/s"", because <Answer>"
+48,0.06896551724137931,"To approach this task effectively, let's analyze the given information and identify key aspects to address in our starting sentence."
+49,0.03065134099616858,"Sentences as possible -- in length, chronology, context, frequency, etc. The <Start> sentence may have words in common with the given <Start> sentences, but the writing style should be completely different.
+
+<Start>"
+49,0.0,"For the given QA pairs.
+A demo of the easiness and rejuvenation of the <Start> prompt."
+49,0.21839080459770116,When analyzing the problem at hand - be it complex or seemingly simple - taking a step-by-step approach and employing the appropriate methods allows us to unravel even the most intricate challenges.
+49,0.3371647509578544,Your starting sentence should prompt students to be engaged and immersive in interpreting the content correctly to generate the answers. See the scores for the upper bound and use it as a reference.
+49,0.4329501915708812,"The path to solving your problem requires a clear understanding of the variables, applying relevant techniques, and evaluating the outcomes step by step."
+49,0.24521072796934865,The starting sentence should be different in spirit than all the <START> sentences above.
+50,0.01532567049808429,"Sentence should not be a multiple or variation of any other sentence. The sentence should merely serve as an introduction to the given answer or question. The <Start> sentence must not copy the content from any of the above <Start> sentences, and it should sum up the given answers given for the questions <Start> and"
+50,0.01532567049808429,Let's deduct the total costs incurred by Mitzi in her amusement park trip to determine how much money she brought with her at the beginning.
+50,0.07662835249042145,"Starting Sentence:
+Ground truth answer is to break down the problem, logically analyze the givens, and apply relevant mathematical operations to reach the correct answer."
+50,0.034482758620689655,The purchase of the weatherproof outdoor cameras at an organized shopping event introduced the question: Which brand is on sale at Amazon today?
+50,0.06896551724137931,"To begin solving this problem, let's first analyze the information provided in the scenarios and employ critical thinking to find a solution."
+51,0.12260536398467432,"When solving a problem, it's essential to first identify the available resources and skills at your disposal."
+51,0.19540229885057472,"To solve a problem, let's consider the parts of the question and guide ourselves through a logical process"
+51,0.03065134099616858,"In order to calculate the required number of sandwich packs Jimmy needs to buy for his picnic, we first need to account for the total number of sandwich slices he will require."
+51,0.4521072796934866,You are encouraged to <Reasoning> think step-by-step and think out the problem before completing your task.
+51,0.022988505747126436,Let's solve this problem by calculating the total number of sandwiches Jimmy needs to make and then figuring out how many packs of bread are required to support this production.
+52,0.0,"Remember that the starting sentence should be different from the generic ones, which only contain standard phrases (e.g., ""To solve this problem, let's break it down..."").
+To tackle every challenge in this session, we should consider breaking down the given information and utilizing relevant approaches accordingly.
+```json
+
+```"
+52,0.34099616858237547,"The score is a metric that assesses the effectiveness of the starting sentence The first and second hours, respectively."
+52,0.21455938697318008,"To begin, let's consider the problem at hand, which requires a thoughtful approach and careful analysis in order to calculate an effective solution."
+52,0.27586206896551724,"To solve this problem better, let's first analyze the given data and identify critical factors, then apply logical reasoning and mathematical computations to arrive at the answer."
+52,0.09578544061302682,"Sentences.
+<Start>"
+53,0.5747126436781609,Begin your analysis by establishing the total number of people in the system.
+53,0.46360153256704983,"To effectively solve these problems, let's examine the given information and break it down into manageable steps:"
+53,0.09578544061302682,"Please develop a multi-sentence answer for each problem. Use relevant details that are specific to the problem when composing your answer. Different from grounds and answers, our aim is to create a concise starting statement. You are free to develop an answer based on the contents or keywords in a given question. Make sure your paragraph is clear, coherent, and make sense. Add a complete end marker like"
+53,0.02681992337164751,Now let's approach this problem by breaking it down into clear steps to find the answer effectively.
+53,0.30268199233716475,"Sentence. Make sure you use simple language and try to make the topic easy to understand.
+
+Sure, let's start with a general problem-solving approach that can apply to all given problems."
+53,0.06896551724137931,"If you are certain the context does not contain the answer, output None. If there are infinite valid answers, output the most coherent answer that an average human would come up with in a short period of time. If you can't answer the question without the context, output the corresponding context."
+54,0.4559386973180077,"To nail the problem-solving approach and achieve the correct answer, let's analyze the details step-by-step to effectively address the given situation."
+54,0.1685823754789272,"To approach this problem accurately, let's start by analyzing the given information:"
+54,0.1724137931034483,"In analyzing the problem statement step-by-step, following the given constraints and requirements, we can form an outline on how to approach and solve the presented challenges. By doing this, we guarantee to achieve a clearer understanding of the tasks and targeted outcomes. This structured approach helps us proficiently leverage the available resources and apply analytical techniques to find the desired answers."
+54,0.06896551724137931,"Step by step, we can break down the homework problem into smaller parts, identifying how much work Paul has to do, and then determine how many hours he needs to focus on each night to complete his work."
+54,0.2796934865900383,Sentences above. The starting sentence should be of a length its own it span two lines.
+55,0.4789272030651341,"We can approach a complex problem by identifying its key elements and employing logical strategies to address each aspect systematically, much like the way the experts Yanna, Micah, and Everett handled their challenges."
+55,0.011494252873563218,"Your starting sentence must convey a subtle initiative to prompt problem-solving and evoke curiosity, analogous to the beginning sentences given but with a more distinctive, catchy, or direct approach.
+
+Start."
+55,0.5670498084291188,Let's tackle the problem by first organizing the information given and then breaking it down into manageable steps.
+55,0.5095785440613027,```
+56,0.03065134099616858,"Given a text and a score, we need to generate a new sentence effectively by incorporating the information provided."
+56,0.6168582375478927,"Let's systematically break down the given information, perform necessary calculations, and apply logical reasoning to solve this multidimensional problem efficiently."
+56,0.6551724137931034,"Let's tackle the problem methodically, ensuring accuracy in our calculations while employing a systematic approach to find the correct answer."
+56,0.3524904214559387,"Let's approach this problem systematically, breaking down the information and applying appropriate calculations to find the solution."
+56,0.210727969348659,"By breaking down the given information and applying logical reasoning to each problem, we can systematically solve the challenges faced by Annie, Cindy, and Billy."
+56,0.14559386973180077,"By examining the information provided in the problem and applying logical reasoning, we can identify the key elements necessary to find a solution."
+57,0.3946360153256705,"By systematically analyzing and prioritizing the available information, we can unravel the underlying issue and propose a comprehensive solution to each of these challenges."
+57,0.7701149425287356,Each scenario will be analyzed...
+57,0.6743295019157088,Let's break down the components involved and analyze them step-by-step to approach the problem effectively.
+57,0.5057471264367817,"To start answering this question, we must first break it down into its core components."
+57,0.2681992337164751,"To solve such problems efficiently, it is essential to first identify the known quantities and the goal, then apply logical steps and calculations to reach the answer."
+58,0.022988505747126436,"The starting sentence should not contain a question, it should be a statement. The starting sentence should not be too general, nor too specific."
+58,0.2260536398467433,"By systematically approaching the given information, we can efficiently solve each problem presented, as represented by Yanna, Micah, and Everett."
+58,0.1724137931034483,"To score highly, the starting sentence should capture the essence of solving problems using a systematic approach and efficient techniques while considering the relevance of variables and practical application in varying scenarios. The top-scoring answer requires clear and concise reasoning to tackle the problem effectively."
+58,0.27586206896551724,"To start, let's analyze the given information and determine which strategy to employ to solve the problem effectively."
+59,0.09961685823754789,"Sentence.
+
+<start>Step-by-step approach: Gather information, identify problem area, examine options. </start>"
+59,0.46360153256704983,"In tackling this problem, we first need to understand and extract the relevant pieces of information from our given <Start>..."
+59,0.26436781609195403,"Also, the start sentence should not be obvious, and should not be a cue or a hint."
+59,0.05363984674329502,"In this problem, you are tasked with finding the relationship between the number of male and female cows in a field and the differences in their traits, such as spotting and hornedness. We need to first identify the relevant information and variables, before applying logical reasoning and computations in order to reach a precise and reasonable conclusion."
+59,0.3103448275862069,Let's analyze the given information and apply logical reasoning to determine the solution to the problem in a step-by-step manner.
+59,0.022988505747126436,"Sentence that encompasses these elements and has a higher score based on your previous guidelines.
+<Start> Let's address the challenges presented here by first identifying the teachers' names and their associated points, then systematically addressing each question, ensuring we maintain clarity, conciseness, and relevance."
+59,0.6206896551724138,"To solve this challenge, let's first understand the key components of each problem and then explore the connections between them."
+60,0.17624521072796934,Let's break down the equations and variables involved in each problem to solve them with accuracy and efficiency.
+60,0.2413793103448276,"To find the answer, we can first establish the relationship between the given information, then create an equation to solve for the desired parameter."
+60,0.45977011494252873,"Let's engage in thoughtful problem-solving, breaking down given scenarios and utilizing strategic reasoning to uncover the truth behind each challenge."
+60,0.5977011494252874,Let's approach the problem logically by analyzing the given information and applying appropriate problem-solving techniques to get our result step-by-step.
+60,0.40229885057471265,The starting question cannot contain explicit instructions. Introduce the topic from first principles by explaining all the relevant concepts. Introduce a bit of jargon in the article.
+60,0.02681992337164751,It should be digestible even if some information in the questions are missing. Trainee should always aim to produce variety of syntax and style in first sentence.
+61,0.04980842911877394,"When approaching problems like these, it's essential to first organize and understand the given information, before devising a plan to find the answers."
+61,0.2796934865900383,"Let's start by understanding the problem at hand, which involves dividing and organizing information to find an accurate solution."
+61,0.05747126436781609,"To handle a problem, first assess the information and find a suitable methodology.
+<End>"
+61,0.16091954022988506,"The key thing to remember here is conciseness, whilst avoiding holes in the natural flow of ideas where the next sentence ought to be. Additionally, justify the required style changes to the training data using this reference topic.
+All of the initial shifts, right?"
+62,0.11877394636015326,"Sentence only. <Start>First and foremost, let's systematically tackle the problem at hand by precisely interpreting, organizing, and stepping through each given 'fact' or data to deduce the proper solution."
+62,0.37547892720306514,Let's approach the problem systematically by organizing the given facts and utilizing our logic.
+62,0.0421455938697318,The objective is to create starting sentences that are more effective than any that have been used so far.
+62,0.034482758620689655,The first step in solving this problem is to calculate the contribution of each cow to the daily total of milk.
+62,0.2720306513409962,"To approach this problem effectively, let's first gather all the given data and consider a systematic strategy for solving it."
+62,0.06513409961685823,"Let's analyze and break down the combined information given in the questions to find the solution to Farmer Red's milk production problem and other challenges he faces.
+
+Operating on imaginary money."
+63,0.12260536398467432,The sentence should lead to more interactive and engaging solutions rather than just showing the answers. Please try to simplify the sentence and make it more specific your answer. Avoid changing the topic and make sure your starting sentence is clearly distinguishable from the given starting sentences. Let's analyze the problem together and determine the best approach to solving it.
+63,0.42911877394636017,"When we solve the problem systematically, taking each piece of information step by step, we can effectively identify trends, relationships, and the solution."
+63,0.034482758620689655,"Sentence. You only need to generate the <Start> itself. You don't need to generate <Passage>, </Passage>, <Question>, <Answer> or </Answer>. Make it super succinct. If the <Answer> is not contained in the <Passage>, make it up
+<Start>
+Let's approach this problem step-by-step:"
+63,0.31417624521072796,"If needed, you can use the <Insert> token to insert elements from the input text. Let's analyze and approach the problem in a step-by-step manner, as demonstrated by various QA examples."
+63,0.6666666666666666,"Provides a step-by-step solution to calculate..."""
+63,0.1839080459770115,"Sentences.
+
+<Start> Let's thoroughly investigate the problem by dissecting it into smaller, manageable parts and then tackling each component meticulously."
+64,0.08812260536398467,", let's approach this problem by systematically examining the given information and utilizing a logical reasoning process to find the solution."
+64,0.6475095785440613,"To solve the problem effectively, we need to identify the underlying factors that affect the outcome and develop a step-by-step approach to tackle each aspect of the problem."
+64,0.5363984674329502,"Let's utilize systematic problem-solving techniques to address and resolve the given challenges, just like Everett did with his woodland creatures."
+65,0.022988505747126436,"Sentences. The generated starting sentence should preferably include some generated digits or words that are not partially copied from the above QA pairs. The generated starting sentence should not include nononomic emojis and special characters.
+<Start> Let's get started by understanding the given problem and identifying the main components involved."
+65,0.16475095785440613,"To approach this complex problem effectively, let's begin by breaking it down into manageable components and employing a systematic sequencing technique. From there, we can analyze each component, eliminate irrelevant information, and identify the key elements necessary to find a solution."
+65,0.32567049808429116,"By following systematic steps, we can solve this problem effectively."
+65,0.5019157088122606,", and end the starting sentence with"
+66,0.4674329501915709,"To address the following problem effectively, let's first understand the requirements and data provided in the text."
+66,0.42911877394636017,"Let's approach this problem systematically, using mathematical reasoning and logical analysis to arrive at a solution."
+66,0.0,"To calculate the total amount required for hiring a private school teacher and splitting it among the parents, we must first determine the new salary and then divide it evenly."
+66,0.04980842911877394,"Solomon collected bananas while shopping at the market. He had an empty basket, and now he has to calculate the total number of bananas based on the combined weight of the bananas and the price of each banana."
+66,0.7279693486590039,You begin with <Start>
+67,0.23371647509578544,"Using logical reasoning and critical thinking, we can effectively analyze and solve problems, as seen in this basketball team's win-loss strategy over the course of the season."
+67,0.0842911877394636,"Find a strategy that allows you to efficiently analyze and solve each problem, breaking them down into actionable steps and utilizing the resources available to achieve the desired outcome."
+67,0.4329501915708812,There's no need to directly answer the Q yet. <
+67,0.42528735632183906,Let's examine the given information and calculate the solution methodically.
+68,0.5325670498084292,"With the tools at hand, we develop a strategy and systematically tackle the problem at hand."
+68,0.09961685823754789,The score is the percentage of yes/not answers from humans for a given concept.
+68,0.6091954022988506,"Let's break down the problem into smaller parts, processing each component systematically to reach an accurate solution."
+68,0.5823754789272031,Let's break down the problem into three distinct parts and address each part step-by-step to find the final answer.
+69,0.7586206896551724,Gathering the appropriate numerical values from the text is a key step in solving this problem.
+69,0.05363984674329502,"Sentence must prioritize specificity for increased clarity and should be succinct enough for easy consumption and understanding.
+<Start> By understanding the steps necessary to create a successful solution to a given problem, we can apply strategic thinking to each component involved, thereby enhancing our efficiency and effectiveness in addressing complex issues such as those depicted in our examples."
+69,0.29118773946360155,Step-by-step approach to solving any problem effectively:
+69,0.40229885057471265,"To effectively solve problems requiring mathematical computations, follow a systematic approach and use logical reasoning."
+69,0.39846743295019155,"When approaching a multi-step problem like the one with the ice-pops and pencils, it's crucial to break down the information and analyze it systematically, like Everett did with the gumballs. Applying this strategy can lead to solutions like Yanna's and Micah's in their respective challenges. Employing this method allows for efficient analysis and potential breakthroughs in problem-solving."
+70,0.28735632183908044,"Let's efficiently utilize the given information to solve the problem by breaking it down into manageable steps. By only focusing on the relevant details, we can obtain an accurate answer."
+70,0.1532567049808429,"</S>
+Let's examine the problem and create a logical approach to find the desired answer."
+70,0.16091954022988506,"To start solving a problem effectively, let's first identify and understand the key elements involved."
+70,0.3486590038314176,"Sentence if that information is already provided in the QA pair.
+<Start>We must first understand the given information before moving on to solve the problem"
+70,0.14559386973180077,"Please refrain from using the structure like ""Given a list of QA pairs. The task is to…""
+
+Great problem! Based on the information provided, let's approach the problem step-by-step to determine how many new boxes of markers Mr. Smith bought."
+70,0.24521072796934865,"Sentence, but a genuinely distinct one that encompasses the problems remarkably well. Below are some starting guidelines:
+
+<Start> Identifying the relationship between the given quantity and the desired outcome,"
+71,0.5363984674329502,Hi
+71,0.02681992337164751,"Sentence should be followed by <Q> and then the question. Also, the <Start> sentence should be followed by <A>, a space, ground truth answer and end with <</A>>. The <Start> sentence should be followed by the question and the ground truth answer. The <Start> question should not contain"
+71,0.0038314176245210726,"The starting sentence should not repeat varying parts of the QA pairs above. within the secretary who was such a new job for ann
+Answer:
+should"
+72,0.034482758620689655,"To determine the number of ridges on all of Jerry's records, let's begin by"
+72,0.49808429118773945,Let's analyze the problem step by step:
+72,0.07279693486590039,"To solve this problem, let's analyze the previous starting sentences and understand their components. Then, we'll work on generating a new starting sentence with higher scores and meeting all the requirements."
+72,0.14559386973180077,"Sentences above.
+<Start>"
+72,0.06513409961685823,Let's calculate the total number of gumballs Hector purchased
+72,0.14942528735632185,"In order to solve the problems above, we need to break each one down into its separate components and identify the necessary steps required to arrive at a solution."
+72,0.13409961685823754,"Sentences will be considered high quality and accurate by humans evaluated by humans.
+
+<Start>Begin by"
+72,0.0038314176245210726,"The starting sentence should focus more on the problem-solving process and less on the technical details. The starting sentence should provide enough context for the reader to understand the main concept of the problem and how to approach it, without revealing the specific details or numbers. The score of the starting sentence should be calculated based on the number of positive words it contains (e.g., sense, high level, overview, overall, basically, strategy, plan, approach)."
+73,0.524904214559387,"Together, let's tackle this problem systematically."
+73,0.0842911877394636,"Let's start by examining the key details in the problem, which include the ages and relationships provided, with a specific focus on Nora's current age."
+73,0.7394636015325671,"To determine the answer to this problem, let's first identify the question we're trying to solve and gather any relevant information provided in the text."
+73,0.5632183908045977,"Approach:
+Ground truth answer:
+Solve the problem systematically."
+74,0.03065134099616858,Q: The paragraph belongs to the category of a company.
+74,0.011494252873563218,"The sentence should not contain the solution (i.e. the answer). For example, ""What does the following problem tell us about"" or ""Which of the following details are useful for answering"" or ""Which key parts of the passage can we discard""."
+74,0.19540229885057472,"There's a series of logical steps to take to arrive at the solution,"
+74,0.6283524904214559,"Please remove all special characters such as (/,_)."
+74,0.5210727969348659,"Through systematic analysis and logical reasoning, we can solve this problem by breaking it down into logical steps and applying the appropriate mathematical formulas."
+74,0.5977011494252874,"Let's approach the problem by breaking it down into smaller, more manageable components to ensure a comprehensive solution."
+75,0.011494252873563218,"In order to calculate the savings for Martha, we can first determine her total projected income for the week and then subtract her actual savings based on her exceptions."
+75,0.5402298850574713,"First, let's clarify the problem and establish the necessary formulas to solve it."
+75,0.3103448275862069,"It should not merely be a direct repeat or paraphrase of an existing answer, but should synthesize multiple answers into a situationally appropriate, coherent one. It should encapsulate a complete thought to form a good start to a conversation. The starting sentence should not be overly general. It should use clear and concrete references that are referred to later. Use A: as a delimiter when answering."
+75,0.06513409961685823,"To solve this problem, let's consider the given scenarios and analyze them step by step to determine the number of pistachios with shells and those are open, the saved amount for Martha, and the number of games the basketball team needs to win."
+75,0.09578544061302682,Let's calculate the total number of gumballs Hector purchased by examining the given information and solving the problem step by step.
+76,0.15708812260536398,"USe the words/style of the above answers.
+
+Welcome to the world of problem-solving, wherein each sentence serves as the foundation for a logical journey."
+76,0.7126436781609196,We must carefully analyze
+76,0.15708812260536398,A problem-solving strategy is imperative to determine the solution to this riddle.
+77,0.20689655172413793,"In this task, we are given a problem from a Turkish restaurant owner who has successfully managed to prepare traditional dishes based on the ingredients she obtained from three different butchers. The question at hand pertains to the number of packages delivered by the third butcher, and we are expected to come up with a concise and effective ground truth answer that successfully solves the problem."
+77,0.8735632183908046,-
+77,0.02681992337164751,"Sentences provided at the beginning with respect to word choice, sentence structure, and meaning.
+
+<Start>The task at hand involves addressing a scenario where the weight of the ground beef delivered by three butchers is known, yet the number of packages from the third butcher is unknown."
+77,0.2567049808429119,"To effectively solve this problem, let's first analyze the numerical information provided and create a comprehensive plan for calculating the answer"
+77,0.05363984674329502,"In this scenario, we need to first gather all the relevant information and evaluate the data provided in the problem."
+77,0.4789272030651341,Translating the problem statement into mathematical terms with equations is an essential starting point
+78,0.6360153256704981,The starting sentence should still be reasonable if the previous sentence was removed. The aim is to decrease redundancy in the answer starts Answer:
+78,0.4099616858237548,"Sentences.
+<Start> Let us break down the problem step-by-step"
+78,0.524904214559387,The process of solving numerical problems involves several steps
+78,0.8045977011494253,As a
+78,0.05363984674329502,"In order to come up with the answer, let's break down the information provided and examine the possibilities in each scenario"
+78,0.038314176245210725,"Sentence is considered the most important sentence.
+<Start>
+
+To solve this problem, we must first analyze the information and identify the key variables and goals."
+79,0.685823754789272,"A three-step approach to solving this problem.
+/Start>"
+79,0.20306513409961685,Let's begin solving the problem by analyzing the given information and identifying the key elements to consider. <Start>
+79,0.5210727969348659,And the starting sentence. Leave a blank line between the sentence and the one below.
+79,0.5747126436781609,Different across all challenges and yet adaptable in each one.
+80,0.05363984674329502,We can simplify the problem by identifying the cost of specific components of the bike
+80,0.7011494252873564,We begin with the data provided
+80,0.3946360153256705,"To find the solution, we'll analyze the given information and break the problem down into smaller, more manageable pieces."
+80,0.18773946360153257,"Sentence fragments. No two consecutive fragments should have the same grammatical structure: pronoun, noun phrases, conjunction, adverbs, adjectives, verbs, prepositional phrases, or interjections.
+
+<Start>
+As we determine the answer to the problem, let us consider the available information, identify the variables, and assess the limitations to discover a comprehensive solution.
+/Start>"
+80,0.08045977011494253,"In order to determine the optimal approach to solve the problem effectively,"
+80,0.3486590038314176,"By analyzing the given information and applying relevant data, we can gather valuable insights and make informed decisions to address our problem."
+80,0.7126436781609196,We begin by collecting the necessary numerical values from the text
+81,0.31800766283524906,".
+<Start>Starting by considering the relationship between the two students' counts of squirrels..."
+81,0.5632183908045977,"Let's take a logical approach, carefully considering the information given and the constraints of each problem in order to deduce the correct answer."
+81,0.6283524904214559,"Here's a starting sentence with a different approach, higher score, and generally lower words count while being effective for the problems:
+
+text:
+Let's think..."
+81,0.022988505747126436,"Let's analyze each problem systematically to find a solution.
+This initial framework aims to provide the most general understanding possible, capturing the essence of tackling problems presented in the format provided - breaking them down, understanding what needs to be done, and applying appropriate strategies or mathematical concepts to solve them."
+81,0.41379310344827586,"Response ```text
+To break down this problem, let's start by analyzing the information provided...
+```"
+81,0.6590038314176245,"Let's solve the problem step by step, analyzing the given information to derive the most accurate solution."
+82,0.5823754789272031,"Let's interpret the problem and collect the given information, then solve it step by step."
+82,0.3946360153256705,Let's explore the problem from a more comprehensive perspective and consider the factors involved before arriving at the solution.
+82,0.26053639846743293,"In solving any problem, we first need to carefully define the parameters.
+
+Though, there needs to be a slight adjustment as this isn't completely applicable across all scenarios. Let's refine and ensure it's universal for diverse situations.
+
+<Start> To approach any solution effectively, the initial step should involve discerning the context and scope."
+82,0.3831417624521073,Generate the starting sentence in lowercase.
+83,0.0,"Your model should be able to identify the hidden pattern in the given QA pairs, and generate various new beginning sentences using (partially?) different wording. Being surprising is highly encouraged! Do not include Q and A in your answer."
+83,0.019157088122605363,"Your task is to generate the starting sentence; Start: To directly address this problem, let's first quantify the expenses for each season of the TV show, analyzing the varying episode counts and production costs."
+83,0.05363984674329502,Consider the cost breakdown based on the number of episodes in each season of the TV show.
+83,0.5478927203065134,We are provided with the following information:
+83,0.6206896551724138,Ensure that multi-select choice is not applicable for this task.
+83,0.20306513409961685,"The starting sentence should make improvement on the ground truth answer's score. Using vague phrase such as ""instruction"" or ""information"" is not allowed. Answer in English.
+text:
+
+For the purposes of this task, effective problem-solving requires breaking down the problem, gathering data, and applying critical thinking."
+84,0.04597701149425287,We will first calculate the number of viable eggs produced by the gecko.
+84,0.47126436781609193,"First, examine the problem's conditions and gather the necessary information from the text. remaining; crunch the numbers with methodical analysis; apply logical reasoning to determine the answer."
+84,0.5287356321839081,It should not contain any irrelevant information nor complicate the answer.
+84,0.1724137931034483,"Sentences.
+<Start>Step by step, we can break down the problem into its individual components, examine possible solutions, and analyze the given information to arrive at the final answer."
+84,0.22988505747126436,"Begin by analyzing the problem, step by step, to gather the necessary numerical values and understand the constraints present in the given text."
+84,0.6475095785440613,Sentences above but still relevant to the QA pairs.
+85,0.0,</s>
+85,0.05747126436781609,"Before beginning our analysis of the problem statement, I suggest that we first identify the available variables and constraints to ensure a comprehensive understanding of the scenario."
+85,0.29118773946360155,".
+Reference"
+86,0.06130268199233716,"However, it should not be a copy of any <Answer> and it should be semantically related to the <Answer>. Payload can be used to increase the length or quality of the content. Fuel can be used to improve fluency, and Transport can help move towards the objective. The content should be coherent, abundant, consistent in style, and free of any usage of forbidden engine functions. The English text below each set of <Avatar> is only a reference and will not contribute to scoring."
+86,0.7662835249042146,Starting with an inventory of elements
+86,0.8122605363984674,He
+86,0.019157088122605363,Step by step analysis is essential to solve any problem effectively and accurately.<End>
+86,0.3065134099616858,"First, we need to carefully analyze the text to generate a start sentence."
+87,0.45977011494252873,"In analyzing the given scenarios, a key step involves isolating and prioritizing the primary aspects to address"
+87,0.1532567049808429,"No need to include the leading 'text: ' or the 'score: ', or any punctuation, when generating the answer."
+87,0.10727969348659004,"However, incorporating canonical forms in the starting sentence will result in a lower score.
+Starting sentence: Let's start by gathering all the facts and information given in the problems."
+87,0.3218390804597701,"When analyzing these problems, we can identify key relationships between variables and apply relevant mathematical operations to solve them."
+88,0.1532567049808429,"It should be easily understood, and help process information to answer the question. 
+
+Example:
+text:
+Have you tried thinking backwards?
+score:
+N/A"
+88,0.3333333333333333,"Sentences are reasonable. For example, ""This paragraph"" is a reasonable sentence, but it does not apply to all QA pairs, so it is not a reasonable <Start> sentence.
+<Start>
+
+Towards solving this problem"
+88,0.3103448275862069,Do you know how to convert a fraction into a percentage?
+88,0.04597701149425287,"Sentence is generally applicable to all QA pairs, avoid repeating that self-understood sentence.
+In solving
+
+In solving problems, it is important to systematically analyze and identify the key elements and constraints present in the given situation, and apply relevant mathematical principles and techniques to derive the solution step by step."
+89,0.39080459770114945,Let's break down this problem and identify the given information: <Start>
+89,0.14559386973180077,The various components of this given problem need to be identified and properly analyzed in order to provide an accurate solution.
+89,0.29118773946360155,Let's tackle this challenge together.
+89,0.09961685823754789,A: <Start> Calculate how many packages the third butcher delivered.
+89,0.07279693486590039,What is the total weight of ground beef delivered by all three butchers?
+89,0.39846743295019155,"Let's break down the information provided in this question to understand the problem and identify the necessary variables. 
+
+<Start>"
+89,0.4329501915708812,Verify yourself as a seacher/rescuer
+89,0.5517241379310345,Let's solve the solution by carefully analyzing the problem and strategic thinking.
+90,0.26436781609195403,Identifying the issues presented in the problem requires a thorough understanding of the context and the relevant factors involved.
+90,0.7471264367816092,"Start by understanding the values given in each scenario and how they relate to the overall answer,"
+90,0.31417624521072796,"The starting sentence should be grammatically correct, easy to understand, and consistent with the provided ground truth answers. It should also contain reasoning and number, if required.
+
+Start: Gaining a firm understanding of the given information is essential in solving this problem.
+End:"
+90,0.41379310344827586,Let's begin by carefully understanding and breaking down the problem presented to us in the text.
+91,0.7203065134099617,"Consider the given information and how it relates to the problem,"
+91,0.36398467432950193,"Sentences is described below. Make sure the
+Start sentence while maintaining"
+91,0.2950191570881226,Let's tackle this problem together.
+92,0.31800766283524906,Let's begin by breaking down the problem and identifying all necessary information and formulas required to derive the answer.
+92,0.011494252873563218,"Sentences above, for instance, they all contain the word ""start"", they all refer to a problem or an issue. Use those common elements and compose the starting sentence with a higher score than all the above sentences. You are free to draw from other QA pairs (that I will provide) to come up with a common piece and use that here. Do not format the starting sentence like ""text:"" but leave that format only for the text of a QA pair."
+92,0.10727969348659004,Let's first identify the key information given in the question and understand what we're expected to determine from the provided data.
+92,0.3333333333333333,"To solve this problem, we need to first identify the total cost of items and the price of each item given. Then, we can set up an equation to determine the price of the item we are looking for."
+92,0.022988505747126436,"First, let's analyze the given information in each Q&A pair to identify common patterns or rules that can be applied to find the answer."
+92,0.38697318007662834,"The starting sentence should not copy any text from above, except for score-related phrases."
+93,0.4329501915708812,"Verbose and intricate calculations are necessary for determining the answer to this question, as we must consider the various factors affecting the bee colony's population decline."
+93,0.13026819923371646,"Let's decipher this problem together by consulting all previous starting sentences and their respective scores, and then craft our <Start> sentence accordingly."
+93,0.42528735632183906,Sentences. <Start>
+93,0.02681992337164751,"The starting sentence should be descriptive, attention-grabbing, and thought-provoking. The goal is to maximize engagement, clarity, and understanding in the first sentence."
+93,0.7432950191570882,You start with a task
+93,0.04597701149425287,"Question and Answer: What is the cause of deforestation in the Amazon Rainforest?
+Answer: Deforestation in the Amazon Rainforest is primarily caused by various factors including agriculture, logging, mining, and urbanization."
+94,0.07662835249042145,"Sentence. Start with these three Wiki pages. Use information from these and search for similar pages. Then analyze.
+text:"
+94,0.5747126436781609,Let's analyze the problem and identify the variables involved.
+94,0.7203065134099617,", and then ending with"
+94,0.02681992337164751,"In this task, we aim to solve the problem presented by using the information provided."
+94,0.1685823754789272,Let's figure out the solution to this problem by examining the given information and breaking it down into simpler parts.
+94,0.14942528735632185,"Sentence if it's the same as the <Start> sentence above. <Start>
+To solve this problem, we begin by analyzing the given information and understanding the relationships between the different variables and their roles in determining the final answer."
+94,0.5402298850574713,A concise and general approach begins by analyzing the given information and establishing the relationship between the variables.
+95,0.01532567049808429,"Sentences.
+<Start>You need to determine how many feet of wood he needs for the rungs based on the number of sheets left, the number of sheets and specifications of each rung, and the height of the tree that he wants to climb."
+95,0.5440613026819924,Consider the following multiples to establish a baseline:
+95,0.04980842911877394,"In order to determine the amount of wood needed for the rungs, we must first analyze the dimensions and spacing of the ladder rungs."
+95,0.6475095785440613,In order to determine <Start>
+95,0.12643678160919541,"To begin solving this problem, let's assemble the information provided and devise a plan for the next step."
+95,0.03065134099616858,"With an automated pipeline.
+<Start>
+To calculate the number of envelopes Rachel needs to stuff per hour to finish the job, consider the total number of envelopes and the number of hours Rachel has to complete the task."
+96,0.007662835249042145,The score of a starting sentence is calculated as the weighted average of the score of the QA pairs it summarizes.
+96,0.37547892720306514,"It should not repeat or be very similar to the preceding starting sentences.
+Dear ans, kind regards
+ground truth:"
+96,0.4482758620689655,"If you were going to create a visual representation of the facts using a graph, diagram, or chart, what would it look like?"
+96,0.3218390804597701,"Sentences should motivate the algorithm to pertain to the problem at hand.
+
+<Start>We need to figure out"
+96,0.5517241379310345,"Understand the problem first, then determine the key information and formulae to use."
+96,0.42528735632183906,"To begin solving the problem,"
+97,0.47126436781609193,Begin solving each problem by identifying its components and understanding the variables at play.
+97,0.13793103448275862,"When addressing a problem, it's important to break it down into manageable steps, analyze the given information, and apply logical reasoning to arrive at the solution, all while considering the specific context and variables involved."
+98,0.3371647509578544,"To create the solution for the problem, let's first understand the variables given."
+98,0.5708812260536399,"Try everything possible, and take every opportunity to be unique, impressive, and clever."
+98,0.6360153256704981,Let's tackle the problem by breaking it down step-by-step and then apply mathematical equations based on the given information.
+98,0.39080459770114945,"To solve the question at hand, let's first analyze and understand the problem"
+98,0.04597701149425287,""" of an unusual level of attention to detail, an almost obsessive focus on <detail>. The character's attention to detail is constantly on the things around them, trying to distill the essential nature of what they're noticing."
+98,0.4827586206896552,Beginning a problem-solving task where you have f
+98,0.7969348659003831,Begin examining the problem step-by-step:
+99,0.34099616858237547,"When constructing a problem, start by outlining the information you have and what you need to find, then determine the appropriate formulas or methods to apply."
+99,0.26053639846743293,"Now, let's analyze the information given to find the total amount of cookies Meena has initially and then subtract the ones she sold and gave away"
+99,0.3103448275862069,"Use · as a placeholder for the actual Data and Label.
+Let's take a systematic approach to tackle this multi-step problem."
+99,0.4099616858237548,The starting sentence can assume prior knowledge of the two entities associated with QA.
+99,0.3716475095785441,"Consider the given problem and the constraints, then devise a step-by-step method to solve it."
+100,0.5670498084291188,Let's break down the problem and work through the given information to determine the answer to the question.
+100,0.09195402298850575,Let's begin tackling the problem by analyzing the information provided and breaking it down into manageable parts.
+100,0.2988505747126437,Let's first break down the problem and gather information we need to find the solution.
+100,0.3793103448275862,"During the problem-solving process,"
+100,0.14942528735632185,"Lorem ipsum is a placeholder text commonly used in printing and typesetting
+ground truth answer: Lorem ipsum is a placeholder text commonly used in printing and typesetting."
+100,0.2413793103448276,"When approaching this problem, begin by analyzing the information provided"

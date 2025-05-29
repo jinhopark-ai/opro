@@ -1,0 +1,7 @@
+{
+    "model_type": "llama3.1-8b",
+    "temperature": 0.0,
+    "num_servers": 1,
+    "batch_size": 2048,
+    "max_decode_steps": 1024
+}
