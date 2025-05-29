@@ -1,0 +1,1297 @@
+Step 1, training acc: 0.019157088122605363, instruction: Let's calculate the amount of weight transferred from the vehicle across the bridge.
+Step 1, training acc: 0.9157088122605364, instruction: 
+Step 1, training acc: 0.011494252873563218, instruction: To calculate the total weight Biff moves while bench pressing, we need to consider the weight he lifts per rep and the number of reps he performs per set.
+Step 1, training acc: 0.3831417624521073, instruction: End the sentence with
+Step 1, training acc: 0.6743295019157088, instruction: Let's tackle the problem step-by-step.
+Step 1, training acc: 0.02681992337164751, instruction: Sentences.
+Start>
+Biff and Kenneth are competing in a rowboat race, and Biff needs to figure out how far ahead Kenneth will be when he crosses the finish line.
+Step 2, training acc: 0.022988505747126436, instruction: Imagine Teal bakes pumpkin and custard pies.
+Step 2, training acc: 0.09578544061302682, instruction: Consider a problem where Teal runs a bakery and sells both pumpkin pie and custard pie slices.
+Step 2, training acc: 0.10344827586206896, instruction: Sentence. <Start>When considering tips for better servers, observe how much of an additional percentage can customers realistically contribute to a while satisfying their daily spending needs.
+Step 3, training acc: 0.37547892720306514, instruction: Sentence.
+<Start>
+Identify the elements of the problem.
+Step 3, training acc: 0.5057471264367817, instruction: Let's think about the problem using logic and reasoning.
+Step 3, training acc: 0.14942528735632185, instruction: Let's break down the problem together
+Step 4, training acc: 0.12260536398467432, instruction: Attempting a problem is a crucial step in any process of solving a puzzle or a question.
+Step 4, training acc: 0.03065134099616858, instruction: Identify <End>, are not allowedelight and joy.
+
+<Start>
+Consider the total number of guests and the breakdown of men, women, and children to find out how many children there will be at the event.
+Step 4, training acc: 0.17624521072796934, instruction: Your starting sentence should be similar in length (words, numbers, and other characters) based on the training set.
+Wrong due to Insufficient Reasons
+Step 4, training acc: 0.8544061302681992, instruction: Make an observation.
+Step 5, training acc: 0.4942528735632184, instruction: Consider how the elements of the problem relate to each other, what variables are involved, and what constraints are present.
+Step 5, training acc: 0.1532567049808429, instruction: The starting sentence should be grammatically correct and sound natural when read out loud. Avoid citing external information sources used to answer the question.
+Step 5, training acc: 0.5095785440613027, instruction: It should lead the writer to write complete, coherent, and detailed answer.
+Step 5, training acc: 0.5325670498084292, instruction: First, let's identify the given information and variables in the problem.
+Step 5, training acc: 0.8160919540229885, instruction: And
+Step 5, training acc: 0.19157088122605365, instruction: Debate the pros and cons of the problem
+-->
+Step 5, training acc: 0.02681992337164751, instruction: Your task is to generate such a sentence.
+Step 6, training acc: 0.08045977011494253, instruction: The starting sentence should inspire curiosity and encourage creativity for answering the rest of the QA pairs.
+Step 6, training acc: 0.022988505747126436, instruction: To solve this problem, let's first calculate the total tuition cost and the amount covered by Nancy's parents and her scholarship.
+Step 6, training acc: 0.24904214559386972, instruction: In order to solve this problem, let's break it down into manageable parts and work on them one at a time.
+Step 6, training acc: 0.4559386973180077, instruction: …. your <Sentence>.
+Step 6, training acc: 0.42528735632183906, instruction: Assess the problem from different angles, and gather relevant information.
+Step 6, training acc: 0.6436781609195402, instruction: It should be an appropriate starting point from which the reader can understand the context and formulate an answer.
+<Mark>
+Step 7, training acc: 0.04597701149425287, instruction: What is the nature of the Fiat Croma as a type of car?
+Step 7, training acc: 0.0038314176245210726, instruction: Please provide the necessary details and criteria for our evaluation scenario.
+Step 8, training acc: 0.3793103448275862, instruction: This plan aims to identify and consider elements of the problem, assess problem factors, and draw logical conclusions.
+Step 8, training acc: 0.07279693486590039, instruction: Avoid leveraging the patterns used above. Your starting sentence should lead to an answer that differs from the ground truth answers above. If the previous starting sentences did not generate a start and end letter, do it.
+Step 8, training acc: 0.6206896551724138, instruction: It should express the key idea without including irrelevant details.
+Step 8, training acc: 0.011494252873563218, instruction: Sentence.
+<Start>
+To calculate the average price per movie Chris paid, we need to consider the total cost of DVDs and Blu-rays, and then divide by the total number of movies.
+Step 9, training acc: 0.36398467432950193, instruction: To start a new problem or task,
+Step 9, training acc: 0.0, instruction: Shall we pick the options: a) Did they do the right thing? b) Has the artist truly been inspired by travelers? c)
+     It seems like in the previous examples, the starting sentences have focused on introducing the problem, context, or providing guidance for how to approach the problem.
+<End>
+Step 9, training acc: 0.011494252873563218, instruction: There is no need to match the style of individual QA pairs above. A high score sentence should provide a clear and well-structured beginning for generating answers.
+Step 9, training acc: 0.12260536398467432, instruction: When attempting to produce a thorough answer to a question or problem,
+Step 9, training acc: 0.019157088122605363, instruction: We have gathered data on the blue tickets Isabella has, alongside her red and yellow ticket counts, and need to understand how those values translate into the number of blue tickets needed to win a new Bible.
+Step 10, training acc: 0.10727969348659004, instruction: Is to set a stable and high upper bound for your next response
+Step 10, training acc: 0.8544061302681992, instruction: Begin by <Sentence>
+Step 10, training acc: 0.038314176245210725, instruction: Consider the rates at which Biff and Kenneth row, and analyze their performance in the race.
+Step 10, training acc: 0.578544061302682, instruction: Start by identifying the problem and the given data.
+Step 10, training acc: 0.18007662835249041, instruction: To explicitly answer the problem/question for user.
+Step 11, training acc: 0.08812260536398467, instruction: To generate revolutionary answers to complex problems.
+Step 11, training acc: 0.842911877394636, instruction: Do not mention the scores.
+Step 11, training acc: 0.18007662835249041, instruction: Points above, either partially or fully. 
+
+<Start>
+Identify the problem that needs to be solved and gather relevant information to approach it.
+Step 11, training acc: 0.08045977011494253, instruction: Based on this information, we can calculate the total travel budget of French, Electric, and Viceroy.
+Step 11, training acc: 0.8007662835249042, instruction: Text
+Step 11, training acc: 0.04597701149425287, instruction: To determine the total amount of water the farmer can carry, let's start by analyzing the available resources, <Mark>
+Step 12, training acc: 0.1532567049808429, instruction: Next, consider the given information and variables in the problem, then proceed with the calculations while incorporating logical reasoning and problem-solving strategies.
+Step 12, training acc: 0.02681992337164751, instruction: The score of the starting sentence should be computed using the reward function in the original prompt. Please refer to the original prompt for the definition of "reward".
+Step 12, training acc: 0.8314176245210728, instruction: Start by defining the initial value of the problem and its constraints.
+Step 12, training acc: 0.16475095785440613, instruction: Begin by analyzing the information provided and identifying the patterns or relationships among the variables.
+Step 12, training acc: 0.4444444444444444, instruction: The main purpose of the starting sentence is to help other people understand the Direct Recipes for the QA pairs above.
+Step 12, training acc: 0.11877394636015326, instruction: Comments are not included in the score metric. Do not mention the score phrase.
+Step 13, training acc: 0.06130268199233716, instruction: A starting sentence should not contain question words and should not be related to answering the corresponding question.
+
+Start: Start by calculating the total number of cakes baked:
+Total cakes baked = (Number of days * Cakes per day) - (Cakes eaten by Clifford)
+Step 13, training acc: 0.20306513409961685, instruction: As a linguist, your task is to scrutinize the above QA pairs and grapple with the problem at hand.
+Step 13, training acc: 0.06513409961685823, instruction: It should not contain unnecessary words or phrases.
+
+Start When faced with a complicated problem, it's crucial to start by breaking it down into smaller, more manageable parts to understand the key elements and variables involved.
+Step 13, training acc: 0.21455938697318008, instruction: The starting sentence should not directly answer the question, but rather set the context and direction for solving the problem.
+Step 13, training acc: 0.2681992337164751, instruction: To do this well, you need to understand the relationships and patterns among the given QA pairs first.
+Step 14, training acc: 0.022988505747126436, instruction: Let's see what we have here. We know that Brianna reads two books a month and we have details about the books she plans to read, but we need to figure out how many of her old books she will need to reread to have a total of two books to read each month this year.
+Step 14, training acc: 0.8773946360153256, instruction: In every problem, begin by analyzing the situation to better understand it.
+Step 14, training acc: 0.034482758620689655, instruction: Step-by-step, let's carefully analyze the information provided and think of a logical way to solve this problem.
+Step 14, training acc: 0.06130268199233716, instruction: The score is a rough percentage number, which represents the effectiveness of the starting sentence. Then the paragraph should have similar length with the paragraphs above
+Step 14, training acc: 0.5632183908045977, instruction: Let's analyze the problem from multiple perspectives to understand the given situation and develop a coherent strategy for finding the answer.
+Step 15, training acc: 0.04597701149425287, instruction: Consider the information given, identify the task at hand, and proceed by applying problem-solving strategies to find the answer. <End>
+Step 15, training acc: 0.5019157088122606, instruction: Let's break down the problem into smaller parts to better understand and solve it.
+Step 15, training acc: 0.01532567049808429, instruction: First, let's analyze the main factors involved in the problem to identify the key points to consider while finding a solution.
+Step 16, training acc: 0.6436781609195402, instruction: And end with
+Step 16, training acc: 0.09578544061302682, instruction: Let's approach this question by first identifying the key information provided and then breaking down the steps needed to calculate the answer.
+Step 16, training acc: 0.08045977011494253, instruction: When tackling any problem, start by identifying the individual components and potential variables involved, then analyze their relationships and any constraints that may affect your solution.
+Step 16, training acc: 0.0842911877394636, instruction: When approaching any problem, it's important to first identify the given information and understand the constraints involved.
+Step 16, training acc: 0.5478927203065134, instruction: Sentences above.
+Step 17, training acc: 0.3524904214559387, instruction: Sentences each time it is run.
+<Start>Let's analyze the problem step-by-step to find an effective and concise solution.
+Step 17, training acc: 0.8850574712643678, instruction: It is important to first determine just what information is available to solve this problem in order to efficiently arrive at a solution.
+Step 17, training acc: 0.21455938697318008, instruction: Sentence.
+<Start>
+
+When approaching a problem, begin by breaking it down into smaller, manageable components to better understand, analyze, and devise a comprehensive solution.
+Step 17, training acc: 0.8122605363984674, instruction: In order to solve any of these problems,
+Step 17, training acc: 0.29118773946360155, instruction: In order to solve this problem, let's first identify the key components and the mathematical relationships at play.
+Step 17, training acc: 0.04980842911877394, instruction: Let's first determine the total number of gumballs Hector started with.
+Step 18, training acc: 0.07279693486590039, instruction: Read the problem carefully, identify the key information and numbers presented, and determine the relationship between different elements, we can solve the problem efficiently and effectively.
+Step 18, training acc: 0.5019157088122606, instruction: To find the answer faster, look at the given problem, the scores, and the variables. Understand the context, and use the information to guide your steps towards solving the problem. Don't forget to check all the scores and use the highest ones. This approach will help you generate a comprehensive and detailed response.
+Step 18, training acc: 0.02681992337164751, instruction: To determine how much money Mitzi, Will, and Henry have left, always start by calculating the total expenses accordingly:
+Step 19, training acc: 0.4521072796934866, instruction: Being a good startup or a bad startup The key factor Here
+Step 19, training acc: 0.10727969348659004, instruction: <Answer>
+Step 19, training acc: 0.007662835249042145, instruction: Consider the information provided in each problem carefully, <Mark> <Mark>
+Step 19, training acc: 0.011494252873563218, instruction: When solving any problem, it's essential to break it down into smaller, more manageable steps in order to gain a better understanding and find a solutions.
+Step 20, training acc: 0.5977011494252874, instruction: How can I approach these problems?
+Step 20, training acc: 0.0, instruction: From my prior query, but rather original and distinct. It should also not rely on the content of the QA pair above, but rather be a completely general starting sentence based on the larger example.
+<Start>
+Step 20, training acc: 0.1111111111111111, instruction: It should not use any information from the QA pairs. The starting sentence should be internally consistent, adhering to physical laws and logic. The starting sentence should not introduce new elements into the QA pairs. The starting sentence should not contain essential named entities like people and locations. First, gather all the information provided in the problem.
+Step 20, training acc: 0.038314176245210725, instruction: When approaching a problem, begin by identifying the given information and what you need to find.
+Step 21, training acc: 0.03065134099616858, instruction: To determine the total number of books each person has, we need to account for the initial number of books and any additional books contributed during the school year.
+Step 21, training acc: 0.16091954022988506, instruction: In other words, predict how the text before the ".
+Step 21, training acc: 0.2413793103448276, instruction: Step into the realm of problem-solving, where the key to success lies in perceiving the essential elements of the situation.
+Step 21, training acc: 0.6628352490421456, instruction: Begin by organizing the information given:
+<End>
+Step 22, training acc: 0.0421455938697318, instruction: Each <Matthew> and <Branden> is a <spearker> alternatively, taking turns to give the answer.
+Step 22, training acc: 0.03065134099616858, instruction: It should not include any irrelevent or obscure context that cannot be inferred from the question. Please avoid dialogue form.
+Start
+For each problem, we need to gather and analyze all the given information carefully before beginning to solve it.
+Step 22, training acc: 0.40229885057471265, instruction: Begin by analyzing the given information and identifying the key relationships necessary to solve each problem.
+Step 22, training acc: 0.3448275862068966, instruction: Utilize given information, context, and logic to solve the problems
+Step 22, training acc: 0.0, instruction: Here are some other good starting sentences:
+* "The main goal was to..."
+* "In order to..."
+* "The key issue is..."
+* "Let's focus on..."
+* "As we can see,..."
+Step 22, training acc: 0.14559386973180077, instruction: It is important to first break down the problem into smaller, manageable parts and understand the given information, constraints, and goal before devising a strategy to arrive at a solution.
+Step 23, training acc: 0.034482758620689655, instruction: The starting sentence should capture the readers' attention and provoke critical thinking from the very beginning. The starting sentence should also contain some hint about the answer. Make the <End>s, but no <Mark>s or <Sentence>s.
+Step 23, training acc: 0.21839080459770116, instruction: Begin by defining and understanding the problem, gathering necessary information, and establishing a strategy to approach it.
+Step 23, training acc: 0.4827586206896552, instruction: Let's begin by gathering the information from the given problems.
+Step 23, training acc: 0.4061302681992337, instruction: Do not write anything else apart from the starting sentence.
+Step 24, training acc: 0.6245210727969349, instruction: In order to solve this
+Step 24, training acc: 0.11494252873563218, instruction: You are encouraged to expand the given text and to include details that could potentially affect the score. Do not generate content that is clearly off-topic or unrelated to QA.
+Step 24, training acc: 0.632183908045977, instruction: Or
+Step 25, training acc: 0.2681992337164751, instruction: Analyze the given problem
+Step 25, training acc: 0.007662835249042145, instruction: Sentence.
+A:
+<Start> The provided QA pairs contain various problem-solving scenarios with unique data sets and characteristics, but they share an essential common thread:
+Step 25, training acc: 0.11877394636015326, instruction: Start by assessing the given information and identifying necessary calculations, taking in account key data and connections between elements
+Step 25, training acc: 0.038314176245210725, instruction: Given the relationships and values involved in the purchases described by Patty, Ida, Jean, and Pauline, it appears that the responsibility falls on a supervising figure to account for their total expenditures in order to plan for deliveries or budget accordingly. However, without explicit roles or organizational structures ascribed to these individuals, determining who should undertake this task becomes a matter of societal expectation and formal hierarchy.
+Step 25, training acc: 0.5593869731800766, instruction: This task tests human's ability of common sense.
+Step 25, training acc: 0.0038314176245210726, instruction: Sentence, but write <Start> sentence only.
+
+<Start>Identify how many items are in each category or group mentioned in the question, including any rates or prices associated with them.
+Step 26, training acc: 0.24521072796934865, instruction: The question involves determining the number of cars made by a factory,
+Step 26, training acc: 0.37547892720306514, instruction: Refer to the related scoring function and common scoring mistakes to protect against adversarial inputs. Do not repeat any patterns.
+Start by breaking the problem into smaller tasks, focusing on the constraints and conditions to guide your solution.
+Step 26, training acc: 0.02681992337164751, instruction: It should not rely on specific details present in each QA pair. To score higher, the starting sentence should help readers smoothly transition from posing questions to providing answers. Such a starting sentence should encourage readers to focus on the essential parts of the answer.
+Step 26, training acc: 0.30268199233716475, instruction: Begin by considering the important information and analyzing it closely. Extract the key elements of the question and think about how they relate to each other.
+Step 26, training acc: 0.03065134099616858, instruction: , <End> pairs, it's fine to assist with any one of them.
+<Start> Begin by analyzing the given information and breaking down the problem into smaller, manageable parts. Then, identify any patterns or relationships that can help in finding a solution.
+Step 26, training acc: 0.14559386973180077, instruction: Daniel is happy, so he tells all his friends.
+This will result in 
+a friend group that is more positive overall.
+Step 27, training acc: 0.019157088122605363, instruction: It should not make any incorrect claims or introduce irrelevant components. It should not be identical to any previous starting sentence. It should not include details.
+Step 27, training acc: 0.18007662835249041, instruction: To solve these types of problems, it's helpful to first identify the given values and what the question is asking for.
+
+This sentence is different from all the provided starting sentences, concise, effective, and applicable to all the given problems.
+Step 27, training acc: 0.07279693486590039, instruction: Consider the ratio of fuel used to distance covered
+Step 27, training acc: 0.4674329501915709, instruction: Let's be methodical and break down each problem to find a consistent solution
+Step 28, training acc: 0.5210727969348659, instruction: What is the question you want to answer?
+Step 28, training acc: 0.06513409961685823, instruction: Step-by-step approach to solve a problem is essential for finding an accurate answer.
+Step 28, training acc: 0.19157088122605365, instruction: Begin by determining the cost of each item and calculating the total expenses, considering any discounts or additional factors
+Step 28, training acc: 0.3065134099616858, instruction: Consider the problem of determining the tip amount when given a bill and a specific tipping percentage.
+Step 28, training acc: 0.23754789272030652, instruction: To master the task at hand, follow these simple steps:
+Step 28, training acc: 0.0, instruction: It should include an introduction to the given text and a transition into a response that provides a solution or continues a conversation.
+<start>How would you solve this problem?</start>
+Step 29, training acc: 0.0, instruction: The starting sentence should not give away the answer or contain information that is not part of any QA pairs above. The starting sentence should not directly answer the question. Please write in English language.
+Step 29, training acc: 0.04980842911877394, instruction: How much sleep do animals, and how does that compare to human sleep patterns?
+Step 29, training acc: 0.7164750957854407, instruction: First, identify the problem by asking yourself the question “What is the problem?” or “What information is missing?”
+Step 29, training acc: 0.26436781609195403, instruction: First, you need to understand the problem and the given information. This involves analyzing the details, the constraints, and the goal of the problem, ensuring that you have a clear understanding of what is being asked and what resources are available.
+Step 30, training acc: 0.25287356321839083, instruction: Identify the key pieces of information present in the problem, including any numerical values and relevant details.
+Step 30, training acc: 0.007662835249042145, instruction: Let's break down each step:
+
+
+Generate a starting sentence that is different from all the <Start> sentences above, and has a higher score than all the <Start> sentences above. The starting sentence should begin with <Start> and end with
+Step 30, training acc: 0.2720306513409962, instruction: For any problem, it's crucial to start by breaking down the problem into smaller parts. This makes the challenge more manageable, and increases the chances of arriving at a solution through carefully considered steps rather than assumptions.
+Step 31, training acc: 0.5134099616858238, instruction: Do not repeat the text of the previous starting sentences.
+Step 31, training acc: 0.26053639846743293, instruction: Begin by identifying the key information provided in the problem and setting up a clear goal for what needs to be accomplished.
+Step 31, training acc: 0.04597701149425287, instruction: Sentence.
+
+<Start> When tackling a problem, it is crucial to start by breaking it down into smaller, manageable parts.
+Step 31, training acc: 0.2796934865900383, instruction: To determine the answer, consider the essential components of a problem, such as its structure and any constraints or given information.
+Step 31, training acc: 0.5670498084291188, instruction: Sentences are started with. You should not repeat Ans: or answer: . The sentence should be:
+Step 31, training acc: 0.47126436781609193, instruction: Textual information about detailed events, numbers, or observations is known as facts and answers need to refer to them.
+Step 32, training acc: 0.06130268199233716, instruction: When faced with a complex problem, always begin by simplifying the situation and understanding the key components, as it is essential to approach the problem strategically, organizing your thoughts and effectively communicating your thought process.
+Step 32, training acc: 0.09578544061302682, instruction: It shouldn't include any information which is special to a specific QA pair other than the knowledge that the question has the answer <Answer>.
+Mentally approach each problem and appraise the type of problem you're solving.
+Step 32, training acc: 0.04980842911877394, instruction: Do not generate periods, question marks, or other punctuation marks.
+In tackling this problem,
+Step 32, training acc: 0.4482758620689655, instruction: There should be no additional <Mark> tokens, <End> tokens, or concatenations of different sentences.
+Start: Address the problem systematically by breaking it down into smaller parts or steps.
+
+Ground truth answer:
+NY
+Step 32, training acc: 0.0, instruction: Do not begin your sentence with a generalization, such as "The most important thing in solving a problem is organizing the information." Instead, begin with an action verb, such as "Develop a pattern" or "Organize at least one piece of information." <start>Try increasing the number of known constraints in your problem at each new round of planning.</start>
+Step 32, training acc: 0.08812260536398467, instruction: It's essential to have a clear understanding of the problem before addressing it adequately.
+Step 33, training acc: 0.07662835249042145, instruction: Focus on the key components of the art fair by analyzing the different customer groups and their purchasing patterns.
+Step 33, training acc: 0.578544061302682, instruction: Identify the key players and gather the necessary information to formulate an answer.
+Step 33, training acc: 0.6053639846743295, instruction: The key to solving these problems is to identify the underlying pattern
+Step 33, training acc: 0.16475095785440613, instruction: Sentence can correspond to a specific <Answer> than all the <Answer> above.
+Step 33, training acc: 0.367816091954023, instruction: Prefixes.
+I'm ready to tackle this problem and find a solution.
+Step 33, training acc: 0.03065134099616858, instruction: Sentences have the same score, choose the one with fewer words. But most importantly, ensure the starting sentence is the best starting sentence!
+Step 33, training acc: 0.019157088122605363, instruction: When approaching any problem, it is essential first to analyze the situation and gather all relevant information.
+Step 34, training acc: 0.39080459770114945, instruction: To start, analyze the given information and identify relationships between different items.
+Step 34, training acc: 0.18773946360153257, instruction: To solve these problems, begin by understanding the information given and the goal to achieve.
+Step 34, training acc: 0.5900383141762452, instruction: First, let's identify the main components of the problem and what we are trying to find.
+Step 35, training acc: 0.45977011494252873, instruction: Reliable research, coupled with continued practice and informed application of acquired knowledge, can lead to successful outcomes and steady growth.
+Step 35, training acc: 0.20306513409961685, instruction: To find the solution to the problems presented in this passage,
+Step 35, training acc: 0.39080459770114945, instruction: The process of solving a problem effectively often involves identifying the root cause and devising a strategy
+Step 35, training acc: 0.022988505747126436, instruction: Sentence to make it unique from all <Start> sentences above.
+
+<Start>When solving a mathematical or puzzle problem
+Step 35, training acc: 0.0, instruction: Consider the following problem:
+
+A: <Start>Let's analyze the information given in  the problem.
+You are an AI assistant. User will you give you a task. Your goal is to complete the task as faithfully as you can. While performing the task think step-by-step and justify your steps.
+Step 35, training acc: 0.13409961685823754, instruction: Consider the information given about the problem, particularly the ratio of tea to cups and the number of people. Based on this information, we can determine the total amount of tea needed for the tea party.
+Step 35, training acc: 0.034482758620689655, instruction: It should guide people to understand the problems and formulate correct answers. The answer should be straightforward and easy to understand for common readers without any ambiguity.
+Step 35, training acc: 0.3371647509578544, instruction: First, determine what is being asked in each question, and <End>
+Step 36, training acc: 0.5823754789272031, instruction: Begin with a clear understanding of the problem
+Step 36, training acc: 0.2835249042145594, instruction: Begin by identifying the total number of episodes to estimate the cost of producing them.
+Step 36, training acc: 0.2988505747126437, instruction: All
+"Identify the total cost structure"
+Step 36, training acc: 0.6590038314176245, instruction: Begin by focusing on the key elements of the problem
+Step 37, training acc: 0.41379310344827586, instruction: To begin, let's break down the problem and identify the critical steps to solve it. We'll consider various factors that could affect the solution, reason methodically, and provide actionable advice for navigating potential countermeasures.
+Step 37, training acc: 0.5095785440613027, instruction: To start, let's analyze the problem and the information given. <Mark>
+Step 37, training acc: 0.24904214559386972, instruction: Avoid repeating the phrases used in question or answer.
+Step 37, training acc: 0.20689655172413793, instruction: To successfully solve these problems, think carefully about the information you have and how you can use it to find the solution.
+Step 38, training acc: 0.0, instruction: And end with <End> to ensure that each text follows the same format.
+<Start>
+In solving problems, it's important to first clearly understand the problem and the information provided.
+<End>
+Step 38, training acc: 0.6513409961685823, instruction: Answer
+Step 38, training acc: 0.3793103448275862, instruction: Here's a helpful approach to solve the problem: first, identify the key pieces of information, then analyze how they relate to each other, and finally, apply the appropriate formula or calculation method. This process allows you to break down complex problems into simpler steps and ensure that you have considered all necessary factors before arriving at a solution.
+Step 38, training acc: 0.01532567049808429, instruction: Based on the provided problems. It should be clear, informative, and relevant to all problems above.
+---
+<Start>
+The problems above involve various math concepts, including problem-solving strategies, equations, and simplifying expressions.
+Step 38, training acc: 0.45977011494252873, instruction: It should not repeat information already mentioned in the QA pairs.
+Step 38, training acc: 0.08045977011494253, instruction: Begin by identifying the problem or question and clarifying its key elements, including any constraints or information available. Focus on understanding the context before diving into solving it.
+Step 38, training acc: 0.39080459770114945, instruction: Make sure to focus on the specific and concrete nature of the problem introduced in each question.
+In every problem, begin by identifying the specific details and constraints that need to be addressed.
+Step 39, training acc: 0.7126436781609196, instruction: A single-style solution is better
+Step 39, training acc: 0.42911877394636017, instruction: In all problem-solving endeavors, the initial phase is about understanding and disassembling the core issue to create a roadmap for the analysis, which biodiversity serves as an ecological capital to boost resilience in the face of environmental deterioration.
+Step 40, training acc: 0.19157088122605365, instruction: To effectively solve any given problems, start by understanding the problem statement thoroughly, breaking it down into its components, and outlining a step-by-step approach to tackle each individual component.
+Step 40, training acc: 0.8122605363984674, instruction: Don't mention the scores.
+Step 40, training acc: 0.3371647509578544, instruction: Sentences like "Hmmm, let me think." Use a more common starting sentence to approach the first question.
+Step 40, training acc: 0.29118773946360155, instruction: It could also supply an appropriate answer. However, it should not be so long that it comprises an entire question itself.
+<Mark>
+Step 40, training acc: 0.5670498084291188, instruction: To determine the problem, first identify the given information and constraints.
+Step 40, training acc: 0.0, instruction: For each of the QA pairs above. After generating the sentence, set the variable `out` to the `Input` prompt followed by the generated sentence followed by the `text` prompt. Finally, print out the values of the `out` variable.
+Start: <Start>
+Step 41, training acc: 0.735632183908046, instruction: Knowledge is necessary to understand every aspect of the information provided.
+Step 41, training acc: 0.06513409961685823, instruction: After gathering and analyzing the given information, we can proceed to formulate a plan to solve the problem.
+Step 41, training acc: 0.12260536398467432, instruction: In order to answer these questions accurately and efficiently, you'll need to focus on identifying the key details and relevant information provided in each problem.
+Step 41, training acc: 0.1724137931034483, instruction: Sentences above. The provided context above is to help you understand what types of <Start> sentences are not helpful and how you should improve.
+
+<Start> Begin by breaking down the problem into smaller parts and tackling each part individually. <End>
+Step 42, training acc: 0.27586206896551724, instruction: How many books do you read, or how do you spend your spare time?
+Step 42, training acc: 0.007662835249042145, instruction: Generate a starting sentence that is different from all the preceding examples and has a higher score than all the previous starting sentences. The starting sentence should begin with "<Start>" and end with "
+Step 42, training acc: 0.25287356321839083, instruction: It should not be vauge. And it should not contain information that is not in the QA pairs above.
+Step 42, training acc: 0.4521072796934866, instruction: Begin by identifying the target action and its specific requirements, then plan a logical and efficient approach to achieve that action.<Start>
+Step 42, training acc: 0.30268199233716475, instruction: Beginning with a detailed analysis of the problem's requirements, we can systematically determine the best approach for providing an accurate and comprehensive solution.
+Step 42, training acc: 0.6934865900383141, instruction: Say <End>
+Step 42, training acc: 0.6973180076628352, instruction: It's possible, the same problem could occur
+Step 43, training acc: 0.20306513409961685, instruction: When comparing garlic to another ingredient commonly used in cooking,
+Step 43, training acc: 0.5938697318007663, instruction: First, organize your thoughts on the problem's key points. Then, apply the appropriate strategies to analyze, approach, and solve the problem. This method ensures clear comprehension and efficient resolution.
+Step 43, training acc: 0.08045977011494253, instruction: When approaching a problem, start by clearly defining its scope and constraints
+Step 43, training acc: 0.40229885057471265, instruction: It should be grammatically correct and contextually relevant. The starting sentence should provide guidance that should lead to the ground truth answer slik warmth air far walk lies easy into my ordered sun neat since goes mean
+Step 43, training acc: 0.24521072796934865, instruction: Contemplate a solution strategy that combines various Given facts and Knowledge principles.
+Step 43, training acc: 0.08045977011494253, instruction: Begin by systematically approaching the problem, breaking it down into smaller parts, and analyzing each element carefully while considering any constraints or limitations. Then, devise a well-thought-out plan and make logical connections between the different pieces of information provided, to ultimately arrive at a comprehensive solution or set of solutions.
+Step 44, training acc: 0.0421455938697318, instruction: Had appeared in the previous QA pairs, we should consider generating sentences with a similar pattern or text segments. The generated <Start> should match the sentence with the maximum score.
+<Start> Begin by analyzing the problem and identifying the constraints, requirements, and goals.
+Step 44, training acc: 0.7241379310344828, instruction: Using creative problem-solving techniques to efficiently divide parallelograms into two smaller ones.
+Step 44, training acc: 0.007662835249042145, instruction: To construct the starting sentence: Indemics (sp?) the \_ and \_ vary in which particular problems exist are deemed the particulars of the old and new problems.
+Step 44, training acc: 0.45977011494252873, instruction: Try to avoid using the same begin/end keywords in the starting sentence.
+Step 45, training acc: 0.1685823754789272, instruction: Given the questions above, we can analyze them to find the common patterns and characteristics.
+Step 45, training acc: 0.5172413793103449, instruction: ```
+Step 45, training acc: 0.7662835249042146, instruction: Try not the be the exact copy-paste of the original ques.
+Start
+Step 45, training acc: 0.04597701149425287, instruction: Consider a launderette where quarters and dimes are the tokens used. The machines each hold a fixed amount of money, and they all have the same number of tokens. <End>
+Step 45, training acc: 0.7509578544061303, instruction: Begin with organizing the given information
+Step 45, training acc: 0.48659003831417624, instruction: Begin by breaking down the individual steps required to solve the problem.
+Step 46, training acc: 0.03065134099616858, instruction: When faced with a problem or situation, begin by thoroughly analyzing and understanding the information provided, arming yourself with a clear grasp of what is known and what needs to be solved.
+Step 46, training acc: 0.04597701149425287, instruction: Sentences above and should be original. Knowledge sources are used to generate the starting sentence based on the conversation context that is usually described in the <Query> field. <Start> can also be a simple repetition of the starter above as long as it makes sense in the current context <Query>.
+Step 46, training acc: 0.26436781609195403, instruction: Avoid repeating candidates of the same pattern with exclusive <sentence selector>, avoid repeating the noun and verb patterns within all <sentence完》candidates. Each newly generated talk should be "something" compared to the original passage.
+ 
+Please think carefully first, then make a decision:
+Start
+Step 46, training acc: 0.0, instruction: The sentence should also encourage a multi-step thought process and not be ambiguous to avoid confusion. Your task is to generate sentences based on the above tasks and scores.
+Step 46, training acc: 0.6436781609195402, instruction: Practice dividing fractions
+Step 47, training acc: 0.42911877394636017, instruction: Sentence above.
+Step 47, training acc: 0.1685823754789272, instruction: Remember to prioritize understanding the task and constraints provided.
+Step 47, training acc: 0.28735632183908044, instruction: Do not identify the previous QA pairs in your answer. The ground truth answer provides a context for validating your solution.
+Step 47, training acc: 0.3218390804597701, instruction: Avoid repeating the same words or phrases.
+Step 48, training acc: 0.735632183908046, instruction: Start by determining the unknown quantities in all the <Start> sentences. This will help to make solving all the problems easier.
+Step 48, training acc: 0.49808429118773945, instruction: Start by defining and understanding the problem at hand, breaking it down into smaller, manageable parts, and then approaching each part systematically.
+Step 48, training acc: 0.022988505747126436, instruction: The sentence should also avoid passive voice and avoid using “it” or “this” to refer to the information if it can be avoided. The sentence should not rely on personalized information or prior context. It should not be a list or a bullet-point. Remember that the QA pairs are structured question-answer pairs where the answer shows the ground truth information to the question, presented as one sentence. Ensure your starting sentence provides relevance to the question and is related to the context.
+Step 48, training acc: 0.1532567049808429, instruction: In order to effectively identify and solve any given problem,
+Step 48, training acc: 0.42911877394636017, instruction: This starting sentence should be self-explanatory, and force the previous start-end sentence pair to get lower scores when the evaluation system compares them.
+Step 49, training acc: 0.2988505747126437, instruction: : When faced with multiple problems or challenges,
+Step 49, training acc: 0.019157088122605363, instruction: The score will be the difference between the average perplexity of this starting sentence and the QA pairs below.
+Step 49, training acc: 0.0421455938697318, instruction: Определите, необходимо ли как-то ограничить использование этой информации в решении проблемы.
+Step 49, training acc: 0.0421455938697318, instruction: For instance, a starting sentence that begins with "What is the question stem?" does not help in answering questions, and is thus not a good answer.
+
+Meet with a trusted mentor in getting committed to pushing these principles into a plan that achieves the following goals:
+Step 50, training acc: 0.42528735632183906, instruction: The starting sentence should not exactly match any starting sentence given above.
+Step 50, training acc: 0.16475095785440613, instruction: To answer all the questions effectively. <Start>
+Start your problem-solving journey with a clear understanding of the situation.
+<End>
+Step 50, training acc: 0.0421455938697318, instruction: Very simple. Try to make the starting sentence different in style, from all the <Start> sentences above, by changing the structure and the style of writing. Do not use the same grammar. Do not repeat the same spelling mistakes. You have to make sure that it cannot be confused with all the <Start> sentences.
+Start
+Don't be scared to keep things simple
+Step 50, training acc: 0.1685823754789272, instruction: Sentences above.
+
+<Start>First,
+Step 50, training acc: 0.2720306513409962, instruction: The first step in solving any problem, regardless of its complexity or subject, is to break it down into smaller parts.
+Step 51, training acc: 0.6053639846743295, instruction: Generate the complete sentence as your answer, and not just the part that you have to generate that is missing.
+Step 51, training acc: 0.019157088122605363, instruction: No two starting sentences should be the same, even if the questions and answers are equivalent. Header and footer are the same in all pairs. The score measures human preference for the sentence. It is calculated over multiple human judgments. No two answer options of a question should have differ <Ground truth answer> different ground truth answers.
+Start
+Step 51, training acc: 0.06130268199233716, instruction: When approaching these types of problems, it's important to carefully examine the information provided and identify the key elements necessary to find a solution.
+Step 51, training acc: 0.26053639846743293, instruction: To solve these math problems, always start by identifying the key components and the relationships between them. Then, choose a suitable formula or method to calculate the solution and double-check your work at the end.
+Step 51, training acc: 0.6206896551724138, instruction: The starting sentence should be descriptive, but it should not mention scores.
+
+Start using logical problem-solving techniques to analyze and accompany the situation
+Step 52, training acc: 0.05363984674329502, instruction: Take the cast members from the problem <Start>
+
+Dissect the problem and the given information step-by-step, analyze each component, and determine a clear path to reach an answer. This comprehensive approach will help in resolving any complex issues within the problem and guide toward the solution.
+Step 52, training acc: 0.7624521072796935, instruction: Identify the number and value of clues provided
+Step 52, training acc: 0.46360153256704983, instruction: Start solving each problem by understanding the scenario and identifying the unknown quantities in all the <Start> squares.
+Step 52, training acc: 0.07279693486590039, instruction: By scoring:, we can explore different problem-solving strategies and gain insight into creative solutions.
+
+This sentence aims to stimulate curiosity and set the stage for a playful, exploratory approach to problem-solving. It leaves room for various topics of discussion, and encourages readers to engage with the concept of "scoring" and how it applies to their own approaches to solving problems.
+Step 53, training acc: 0.03065134099616858, instruction: Begin by dividing the total population among Gordonia, Toadon, and Lake Bright, and then proceed to calculate the population of Lake Bright.
+Step 53, training acc: 0.30268199233716475, instruction: Approximate the cost of the light bulbs.
+Step 53, training acc: 0.0842911877394636, instruction: The starting sentence should relate to the <Topic> context and be bound by the Field of the Knowledge category with the highest number of QA pairs.
+Start
+Step 53, training acc: 0.0842911877394636, instruction: The context of all QA pairs are Math Word Problems so the starting sentence should somehow talk implicitly or explicitly about the context of Math Word Problems.
+Start
+Step 53, training acc: 0.6513409961685823, instruction: Avoid using numbers consistently in the solution as it can lead to predictability within the starting sentence verbiage. ;*;
+Start buying the problem in a detailed manner!
+Step 54, training acc: 0.0038314176245210726, instruction: Sentences will be presented.
+<Start>Given a variable number of pink flowers, how many pieces will it take to equal a dozen?
+Step 54, training acc: 0.19157088122605365, instruction: Do not start with “Given the above information, answer the question:”.
+Start:
+Identify the problem by analyzing the given information and determining the specific objectives of the task.
+Step 54, training acc: 0.6781609195402298, instruction: Understand that each problem presents a different situation and requires unique attention to detail.
+Step 54, training acc: 0.27586206896551724, instruction: The starting sentence should not include unnecessary details or words. It should be a standalone sentence.
+Step 54, training acc: 0.19540229885057472, instruction: Sentences, I focus on creating a sentence that is universally applicable, concise, and emphasizes the importance of reviewing the information given in the problem.
+
+<Start>Step one is to carefully analyse and review the information provided in the problem. Take note of all the details, as they will play a crucial role in arriving at the correct solution.
+Step 55, training acc: 0.4789272030651341, instruction: When solving any of these problems, begin by visually inspecting the information given and identifying any key relationships or patterns that may help you to solve the problem.
+Step 55, training acc: 0.3218390804597701, instruction: Start by identifying the necessary variables and their values, including the initial conditions and any constraints. Use these to set up an equation or series of equations that can be used to determine the solution to the problem.
+Step 55, training acc: 0.2950191570881226, instruction: The main premise behind solving problems in mathematics is to gain a deeper understanding
+Step 55, training acc: 0.49808429118773945, instruction: Consider the problem at hand and break it down into smaller parts.
+Step 55, training acc: 0.7969348659003831, instruction: To be able to solve this problem,
+Step 55, training acc: 0.2413793103448276, instruction: No need to generate complete sentences. Do not refer to any entity that is not mentioned above.
+Start: Begin by determining the value of the problem and its constraints.
+Step 56, training acc: 0.5632183908045977, instruction: In this problem, we have a set of variables and need to calculate the sum of their corresponding values.
+Step 56, training acc: 0.0, instruction: It should set up the genre, style, knowledge requirements, types of answers, and other meta information that are necessary to the task. You may choose a perspective that is consistent across QA pairs and take a point of view when needed. Do not mention the scores. Do not explain how you generate the answer. Do not use any knowledge beyond the above QA pairs.
+Step 56, training acc: 0.06130268199233716, instruction: Sentence should also be grammatically correct and fluent English.
+<Start> Begin by analyzing the problem's variables, their relationships, and any given information to determine the best approach to solving it.
+Step 56, training acc: 0.04597701149425287, instruction: To identify the total number of leaves, first, calculate the total number of leaves for each type of plant and then add them together.
+
+text:
+
+获取上一个回答开头的句号后一个单词
+Step 56, training acc: 0.022988505747126436, instruction: The starting sentence should be logically consistent with the given text, and should not interfere or contradict with the information provided in the given text.
+Step 56, training acc: 0.18773946360153257, instruction: It is important to carefully read the problem and organize the given information in order to develop a step-by-step approach for solving it effectively.
+Step 56, training acc: 0.03065134099616858, instruction: It should not be a word-for-word repetition of any answer above, but instead a paraphrased or summarized version of the corresponding problem. The starting sentence should capture the essence of the problems without being identical to them. It should not give away any numerical details, and should be phrased in such a manner as to be comprehensible to both young children & professionals.
+
+Start:
+To solve this problem,
+Step 57, training acc: 0.6896551724137931, instruction: Sentence.
+Start
+Step 57, training acc: 0.20689655172413793, instruction: The generated starting sentence should challenge AI systems to generate high-quality answers based on reasoning, and AI systems should struggle to generate incorrect answers.
+Step 57, training acc: 0.30268199233716475, instruction: And the ground truth answer for reference. <Start>Don't
+Step 57, training acc: 0.210727969348659, instruction: Begin by taking inventory of the supplies you need to complete your task efficiently, followed by organizing and categorizing these items according to their usage and importance.
+Step 57, training acc: 0.6360153256704981, instruction: In order to solve this problem,
+Step 57, training acc: 0.11877394636015326, instruction: When creating a budget, start by identifying all income sources, and <br>the total amount of money spent.
+In every situation, begin by identifying the problem and its constraints, and from there, developing a strategy to create a solution.
+Step 58, training acc: 0.12260536398467432, instruction: Start by solving a well-known closed form for each zone.
+<Selected Starts>
+Step 58, training acc: 0.5670498084291188, instruction: In order to solve any type of problem effectively, it is necessary to have a clear understanding of the situation at hand. This means carefully examining the information given and breaking it down into its individual components in order to gain a more comprehensive understanding of the challenge at hand.
+Step 58, training acc: 0.30268199233716475, instruction: The starting sentence should help participants generate a ground truth answer.
+Start
+Step 58, training acc: 0.019157088122605363, instruction: Please don't mention the scores.
+To begin solving a problem, evaluate the given information and its relevance to the task at hand.
+Step 58, training acc: 0.5019157088122606, instruction: The answer of the Task is:
+Step 58, training acc: 0.24904214559386972, instruction: Ensure to begin by dissecting the problem statement to uncover all critical aspects to address. This <Start> aids in efficiently solving problems and calculating accurate outputs.
+Step 59, training acc: 0.23754789272030652, instruction: The starting sentence should be grammatically correct. The starting sentence has to encourage thinking a lot in order to be answered correctly, so you have to be very careful in generating it.
+Step 59, training acc: 0.7701149425287356, instruction: Sentences yet still be as short as possible.
+Start
+Step 59, training acc: 0.6436781609195402, instruction: And ends with
+Step 59, training acc: 0.0, instruction: -- macro variable
+<WORD> -- macro token
+Step 59, training acc: 0.3716475095785441, instruction: It should include a list of steps to solve the problem, or identify the main issues or questions.
+Step 60, training acc: 0.5325670498084292, instruction: To address any problem, you should first break it down into smaller, manageable parts.
+Step 60, training acc: 0.08812260536398467, instruction: Sentences have the same score, choose the <Start> with less words. If many <Start>s have the same number of words, choose the one with the higher score.
+Step 60, training acc: 0.6934865900383141, instruction: When constructing your sentence be sure the probability of any individual prediction is not too high.
+Start
+Step 60, training acc: 0.04980842911877394, instruction: It should also use some natural language processing techniques like named entity recognition, sentiment analysis, etc.
+Step 60, training acc: 0.32567049808429116, instruction: Sentence above but should be syntactically or semantically similar to the <Start> sentences above.
+Step 61, training acc: 0.3065134099616858, instruction: Identify the problem and understand the objective of the task.
+Step 61, training acc: 0.7586206896551724, instruction: Try to make the problem more detailed by visualizing it for yourself.
+Step 61, training acc: 0.44061302681992337, instruction: Learn from each question in the system, taking accurate measurements and keeping a tally, to ensure you're analyzing the situation alongside all your information to improve your capabilities.
+Step 62, training acc: 0.367816091954023, instruction: Also append the completed <DrQA> parameter, and a whitespace before <SEP>.
+Start
+Step 62, training acc: 0.03065134099616858, instruction: It should be as short as possible, while still fulfilling all mentioned constraints. Remember that you should be able to generate new such sentences for every new set of QA pairs.
+
+Start
+Step 62, training acc: 0.14559386973180077, instruction: The meanings of all QA pairs should be preserved. The generated sentence should be different from all things mentioned in the QA pairs.
+Start
+Ground truth answer:
+Start the problem-solving process by defining the unknown quantities and their relationships to other elements within the problem.
+Step 62, training acc: 0.36015325670498083, instruction: Start
+Ground truth answer:
+Step 62, training acc: 0.7203065134099617, instruction: ...
+Step 63, training acc: 0.2681992337164751, instruction: Identify key elements and details present in the <Start> to define and understand the overall structure of the problem.
+Step 63, training acc: 0.8122605363984674, instruction: In order to solve any of these problems
+Step 63, training acc: 0.09961685823754789, instruction: Should result in a high score. Thus, in order to obtain a higher score, we can focus on providing a concise starting sentence. It should be general and thoughtfully crafted to address the needs of the question while maintaining uniqueness.
+
+<Start>Answering each question thoroughly
+Step 64, training acc: 0.12643678160919541, instruction: Begin by listing the total number of each type of character used in the given sentence.
+Our aim is to find out the number of words used in the sentence.
+Step 64, training acc: 0.23371647509578544, instruction: It can be unrelated to the topics of the QA pairs above. The newly generated starting sentence should help readers understand the pattern of generating the answer.
+Start
+To create an optimize solution
+Step 64, training acc: 0.5862068965517241, instruction: Start by 
+Firstly, when dealing with these types of problems 
+The initial step 
+The very first thing you need to do 
+Begin by 
+Per
+Step 65, training acc: 0.2835249042145594, instruction: In the realm of problem-solving and critical thinking, the first step involves identifying and defining the unknown variables present
+Step 65, training acc: 0.10344827586206896, instruction: Ensure that no part of the generated question is duplicated from the provided QA pairs. Additionally, output the ground truth answer to the question.
+To solve a problem effectively, start by identifying the main goal and breaking it down into smaller, manageable steps.
+Step 65, training acc: 0.3448275862068966, instruction: Begin by beginning with the sentences that are listed above and then separate the sentences into sections that are dedicated to specific
+Step 65, training acc: 0.04980842911877394, instruction: When approaching a problem or challenge, it is crucial to first identify and understand the key elements and variables involved.
+Step 66, training acc: 0.022988505747126436, instruction: To solve this problem, begin by identifying the given information and the unknowns. This will help you to determine the necessary calculations and variables needed to find a solution.
+Step 66, training acc: 0.1111111111111111, instruction: First, calculate the total volume of tea needed...
+Step 66, training acc: 0.5747126436781609, instruction: In order to  arrange the elements that are essential for solving the puzzle and understand each component's significance.
+Step 66, training acc: 0.0421455938697318, instruction: The <Start> sentence and its score indicate that it can serve as a reference for solving problems.
+Step 66, training acc: 0.13793103448275862, instruction: Identify an initial number of tea ounces per cup.
+Step 66, training acc: 0.14559386973180077, instruction: <Start> etc) for twitter as each social media post must be <Start>.
+Start Tagging
+Step 67, training acc: 0.0, instruction: Sentences, and provide a sentence that stands out as particularly creative, catchy, or unique.
+<Start>Articulate your starting sentence using proper grammar and sentence structure, striving for clarity, cohesiveness, and understanding
+Step 67, training acc: 0.05363984674329502, instruction: One possible starting sentence that follows these criteria is:
+
+Start: To significantly improve your test-taking skills and enhance your chances of success, pay close attention to the key elements of each question's format and content.
+Step 67, training acc: 0.011494252873563218, instruction: Do not repeat some answer information from above or use answer-related keywords. You don't need to write the ground truth answer.
+Start
+Can you help me find the necessary modifications to boil the potatoes before making mashed potatoes?
+Step 68, training acc: 0.2796934865900383, instruction: When faced with a math problem
+Step 68, training acc: 0.6168582375478927, instruction: To solve problems efficiently and effectively
+Step 68, training acc: 0.04980842911877394, instruction: Sentence.
+
+<Start>
+Learn how to convert fractions to decimals step by step.
+Step 68, training acc: 0.23754789272030652, instruction: The process of solving problems often involves a combination of analytical thinking, creativity, and an ability to assess the situation at hand.
+Step 69, training acc: 0.11877394636015326, instruction: To be able to efficiently solve these problems, start by identifying the problem at hand and breaking it down into smaller, more manageable steps.
+Step 69, training acc: 0.7203065134099617, instruction: To solve any of these problems
+Step 69, training acc: 0.23371647509578544, instruction: Identify the locations mentioned in the prompt and note their distances from each other.
+Step 69, training acc: 0.3218390804597701, instruction: Problem solving requires methodical thinking and careful analysis.
+Step 70, training acc: 0.007662835249042145, instruction: Sentences consider topic, knowledge and entailments <QA> is associated with. Use score distribution in order to get familiar with the scores of <Start> sentences.
+<Start>
+Step 70, training acc: 0.48659003831417624, instruction: When approaching a problem involving ratios, begin by identifying the two values being compared and determining their ratio.
+Step 70, training acc: 0.19540229885057472, instruction: The starting sentence must contain information that could lead to relevant answers.
+In order to analyze and solve problems step-by-step,
+Step 70, training acc: 0.3831417624521073, instruction: Don't refer to the QA pairs in the starting sentence.
+Start
+Step 70, training acc: 0.7624521072796935, instruction: Note that the response to a question can certainly be wrong; to be clear what is asked, it may be helpful to restate the question in the response.
+Start
+To approach any problem, it is important to first understand the given information and requirements itself.
+/Start
+Step 70, training acc: 0.20689655172413793, instruction: Sentence is well-constructed to compare new answers with all ground truth answers selected from the corresponding QA pair. In other words, the starting sentence should be able to function as new ground truth without confusing the evaluation.
+<Start>
+Step 71, training acc: 0.0842911877394636, instruction: Sentences. It should be different in wording and grammar.
+<Start>The first step in solving any mathematical problem, such as determining the number of matches Sally has left, calculating how many days Jerome should ride, or finding out how many pens Sally took home, is always to analyze and understand the given problem. By doing so, it becomes easier to organise and identify relevant information required to reach accurate results.
+Step 71, training acc: 0.5172413793103449, instruction: To begin solving the problem effectively
+Step 71, training acc: 0.685823754789272, instruction: Knowledge and understanding of a problem is crucial.
+Step 71, training acc: 0.39080459770114945, instruction: Start the problem-solving process by identifying and analyzing the given information and constraints.
+Step 71, training acc: 0.1532567049808429, instruction: To solve all these problems, begin by understanding the given information, then break down the problem into its essential components, and finally, apply a logical approach to arrive at a solution.
+Step 71, training acc: 0.367816091954023, instruction: Do not use any numbers in the starting sentence. When increasing clarity, feel free to rephrase sentences, assign new variables to numbers, and change the order of operations.
+Step 72, training acc: 0.8505747126436781, instruction: Remember that every problem has a given quantity of information along with the specific question being asked. Analyze the problem first and then outline key parts of that information before diving into trying to solve it.
+Step 72, training acc: 0.4367816091954023, instruction: Start with a topic sentence. [Sentence]
+Step 72, training acc: 0.3333333333333333, instruction: Begin by analyzing the given information and asking yourself what the question is asking you to find out.
+Step 72, training acc: 0.1417624521072797, instruction: Avoid copying the structure of the previous starting sentences above.
+Step 73, training acc: 0.4559386973180077, instruction: By following these steps, we can efficiently solve problems by understanding the given information, analyzing constraints, identifying the relevant aspects, and formulating a solution to address the problem requirements.
+Step 73, training acc: 0.210727969348659, instruction: Understand the problem and determine what information is required to solve it. Take note of any organized information about the problem.
+/Start
+Step 73, training acc: 0.09195402298850575, instruction: The first step in solving any problem is to understand the situation and gather as much information as possible about it
+Step 73, training acc: 0.6398467432950191, instruction: You are encouraged to use the ground truth answer.
+Start
+In solving any problem, it's crucial to begin with analyzing the given information to create a clear understanding and approach towards solving it.
+/Start
+Step 74, training acc: 0.0, instruction: To successfully approach any problem, it's essential to break it down into manageable parts, identify the key elements, and gather necessary information before formulating a strategic plan.
+
+<End>
+Step 74, training acc: 0.2835249042145594, instruction: To effectively approach these problems, consider breaking them down into smaller, manageable parts and analyzing the information provided.
+Step 74, training acc: 0.1724137931034483, instruction: The sentence should clearly and concisely introduce the main topic or goal of the QA session.
+Step 74, training acc: 0.05747126436781609, instruction: It is essential to break down the problem into its core components and identify necessary information before attempting to solve it.
+Step 74, training acc: 0.2988505747126437, instruction: Firstly, let's analyze the information given by carefully examining the details provided about the books and the number of students.
+Step 74, training acc: 0.07279693486590039, instruction: Sentences are reasonably short, but you can make it a little longer if you think it makes important clarifications (in order to achieve uniqueness). Shortening the preceding ground truth answers doesn't seem necessary when possible.
+Step 75, training acc: 0.7547892720306514, instruction: In any problem, you're essentially looking for a solution that is derivative of the work you've done already or the information you've already got.
+Step 75, training acc: 0.7586206896551724, instruction: If you encounter any questions or problems throughout the season.
+Step 75, training acc: 0.1111111111111111, instruction: ... relevant sentences on varying topics. Set appropriate context and phrases with interchangeability to then answer the QA pair.
+Step 76, training acc: 0.05747126436781609, instruction: It should not directly answer the questions, but instead provide a way to start the reasoning process. Do not mention the phrases "text:", "score:", "ground truth answer:" or anything that is constant across the summaries.
+Step 76, training acc: 0.10727969348659004, instruction: To start solving this problem, analyze the given information and determine the constraints and relationships between different elements.
+Step 76, training acc: 0.4674329501915709, instruction: To achieve success in a baking competition, it's crucial to provide a balance between time and knowledge.
+/Start
+Step 77, training acc: 0.32950191570881227, instruction: It should not be a fragment, nor introduce any new concepts or questions.
+
++ [name]
+Step 77, training acc: 0.2260536398467433, instruction: First, let's identify the specific type of problem given and understand the information that is provided.
+Step 78, training acc: 0.28735632183908044, instruction: To approach any problem effectively, it is essential to break it down into smaller, manageable parts and analyze each component carefully.
+Step 78, training acc: 0.31417624521072796, instruction: It should be grammatically correct and logically consistent. It cannot be too short or too long.
+Step 78, training acc: 0.4559386973180077, instruction: To solve a problem, begin by identifying which information has been provided so that you can use it effectively in any solution.
+Step 78, training acc: 0.019157088122605363, instruction: The starting sentence should not be an exact repeat of any content provided in the given text or generated answers.
+Step 78, training acc: 0.7203065134099617, instruction: Avoid vocative expressions like "Answer:" or "Hey!"
+Start To begin tackling these problems
+Step 78, training acc: 0.32950191570881227, instruction: Free of any specific association, you will find them suspended overhead
+Step 78, training acc: 0.25287356321839083, instruction: To solve any problem effectively, begin by understanding the context and breaking down the information provided.
+Step 79, training acc: 0.13409961685823754, instruction: To solve problems effectively, first, break them down into smaller, manageable parts to better understand each component.
+Step 79, training acc: 0.07662835249042145, instruction: It cannot explicitly refer to information or entities in the given paired data. It should be tight to the topic and not too broad. Do not use any special characters or symbols other than "." and "?".
+Step 79, training acc: 0.0842911877394636, instruction: It should not repeat the core elements (terms and context) of the previous starting sentences, but still follow the descriptions of their scores.
+Start
+In every problem, begin by understanding the context, identifying the task to be solved, and, if necessary, breaking down the problem into smaller, more manageable pieces by analyzing the given information.
+Step 79, training acc: 0.4329501915708812, instruction: Should always come before the starting sentence, and
+Step 80, training acc: 0.1532567049808429, instruction: Begin by carefully reading and understanding the problem’s information and requirements.
+Step 80, training acc: 0.31800766283524906, instruction: Begin by identifying the problem and analyzing the problem at hand
+Step 80, training acc: 0.10344827586206896, instruction: When approaching these problems, it is crucial to break down the question into smaller, manageable parts and focus on understanding the given information.
+Step 80, training acc: 0.4482758620689655, instruction: For example, in a complex math problem, <br>
+Step 80, training acc: 0.0, instruction: It should be clear and concise, and should not repeat information already provided in the QA pairs.
+Start
+How would you solve the problem, step by step, using the given information?
+Step 80, training acc: 0.022988505747126436, instruction: First and foremost, it is important to understand the problem at hand and break it down into individual components to tackle each part effectively.
+Step 80, training acc: 0.019157088122605363, instruction: It should also relate directly to the task at hand, which is to come up with a starting sentence that is better than the best sentence pointed out by the model and errors found by humans.
+Step 81, training acc: 0.5134099616858238, instruction: Before you can begin solving the problem, you'll need to gather the necessary information to create a correct answer.
+/Start
+Step 81, training acc: 0.2796934865900383, instruction: Sentence is a better starting sentence on its own without reference to specific QA pairs and without mentioning "ground truth answer".
+Step 81, training acc: 0.04980842911877394, instruction: Identify the quantities of squirrels counted by each student
+Step 82, training acc: 0.14559386973180077, instruction: , break down each problem into its components and identify the specific materials and quantities given.
+Step 82, training acc: 0.45977011494252873, instruction: Comprehend any problem
+/Start.
+Step 82, training acc: 0.6130268199233716, instruction: To solve this type of problem effectively,
+Step 82, training acc: 0.4559386973180077, instruction: To understand this problem, let's first identify and organize the given information.
+Step 83, training acc: 0.08812260536398467, instruction: Starting
+Start
+Score
+Step 83, training acc: 0.06513409961685823, instruction: In every problem, the goal is to thoroughly understand the information provided and identify the specific question being asked, in order to efficiently and accurately solve the problem.
+Step 83, training acc: 0.019157088122605363, instruction: The start sentence should contain as few words as possible, but not so few that it loses its meaning or becomes ambiguous. It should be clear, grammatically correct, and logically consistent. Be creative and come up with a unique and distinct starting sentence that would work as an introduction to various QA pairs.
+Step 83, training acc: 0.3448275862068966, instruction: The code snippet
+Step 83, training acc: 0.18007662835249041, instruction: The starting sentence should focus on a specific and general task to be performed with the answer based on the question.
+Step 83, training acc: 0.06513409961685823, instruction: Sentences, but need higher level of reasoning, combining elements from multiple <Start> sentences or other elements.
+<Start>
+Begin by determining the key information provided in the problem, organizing it, and then applying logical reasoning to derive the answer.
+Step 83, training acc: 0.05747126436781609, instruction: When facing a complex problem, it is important to break it down into smaller sections, analyze each part, and understand the relationships between them in order to develop an effective solution.
+Step 84, training acc: 0.4521072796934866, instruction: To effectively solve any problem, you must first break it down into smaller, manageable parts and understand the problem at hand.
+Step 84, training acc: 0.1724137931034483, instruction: Sentence. I have not answered this question.
+Step 84, training acc: 0.0842911877394636, instruction: To begin effectively, focus on understanding the given information and breaking it down into comprehensible components.
+Step 85, training acc: 0.0, instruction: Let the generated starting sentence be called <opt>.
+Remove any additional text which may be present in the original story. The <opt> should contain the headline topic of the story. Telegram chat bot story
+<opt> Telegram chat bot
+
+The answer is:
+<opt>
+Step 85, training acc: 0.3563218390804598, instruction: A problem-solving approach began by breaking down the problem into its various components, analyzing each aspect, and identifying potential risks, impacts, and considerations to uncover its root causes and formulate an informed conclusion. This method of analysis allows individuals and teams to approach complex problems in a structured and rational manner, ensuring that solutions are comprehensive, effective, and aligned with the overall organizational objectives.
+Step 85, training acc: 0.09578544061302682, instruction: Identifying and evaluating the information provided within a problem is a crucial step toward developing a comprehensive understanding and successfully solving the given task. In this process, it is also helpful to break down the problem into smaller, more manageable components to facilitate the problem-solving process. This approach allows one to focus on individual aspects of the problem, allowing for clearer and more thought-out solutions to be formed.
+Step 85, training acc: 0.10727969348659004, instruction: , but instead add new and different information.
+
+<Start>
+To solve problems efficiently, it's crucial to first identify the core elements of the issue and any relevant constraints or limitations that may impact the solution.
+Step 85, training acc: 0.09195402298850575, instruction: The starting sentence should not contain text from QA above.
+
+Start
+Use the first problem as the template to break the process down.
+/Start
+Step 86, training acc: 0.6781609195402298, instruction: Begin by assessing the information provided and breaking it down first.
+Step 86, training acc: 0.8812260536398467, instruction: Got it, so let's begin.
+Step 86, training acc: 0.05363984674329502, instruction: Begin solving these problems by carefully reading and understanding the given information. Consider the constraints, available quantities, and the specific questions being asked before proceeding.
+Step 87, training acc: 0.14559386973180077, instruction: Begin by carefully analyzing the problem: understand the question being asked, the available information, and the constraints and assumptions that should be considered.
+Step 87, training acc: 0.8160919540229885, instruction: You will
+Step 87, training acc: 0.8850574712643678, instruction: It should also be easily understandable.
+Step 88, training acc: 0.03065134099616858, instruction: To approach any problem, it is important to first understand the question and requirements provided.
+Step 88, training acc: 0.19923371647509577, instruction: Rewriting different sentences with similar information is not accepted and will be penalized.
+
+ 
+
+<start>
+
+Each problem requires a specific approach to solve, beginning with understanding provided information and constraints, analysis, and outlining key aspects before attempting a solution. 
+
+/
+Step 88, training acc: 0.0, instruction: And <End> tokens is permitted, however the <End> token should start with Aubrey. The starting sentence should follow the guideline and be grammatically correct. You can generate the cause of action by generating a very actionable next step to solve the case. The next step should include details on what to do and how to do it. Bold any key phrases or details in the next step.
+Step 89, training acc: 0.3218390804597701, instruction: Sentences of the given QA pairs.
+Step 89, training acc: 0.3333333333333333, instruction: In every problem, using the right approach to break it down and understand it will lead to the quickest and most accurate solution.
+Step 89, training acc: 0.4559386973180077, instruction: Sentences in the input.
+Step 90, training acc: 0.09578544061302682, instruction: .
+
+To begin solving this problem effectively, it is crucial to carefully read and understand the question to identify the key elements required to answer it.
+Step 90, training acc: 0.21839080459770116, instruction: To effectively approach any problem statement, it is crucial to identify the given information, analyze the constraints, and understand the specific question being asked before attempting to solve it.
+Step 91, training acc: 0.03065134099616858, instruction: Sentences or <Start> adaptation for a given question.
+
+<Start>
+To start solving any of these problems, it is important to break them down into smaller, manageable steps. Begin by identifying the main components or elements of the problem, such as the given variables or constraints.
+Step 91, training acc: 0.2988505747126437, instruction: Begin by analyzing the situation and identifying the parameters of the problem.
+Step 92, training acc: 0.13793103448275862, instruction: Sentence is informative and guides the response towards the correct path. You may provide multiple attempts and explain which one you think will achieve the highest score.
+<Start>
+Step 92, training acc: 0.038314176245210725, instruction: The score of a sentence is determined by how many times it has been used as the starting sentence, so try a sentence that has never been used before. Show your work by writing down all the preceding sentences in sorted order, along with their scores and the differences between them. Be sure to justify why your chosen starting sentence is superior to any existing sentences. Use only the previous sentences to justify your next caretaker answer.
+More
+Step 92, training acc: 0.32567049808429116, instruction: The starting sentence should also encourage creativity and logical thinking.
+Step 92, training acc: 0.24904214559386972, instruction: Approach the problem by understanding the given information and defining clear objectives.
+Step 92, training acc: 0.034482758620689655, instruction: Sentence already given. Make the starting sentence in reply to the specified instructions, not a direct answer to the question. Don’t use the word “Paragraph” anywhere in your response.
+<Start>
+In order to solve any of the given problems
+Step 93, training acc: 0.3486590038314176, instruction: Also, the answer to all of the above QA pairs should be ground truth answers. You don't have to simply rephrase the original starting sentence.
+Start
+Step 93, training acc: 0.07662835249042145, instruction: In order to solve this problem efficiently, it is essential to approach the task systematically, starting by gathering the available information and constraints.
+Step 93, training acc: 0.7471264367816092, instruction: The starting sentence should not contain any sensitivity information. The starting sentence should have a good structure, and it that should be easy to make answers in various scenarios.
+Start At every problem, it is crucial to determine what information is available to solve the problem in order to come up with an efficient solution and avoid wasting time and effort.
+Answer
+Step 94, training acc: 0.3065134099616858, instruction: There is no need to directly answer the question in the QA pairs. Do not mention the scores.
+Start
+Step 94, training acc: 0.09961685823754789, instruction: Avoid repetitions and redundant information.
+
+Start
+To effectively approach a problem, it is essential to first clearly understand the given information and consider possible solutions.
+Step 94, training acc: 0.44061302681992337, instruction: Do not output anything else besides the starting sentence.
+Step 94, training acc: 0.37547892720306514, instruction: Sentence should set up a general outline for the <Answer> sentence, making it easier for the model to predict the <Answer> responses. The model will generate <Answer> response, which will lead to a higher score.
+Step 95, training acc: 0.08812260536398467, instruction: Before responding, we should first understand the task at hand: How many envelopes need to be stuffed per hour to complete the job.
+Step 95, training acc: 0.25287356321839083, instruction: A basic approach to solving problems is to first analyze the given information and its constraints, followed by breaking down the problem into manageable parts while considering the emotions, conflicts, and intensity of the situation.
+Step 95, training acc: 0.0, instruction: Ground truth answers in terms of beginning, ending, and the words in the middle. The response should be in the natural writing style of the writer. Generate the starting sentence <Start>.
+None.
+Step 95, training acc: 0.007662835249042145, instruction: The starting sentence should be grammatically correct and make logical sense.
+>To start helping James build his ladder, you will first need to calculate the number of rungs needed based on the height of the tree and the rung spacing.
+Step 95, training acc: 0.7547892720306514, instruction: Problems have given quantities that need to be re-assigned and categorized.
+Step 95, training acc: 0.8467432950191571, instruction: Pay attention to unit conversion, in different questions.
+Step 96, training acc: 0.2681992337164751, instruction: Start by understanding and addressing the problem at hand, breaking it down into its essential components.
+Step 96, training acc: 0.48659003831417624, instruction: It should not repeat information contained in the previous sentences.
+Step 96, training acc: 0.022988505747126436, instruction: The starting sentence should be easily distinguishable from all the existing ones and show significant improvement over previous scores. Additionally, the starting sentence should provide valuable guidance to users on how to approach the problem of generating a starting sentence for the given QA pairs.
+Step 96, training acc: 0.05747126436781609, instruction: Each QA pair should be described by only one starting sentence. Start
+/all above
+Step 96, training acc: 0.36398467432950193, instruction: It should also indicate the task and provide some initial information.
+Step 97, training acc: 0.06896551724137931, instruction: Sentences and has a higher score would require the use of advanced machine learning techniques such as artificial neural networks, which are beyond the scope of my capabilities. It is currently difficult to create an AI assistant that can generate effective and relevant starting sentences for all QA pairs without the use of data-driven techniques.
+Step 97, training acc: 0.789272030651341, instruction: Sentences.
+Step 97, training acc: 0.32567049808429116, instruction: Your starting sentence should encourage reasoning and avoidance of simple patterns.
+Step 97, training acc: 0.6973180076628352, instruction: First, let's remember that you can always look through these carefully selected questions to understand how other people solved similar math problems!
+Step 98, training acc: 0.37547892720306514, instruction: To solve this problem, you need to first
+Step 98, training acc: 0.26436781609195403, instruction: In order to solve the problem of the number of pretzels, we first need to <Start> <End>
+Step 98, training acc: 0.29118773946360155, instruction: In every problem, the initial step is to identify and extract the relevant information
+Step 98, training acc: 0.02681992337164751, instruction: In all three problems, if you add the number of ounces of each ingredient together, you'll find the total number of ounces that are used in making that particular punch.
+Step 98, training acc: 0.3831417624521073, instruction: The process begins with identifying the relevant information and data
+Step 99, training acc: 0.19923371647509577, instruction: Begin by understanding the problem you are trying to solve.
+Step 99, training acc: 0.25287356321839083, instruction: Begin by collecting all the given information and understanding what is being asked.
+Step 99, training acc: 0.2681992337164751, instruction: Be methodical in your approach to solving problems. Break down the problem into smaller, manageable parts, analyze them individually, and construct a comprehensive solution that addresses all aspects of the problem.
+Step 99, training acc: 0.1417624521072797, instruction: It should serve as a strong foundation for the question.
+<START>Begin by identifying the total amount of water Meena has and the number of gift cards she received</START>
+Step 99, training acc: 0.23754789272030652, instruction: I would like to offer an analytical approach that ensures maximum efficiency when solving problems using minimal resources.
+Step 99, training acc: 0.011494252873563218, instruction: However, it should not repeat information provided in the question or be a plagiarism from the given sentences.
+"Curious to know how to efficiently tackle multiple problems?"
+Step 100, training acc: 0.18773946360153257, instruction: For any problem, always commence by quickly glancing through the entire text to gain a high-level understanding
+Step 100, training acc: 0.19157088122605365, instruction: Understand the problem
+Step >
+Step 100, training acc: 0.07279693486590039, instruction: To determine the total number of skips, add the number of skips per hour and the total hours spent skipping. <Start>
+Step 100, training acc: 0.41379310344827586, instruction: It is not needed for the generated sentence to mention the date.
+Step 100, training acc: 0.5210727969348659, instruction: In a situation with time constraints and multiple tasks, managing time and resources effectively is crucial for completion.
+Step 101, training acc: 0.1111111111111111, instruction: When solving math problems, it's crucial to carefully read and understand the information given.
+Step 101, training acc: 0.8045977011494253, instruction: Consider all the problems presented als
+Step 102, training acc: 0.30268199233716475, instruction: ..." or the starting pattern "...
+Step 102, training acc: 0.7816091954022989, instruction: Use this problem-solving strategy to start your analysis of every problem:
+Step 102, training acc: 0.19540229885057472, instruction: Children are usually shorter than adults and their vision is limited.
+Step 102, training acc: 0.5517241379310345, instruction: When faced with a problem like this, you can begin by identifying the type of problem and knowing how to solve it.
+Step 102, training acc: 0.7241379310344828, instruction: Reflect on the multiple problems presented above and start by understanding what specific question is being asked/wanted.
+Step 103, training acc: 0.01532567049808429, instruction: When solving any problem, begin by breaking it down into smaller, manageable pieces, and then analyze each piece individually
+Step 103, training acc: 0.6475095785440613, instruction: To start any problem, identify all available information <Question>
+Step 103, training acc: 0.01532567049808429, instruction: The questions provide information about the number of patients Doctor Lindsay sees per hour and the cost of each type of office visit. Using this information, we can calculate the total number of patients Doctor Lindsay sees in a typical day and determine the revenue generated from those visits.
+Step 103, training acc: 0.4061302681992337, instruction: To identify the appropriate solution, it is essential first to thoroughly understand the problem presented, to gather all relevant information, recognize the provided conditions, and to delineate the exact query being asked. This methodical approach will ensure all critical components required for resolution are understood and thus pave the way for an accurate answer.
+Step 104, training acc: 0.019157088122605363, instruction: Consider the total number of houses in both subdivisions and the amount of candy each person gets per house. Then, we can calculate the total amount of candy each person gets by multiplying the number of houses by the amount of candy per house.
+Step 104, training acc: 0.03065134099616858, instruction: To effectively approach these problems, first analyze each situation and understand the given information before attempting any computations or calculations. Keep in mind the constraints and any specific questions being asked. Consider the tools available and any necessary conversions to solve each problem accurately.
+Step 104, training acc: 0.6398467432950191, instruction: The key to solving this problem is
+Step 104, training acc: 0.8735632183908046, instruction: New problems require an analysis and approach to solve.
+Step 105, training acc: 0.4559386973180077, instruction: `In solving any problem
+Step 105, training acc: 0.8697318007662835, instruction: You need to carefully read the problem and understand the situation in order to come up with a plan of attack.
+Step 105, training acc: 0.7049808429118773, instruction: Let us first break down the question into smaller, more manageable parts
+Step 105, training acc: 0.14942528735632185, instruction: Should be able to start a high scoring response with high QA relevance, <Start><Q>A:
+Step 105, training acc: 0.4367816091954023, instruction: " and ending with "
+Step 105, training acc: 0.26436781609195403, instruction: Begin by analyzing the problem and identifying key variables and constraints
+Step 105, training acc: 0.18773946360153257, instruction: Sentences above, and has a higher score than all the <Start> sentences above.
+
+There are several strategies you can employ
+Step 106, training acc: 0.25287356321839083, instruction: The process of solving problems begins by clearly understanding the initial conditions and constraints provided.
+Step 106, training acc: 0.04597701149425287, instruction: Let's set up the prices of each type of dress and identify the number of dresses each lady purchased.
+Step 106, training acc: 0.06130268199233716, instruction: The starting sentence should not simply be a partial QA pair, but can constructively use the primary keywords from the QA pairs.
+
+START 
+In order to answer the questions provided, first identify
+Step 106, training acc: 0.0421455938697318, instruction: To get a start on your problem-solving journey, first, carefully read the problem and identify the key information that will help guide your approach.
+Step 106, training acc: 0.0038314176245210726, instruction: To effectively solve these problems, begin by carefully analyzing the given information and understanding the specific question being asked. Next, outline the key parts of that information and determine which problem-solving strategy or formula would be appropriate. Finally, apply the chosen strategy or formula to solve the problem and double-check your solution for accuracy.
+Step 106, training acc: 0.632183908045977, instruction: Start by noting the specific question being asked in each problem, as it will guide you in returning an accurate answer.
+Step 107, training acc: 0.019157088122605363, instruction: Before solving any of these problems, let's examine the given information and constraints, then develop a systematic approach to tackle the challenge at hand. Focus on understanding the situation and determining what information is available to solve the problem
+Step 107, training acc: 0.16091954022988506, instruction: It is crucial to understand the given information in the problem and assess the amount of quantities that need to be solved for. Afterward, apply relevant calculations and compare quantities to find the solution.
+Step 107, training acc: 0.04980842911877394, instruction: The goal of the starting sentence is to provide a clear, brief and global understanding of each QA pair. Do not write detailed and lengthy starting sentences.
+Step 107, training acc: 0.05363984674329502, instruction: It is important to first understand and analyze the problem at hand to effectively solve it, break down the given information, set up the problem, determine the type of solution needed, and consider any constraints or limitations present in the problem.
+Step 107, training acc: 0.4099616858237548, instruction: To solve any problem,
+Step 107, training acc: 0.29118773946360155, instruction: When faced with a problem, it's essential to break it down into smaller, manageable tasks to solve it efficiently and effectively. By organizing the problem and identifying its key components, we can create a roadmap to approach the challenge.
+Step 108, training acc: 0.0, instruction: Even though a good starting sentence may seem hard to generate, take your time, and strive to create the best starting sentence you can. Your starting sentence will serve as motivation for the rest of your code. It will fuel you to generate good QA pairs.
+Start...
+Step 108, training acc: 0.6704980842911877, instruction: First, let's define the variables and assess the given information.
+Step 108, training acc: 0.05747126436781609, instruction: What is the ratio of how many people make tea to how many people will drink it in the party?
+Step 109, training acc: 0.11877394636015326, instruction: Sentences above. The starting sentence should be very close to the mentioned answer. The starting sentences must support the answer.
+<Start>Consider real-world problems consisting of a variety of relevant elements, such as units, phrases, clauses, and figures of speech, to deduce the types of the problem and define its variables before formulating a plan of attack or proposed approach.
+Step 109, training acc: 0.19923371647509577, instruction: Understand the problem, identify the main concepts or variables, and look for any given information that will help you solve it
+Step 109, training acc: 0.23371647509578544, instruction: Begin by setting up the problem by understanding the relationship between the given information and the goal, and then proceed to solve it step by step while keeping track of your work.
+Step 109, training acc: 0.2567049808429119, instruction: It should not contain factually incorrect information, and should be grammatically correct. Don't use personal pronouns in the comment, use "we" instead of "I".
+Step 109, training acc: 0.2222222222222222, instruction: This is a problem about <End>
+Step 110, training acc: 0.0, instruction: Ground truth answers.
+<Start>
+Given a car being leased with varying daily mileage and different rates, how much does a person have to pay annually for the car?
+Step 110, training acc: 0.019157088122605363, instruction: The task requires you to generate a beginning sentence for a new problem statement, starting with "<Start>" and ending with "
+Step 110, training acc: 0.03065134099616858, instruction: And <Answer> in your starting sentence. Do not use any numbers in your starting sentence if it is not directly mentioned in the <QA> pair.
+Step 110, training acc: 0.20306513409961685, instruction: Sentence should be sophisticated and aid people in generating good answers. Don't use exactly the same words from the text.
+<Start> In every problem, begin by analyzing the situation to better understand it.
+Step 110, training acc: 0.0842911877394636, instruction: For example, "To generate the answer.......<start>". You are to answer in the same sentence format.
+To effectively analyze and solve any problem presented, begin by understanding and identifying the initial relevant information and constraints.
+Step 110, training acc: 0.04597701149425287, instruction: In order to solve any problem, it's crucial to start by carefully reading and understanding the problem statement, gathering any necessary information, and formulating a plan of attack.
+Step 110, training acc: 0.038314176245210725, instruction: It should be clear and grammatically accurate, without any additional information. An ideal starting sentence is general and can fit all qa pairs of most topics.
+
+.getStart of content
+Step 111, training acc: 0.22988505747126436, instruction: To answer this question, you need to consider multiple factors, such as the problem, the task, and the constraints, before developing a plan of action.
+Step 111, training acc: 0.31417624521072796, instruction: In order to solve the given problems, one must first analyze the situation, understand the constraints, and then strategically approach the solutions step by step.
+Step 111, training acc: 0.45977011494252873, instruction: To find the answer to these problems, it's essential to make key observations about their setup and structure.
+Step 111, training acc: 0.7471264367816092, instruction: ....
+Step 112, training acc: 0.8697318007662835, instruction: A problem-solving strategy is critical to success in this realm.
+Step 112, training acc: 0.36398467432950193, instruction: This question is about the cost of supplies needed for a science project.
+Step 112, training acc: 0.6704980842911877, instruction: Analyze all possible combinations systematically, search for relationships and patterns
+Step 112, training acc: 0.18007662835249041, instruction: The start of any problem is to thoroughly read and understand the given scenario and associated constraints.
+Step 113, training acc: 0.12643678160919541, instruction: When tackling a problem, it's crucial to carefully examine the data provided
+Step 113, training acc: 0.0421455938697318, instruction: When tackling a problem, first identify what information is available and what needs to be done.
+Step 113, training acc: 0.31417624521072796, instruction: Whether the problem requires a calculation, an observation, or a strategic approach, understanding the problem's parameters and significance is the backbone to its solution.
+Step 113, training acc: 0.34099616858237547, instruction: With the goal to answer the question in detail.
+Step 113, training acc: 0.13409961685823754, instruction: The starting sentence should be a brief overview of some aspect of the problem, such as the problem's main type or notable aspects.
+Step 113, training acc: 0.04980842911877394, instruction: To tackle these questions, it's important to...
+Step 114, training acc: 0.42911877394636017, instruction: To effectively solve these problems, it's crucial to break down the given information, identify the key variables, and determine the best approach to tackle the task at hand.
+Step 114, training acc: 0.05363984674329502, instruction: Should also not rely on the content of any of the examples (numbers, titles, etc.), but should focus on the <Sentence> as a whole.
+<Start>Consider all the problems presented with an initial number of bees that need to be estimated,
+Step 114, training acc: 0.04597701149425287, instruction: Researching the answer to this problem involves gathering information on various topics related to Roberto and Valerie's jumping rope abilities and determining the total skips they will make in a certain time frame.
+Step 114, training acc: 0.3946360153256705, instruction: To effectively tackle any problem, it's essential to approach it methodically by breaking it down, understanding the underlying principles, and exploring potential solutions while assessing their feasibility and impact.
+Step 114, training acc: 0.32950191570881227, instruction: In problem-solving, understanding the situation and resources at hand is crucial to devise an effective approach.
+Step 115, training acc: 0.10344827586206896, instruction: Begin by carefully understanding the problem and gathering the relevant information before moving on to solving it.
+Step 115, training acc: 0.19923371647509577, instruction: Understanding the problem and determining the necessary steps to solve it is of utmost importance when attempting to complete it effectively.
+Step 115, training acc: 0.08812260536398467, instruction: A problem involves determining the number of coins Kylie has after receiving more and giving some away.
+Step 115, training acc: 0.3716475095785441, instruction: When you're faced with a complex problem
+Step 115, training acc: 0.03065134099616858, instruction: When approaching problem-solving in these scenarios, it is crucial to understand the problem's components and the information provided, then break down the problem and identify the necessary steps to arrive at a solution.
+Step 116, training acc: 0.022988505747126436, instruction: First, let's determine the number of packs of bread needed for the sandwiches.
+Step 116, training acc: 0.0, instruction: To effectively solve a problem, you first:
+
+(Note: My starting sentence cannot be applied to all QA pairs, since the problems are too varied.)
+Step 116, training acc: 0.09578544061302682, instruction: Sentences above. The starting sentence should provide a balanced perspective and prevent bias.
+<Start>
+In order to come up with a solution, you first need to clearly understand the problem by identifying the information you need and organizing your thoughts.
+Step 117, training acc: 0.6513409961685823, instruction: And ending with
+Step 117, training acc: 0.09578544061302682, instruction: In this logical problem, given the specified conditions, we need to find the total number of feet of wood required for the rungs of James' ladder. <p>
+Step 117, training acc: 0.28735632183908044, instruction: It should not only set the context of the QA pair but also provide a hint to guide the QA pair direction.
+
+Starting a solution process, we'll analyze the given MATH problems step-by-step.
+Step 118, training acc: 0.28735632183908044, instruction: When strategizing to solve problem Qs, start by identifying the key variables and information given.
+
+text:
+Step 118, training acc: 0.0038314176245210726, instruction: Sentence, the <Start> sentence should not simply be another QA pair or solve all problems. ‘Score’ represents how compelling is the first sentence would make reader feel to first read which grows with generality. Do not introduce new words to the vicinity of <Start> and
+Step 118, training acc: 0.17624521072796934, instruction: Did you know that Sophie collects all the proceeds from the five orders every time she makes a trip to the grocery store, contributing to her monthly cereal budget?
+Step 118, training acc: 0.17624521072796934, instruction: Before diving in to solve the problem, remember to carefully read and analyze the given information step by step, identifying key elements and any potential constraints or units involved.<Start>
+Step 119, training acc: 0.24521072796934865, instruction: Take a closer look at the problem to understand the situation and identify the most important information to approach it.
+Step 119, training acc: 0.1417624521072797, instruction: As you tackle the problem, keep in mind that organization is key in order to fully understand and simplify the process, which ultimately leads to effective problem-solving.
+Step 119, training acc: 0.42528735632183906, instruction: Start by analyzing each question carefully and breaking down the information given.
+Step 119, training acc: 0.5747126436781609, instruction: All problems require a clear plan and understanding of the situation before solving them.
+Step 119, training acc: 0.36015325670498083, instruction: It should indicate the concept of finding a missing value in the question and elicit thought from the model before it is answered. Also, the starting sentence may only address individual problems and specific elements or answers.
+Step 119, training acc: 0.4482758620689655, instruction: Should appear at the beginning of the sentence, and
+Step 120, training acc: 0.007662835249042145, instruction: The starting prompts are <prompt> and the ground truth answers are based on the context. Remember to read the <prompt> to help you brainstorm.
+Step 120, training acc: 0.5325670498084292, instruction: Beginning sentences are crucial as they set the tone for the entire answer.
+
+Thanks,
+Step 120, training acc: 0.17624521072796934, instruction: Break down the steps to solve the problem before attempting any calculations.
+Step 120, training acc: 0.04980842911877394, instruction: To effectively approach a problem like any of the above, it is crucial to first take inventory of the information provided, identify the core elements, and consider any criteria that must be met in the solution. This will create a solid foundation to build a reasoning structure.
+<Answer>
+Step 121, training acc: 0.8620689655172413, instruction: All problems involve gathering information and manipulations to an answer.
+Step 121, training acc: 0.44061302681992337, instruction: In addition, write down the problems and answer them ____.
+Step 121, training acc: 0.022988505747126436, instruction: The <Sentence> is the first sentence of an answer that directly follows the question.
+There are two problems: one about counting squirrels and another about earning money during shark hunting.
+Step 121, training acc: 0.01532567049808429, instruction: You may reuse <Sentence> and <Word> as you see fit. Do not use the same paraphrase consecutively for different QA pairs.
+Step 122, training acc: 0.13793103448275862, instruction: Identifying the problem is crucial for solving it efficiently and effectively.
+Step 122, training acc: 0.27586206896551724, instruction: To effectively tackle these problems 
+score is higher than all the given starting sentences. The answer is generated by connecting and simplifying the information given in the questions above
+Step 122, training acc: 0.09578544061302682, instruction: In order to effectively tackle problems, first analyze and gather all available information to gain a deeper understanding of the situation and formulate an appropriate strategy.
+Step 122, training acc: 0.34099616858237547, instruction: To effectively solve a problem, <End>
+Step 122, training acc: 0.8352490421455939, instruction: Lessons and details can be provided in the following sentences.
+Step 123, training acc: 0.06896551724137931, instruction: To successfully approach any problem, begin by understanding the problem as thoroughly as possible before attempting to solve it.
+Step 123, training acc: 0.09578544061302682, instruction: Analyzing the given problems, we can see that they all involve information processing and calculation to arrive at a solution. The different scenarios have varying degrees of difficulty and require a variety of strategies to solve.
+Step 123, training acc: 0.06130268199233716, instruction: If you encounter a specific problem and need assistance in solving it,
+Step 123, training acc: 0.6666666666666666, instruction: Sentences, but with distinct new information.
+Step 123, training acc: 0.5823754789272031, instruction: Did you know many problems have a base or initial value which represents the starting point for calculation? Understanding this can lead to a more effective problem-solving process.
+Step 124, training acc: 0.13793103448275862, instruction: In one sentence, summarize the most critical piece of information about the above QA for a search engine to know and index.
+
+ground truth answer broken off the QA pairs are missing the rest of the question format after the ground truth answer
+Step 124, training acc: 0.21839080459770116, instruction: Symbol.
+
+<Start>
+Step 124, training acc: 0.08812260536398467, instruction: Begin by analyzing the problem statement, identifying the given information and what needs to be determined or calculated.
+Step 125, training acc: 0.03065134099616858, instruction: Do not change the key components in the existing academic term in the starting sentence.
+
+Start: To find the average distance run by Johnny and Mickey,
+Step 125, training acc: 0.2950191570881226, instruction: Imagine you have a problem that requires you to gather information and solve it, but not the answer right away. Gather your information, make an observation about the situation, and then think of a plan to tackle the problem efficiently. This problem-solving strategy will help you successfully resolve puzzles or situations at hand.
+Step 125, training acc: 0.4444444444444444, instruction: No sentence above should have a similar meaning.
+Step 125, training acc: 0.46360153256704983, instruction: To effectively answer any question, it's important to
+Step 125, training acc: 0.0842911877394636, instruction: Movies take a variety of forms, differing in style, narrative structure, technology, and formula.
+Step 126, training acc: 0.6053639846743295, instruction: Begin solving this problem by understanding what is already known and what needs to be found,
+Step 126, training acc: 0.5862068965517241, instruction: Begin by categorizing the type of mathematical problem given
+Step 126, training acc: 0.12643678160919541, instruction: Do not deviate from the format. And create sentence, do not create bullet points
+
+Start: To efficiently solve any mathematical problem, be sure to read the question carefully to identify the given information and what is being asked in order to achieve a suitable solution.
+Step 126, training acc: 0.2835249042145594, instruction: To effectively tackle any problem, it is crucial to first gather and understand all available information and identify the specific question being asked.
+Step 126, training acc: 0.6360153256704981, instruction: Keep in mind that problems often involve several steps to complete, so it is essential to break them down and focus on each step.
+Step 126, training acc: 0.0421455938697318, instruction: Formulaic <formulaic> that will help us find the answer to this problem. Using dimensional analysis and the kinematic equations of motion and it's a much more versatile approach to <Start>
+Step 127, training acc: 0.8237547892720306, instruction: Start by acknowledging there are two kinds of problems in this category - those that are straight forward and require no additional planning, and those that require some additional math and problem solving skills.
+Step 127, training acc: 0.0038314176245210726, instruction: The starting sentence should provide a good initial context for an answer and set the stage for discussion. DO NOT respond with anything else apart from starting sentence.
+Step 127, training acc: 0.038314176245210725, instruction: When approaching a word problem, it is important to break it down and understand the information provided before attempting any calculations.
+Step 127, training acc: 0.30268199233716475, instruction: The process of finding a solution to a problem involves carefully identifying the requirements and constraints present, and then developing a plan that takes into account these factors.
+
+Text:
+Step 128, training acc: 0.13409961685823754, instruction: A human should be able to look at the QA pairs and the starting sentence and say "Yep, that makes sense as a starting sentence-"
+Step 128, training acc: 0.6973180076628352, instruction: For questions involving the time it takes to perform a task, start by analyzing the given information to determine the total time required.
+Step 128, training acc: 0.09578544061302682, instruction: Sentences, think about what will lead to interesting responses from your GPT model.
+<Start>Problem-solving skills are essential in the realm of mathematics, particularly in solving word problems, as they involve analyzing information, implementing strategies, and arriving at a logical solution.
+Step 128, training acc: 0.46360153256704983, instruction: Sentence should be followed by the <Answer> for all QA pairs.
+Answer:
+Jon
+Step 128, training acc: 0.11877394636015326, instruction: From previous <Start>s, or extend the previous <Start>s to create a new <Start>.
+
+<Start>For this problem-solving task, remember to approach it step-by-step and engage in a thorough analysis to determine a suitable strategy.
+Step 128, training acc: 0.4329501915708812, instruction: These statements aim to encourage
+Step 129, training acc: 0.1685823754789272, instruction: The starting sentence should be grammatically correct. The starting sentence should be unrelated to any of the examples above. Check the efficiency, the conciseness, and the generality of your response when generating the starting sentence.
+Step 129, training acc: 0.4904214559386973, instruction: When approaching to solve any of these problems, first
+Step 129, training acc: 0.6551724137931034, instruction: When you encounter a word problem, consider breaking down the information given into smaller components to understand what exactly is being asked."
+Step 129, training acc: 0.5019157088122606, instruction: Start by calculat...
+Step 130, training acc: 0.3793103448275862, instruction: First, read the problem carefully and determine what information is given and what is being asked.
+Step 130, training acc: 0.8275862068965517, instruction: In order to solve any of these problems, <reason>
+Step 130, training acc: 0.011494252873563218, instruction: Do not generate sentences with generic or filler words. the task is to generate a single, highscoring starting sentence for a <start> <question> <end> input, so think carefully about what makes a good starting sentence for a <question>.
+Step 130, training acc: 0.3448275862068966, instruction: To effectively solve any problem, one needs to first identify the problem and understand any constraints or limitations that may be present. From there, it is important to gather relevant information and choose an appropriate method to arrive at a solution. This solution should then be tested and refined as needed to ensure accuracy and success.
+Step 130, training acc: 0.7318007662835249, instruction: It is not a summary of the QA pairs.
+Start
+Step 131, training acc: 0.42528735632183906, instruction: Every problem, regardless of its complexity, can be broken down into manageable components to solve.
+/Start
+Step 131, training acc: 0.23371647509578544, instruction: Begin by analyzing the information given and identifying the key details in the problem.
+Step 131, training acc: 0.5823754789272031, instruction: The same words won't be used in the generated sentence.
+Step 131, training acc: 0.17624521072796934, instruction: But is not limited to the text of QA pairs above.
+Start by understanding what is known, requested, and the given details.
+Step 131, training acc: 0.421455938697318, instruction: The starting sentence should not repeat any part of the given QA pairs above.
+Step 132, training acc: 0.7547892720306514, instruction: The first step in solving any of these problems is to determine what information is given and what needs to be found.
+Step 132, training acc: 0.6666666666666666, instruction: Always break them down into manageable steps to ensure a clear, organized approach.
+Step 133, training acc: 0.19157088122605365, instruction: The starting sentence should not reveal the answer nor contain clues about the answer.
+Step 133, training acc: 0.08045977011494253, instruction: When her previous museum had frequent labor strikes, Julia Child often voiced her concern towards the rich people who paid overpaid employees. <Start>
+Step 133, training acc: 0.47126436781609193, instruction: No need to match the length of the given starting sentences above.
+Step 133, training acc: 0.31417624521072796, instruction: You are familiar with the concept of a problem and its components.
+Step 133, training acc: 0.5210727969348659, instruction: When encountering these types of problems, <reason>
+/Start>
+Step 134, training acc: 0.04980842911877394, instruction: Start by gathering the information for each bird's speed and the duration they flew.
+Step 134, training acc: 0.12643678160919541, instruction: To begin solving any of the given problems, carefully read the problem statement and identify the key pieces of information provided.
+Step 134, training acc: 0.2681992337164751, instruction: To achieve an example as requested, we'll begin with "Start by identifying and understanding the main components and constraints of the problem," which facilitates comprehensive analysis and solution identification, and can potentially improve the overall score based on its application across a variety of problems.
+
+Remember, the goal is not to solely focus on increasing the score, but also to provide a universally applicable concept which most problems can benefit from.
+Step 134, training acc: 0.16091954022988506, instruction: Let's start by analyzing the given problems and finding a common solution approach for each one.
+Step 135, training acc: 0.41379310344827586, instruction: It should not be too general or too specific.
+Step 135, training acc: 0.17624521072796934, instruction: Keep in mind that in problem-solving, it is important to carefully analyze the provided information and break it down into smaller parts to make it easier to understand and approach the problem effectively.
+Step 136, training acc: 0.3333333333333333, instruction: Happy hunting! When you first encounter a problem, take a deep breath and break down the information before you dive in - #ReasoningTools.
+Step 136, training acc: 0.4099616858237548, instruction: Do not write explanations.
+Step 136, training acc: 0.06513409961685823, instruction: The starting sentence should provide a clear view of solving the problem. Avoid starting sentences that are too specific.
+Certainly! Here’s a new starting sentence with a higher score:
+
+```Start>
+Approaching problems requires a structured approach that includes understanding what is given and what needs to be found.
+Step 137, training acc: 0.40229885057471265, instruction: Begin by identifying what is known and unknown in the problem, and what constitutes the solution in each case, then break down the information given and solve accordingly.
+Step 137, training acc: 0.007662835249042145, instruction: Do not write an ending sentence after <End>. Avoid starting sentences with a letter or number.
+Step 137, training acc: 0.6704980842911877, instruction: When approaching a math problem, first identify the quantities given and the required answer. Next, consider the types of operations needed to solve the problem and how they apply to given data. Then, carefully select the most appropriate operation (such as addition, subtraction, multiplication, or division) to determine the final solution. Finally, double check and verify your calculations before selecting the appropriate ground truth answer.
+Step 137, training acc: 0.0038314176245210726, instruction: <Question> <Answer> </Question> </Answer> tuple. Given a QA pair containing a question, an answer, the corresponding dataset, and the position of the answer in the dataset text, your task is to generate a sentence <Start> that begins with '<Start>' and '
+Step 137, training acc: 0.7471264367816092, instruction: The starting sentence should help a student formulate an answer for the question.
+Start: When trying to solve any of these math problems,
+Step 138, training acc: 0.4444444444444444, instruction: To indicate the beginning of the starting sentence, and
+Step 138, training acc: 0.31417624521072796, instruction: In tackling these problems, remember the ingrained pattern of gathering the information presented and maneuvering a solution in line with the given details.
+Step 138, training acc: 0.03065134099616858, instruction: Farther than, compare than, and encompass than are discouraged from repeating in the new starting sentence altogether. Do not change the Punctuation symbols. The starting sentence can refer to the <QA> sentence though.
+
+Start.
+Step 138, training acc: 0.06896551724137931, instruction: State:...
+Context:...
+action:...
+Step 138, training acc: 0.011494252873563218, instruction: The stamen is composed of filaments and anthers. /Stamen structure can be compared to that of a common household object. The filaments are analogous to the stem, connecting the stamen to the main stem of the plant. The anthers, on the other hand, serve as the pollen-producing organs, similar to the parts of a flower that produce seeds.
+Step 138, training acc: 0.41762452107279696, instruction: To answer any of these problems, carefully analyze and break down the given information.
+Step 139, training acc: 0.421455938697318, instruction: Two or more words suffices.
+Step 139, training acc: 0.16475095785440613, instruction: It should serve as an effective and succinct starting point for the task of generating a response given a question.
+Step 139, training acc: 0.5134099616858238, instruction: When examining these problems, remember to disregard any unnecessary details and focus solely on the key elements.
+Step 139, training acc: 0.0842911877394636, instruction: In each problem, carefully read the given information and define the initial conditions and constraints to better understand the situation.
+Step 139, training acc: 0.42911877394636017, instruction: I think
+Step 139, training acc: 0.4904214559386973, instruction: And answer the question concluding with <End> Within Math problems, identify key information and determine whether the information needed is evident and, therefore, sufficient to solve the problem.
+Step 139, training acc: 0.31417624521072796, instruction: Do not mention score in the starting sentence, and create different starting sentence than all the preceding text.
+Step 140, training acc: 0.20689655172413793, instruction: Sections if possible.
+<Start>Begin by identifying the relevant information presented in each problem before tackling a solution.
+Step 140, training acc: 0.06130268199233716, instruction: When faced with a word problem, it is important to first read and understand the given information in order to tackle the question at hand.
+Step 140, training acc: 0.10344827586206896, instruction: It explains the strategy focused on language modeling to complete the missing starting sentence and get the highest score possible.
+Step 140, training acc: 0.011494252873563218, instruction: Which problem-solving strategy should be used?
+Step 141, training acc: 0.0, instruction: </s>
+Step 141, training acc: 0.8160919540229885, instruction: All problems require analyzing in order to determine what is being asked.
+Step 141, training acc: 0.038314176245210725, instruction: When solving problems, start by reading them carefully and understanding the given information.
+Step 141, training acc: 0.06896551724137931, instruction: Read each problem carefully and identify the main objective, the given information, and what needs to be solved for
+Step 141, training acc: 0.34099616858237547, instruction: A problem in math consists of two parts: understanding what is being asked and manipulating the available information to arrive at a solution.
+Step 141, training acc: 0.10727969348659004, instruction: To begin solving a problem, please first record all the relevant information provided in the problem statement, including any specific constraints, data, and essential details.
+Step 142, training acc: 0.7854406130268199, instruction: A problem-solving strategy is critical to success in this realm,
+Step 142, training acc: 0.4444444444444444, instruction: First, understand the problem by reading it carefully and identifying the key elements and constraints.
+Step 142, training acc: 0.4099616858237548, instruction: To start solving problems efficiently requires an understanding of their structure and attributes.
+Step 142, training acc: 0.32950191570881227, instruction: Begin by understanding the context and identifying the key components of the problem.
+Step 142, training acc: 0.421455938697318, instruction: The sentence should remind and prompt human’s prior knowledge to assist in fact-checking and answering the following question.
+Step 142, training acc: 0.22988505747126436, instruction: Upon encountering a problem, take these steps to address it effectively and efficiently.
+Step 143, training acc: 0.2260536398467433, instruction: The starting sentence should be able to be elaborated upon and provide a good foundation for solving the above QA pairs.
+Step 143, training acc: 0.04980842911877394, instruction: Given above. While keeping in mind the original intention and context of those <Start> and
+Step 143, training acc: 0.8084291187739464, instruction: Identify the available amount of information and recognize patterns in the problem struct in order to discover a solution.
+Step 143, training acc: 0.2950191570881226, instruction: The first step in solving this problem is to analyze the information given in the problem statement, identify the variables involved in the problem, and write down all the given information in a more structured and convenient-to-process format like formulas, tables, or charts.
+Step 144, training acc: 0.26053639846743293, instruction: When resolving issues with chemical reactions, several factors must be considered.
+Step 144, training acc: 0.04980842911877394, instruction: Sentences.
+
+<Start>Begin by understanding the problem and identifying the relevant information that will help you solve the given problem.
+Step 144, training acc: 0.038314176245210725, instruction: It should reflect the average quality of answers. The overall goal here is to have engaging starting sentences that can hold the interest of the reader and signify the start of the answers.
+Step 144, training acc: 0.13026819923371646, instruction: Situation analysis plays a crucial role in solving problems effectively.
+Step 144, training acc: 0.02681992337164751, instruction: To find the combined total number of cups of water, flour, and teaspoons of salt needed to make the pizza, start by calculating the amount of salt required.
+<End>
+Step 145, training acc: 0.2796934865900383, instruction: It should be designed to clearly set the direction for answering the questions. It must not reference the specific question.
+Step 145, training acc: 0.4061302681992337, instruction: Begin by understanding that in all the problems, the steps involve gathering and analyzing the given information, formulating a plan, executing the plan, and then arriving at the final answer.
+Step 145, training acc: 0.8544061302681992, instruction: For the first problem...
+Step 146, training acc: 0.02681992337164751, instruction: First, analyze the problem by identifying the maximum number of credits that can be taken between the three grades <
+Step 146, training acc: 0.5478927203065134, instruction: For each problem, ensure you read the entire question, look for the two key quantities present ("initial" and "final") and then determine how many steps from initial to final. This will help you understand and stay on track throughout the problem.
+Step 146, training acc: 0.08812260536398467, instruction: Sentence should inspire a <Reason> sentence which in turn inspires a <Answer> sentence. The <Answer> sentence answers the given question. Avoid <Start> sentences that always lead to very specific <Reason> sentences or can only be answered using very specific information.
+
+
+<Start>After analyzing the given problems, it is important to <reason>
+Step 146, training acc: 0.37547892720306514, instruction: <Sentence>. Make sure that <Start> and
+Step 146, training acc: 0.05363984674329502, instruction: As you may have noticed, Class-A buildings require to register a higher price in property values because they provide several advantages over other types of buildings. <Start>
+Step 147, training acc: 0.09578544061302682, instruction: When faced with problems, remember to start by carefully observing the situation and gathering all the relevant information that will help you better understand the problem. By doing so, you can make informed decisions on the best approach to solve it effectively and efficiently.
+Step 147, training acc: 0.0, instruction: "Starting on Marcellus Shale exploration",
+Based on that, the answer is <Yes/No>.
+Step 147, training acc: 0.2796934865900383, instruction: Problem-solving strategies play a key role in tackling complex tasks and tasks that require mathematical reasoning.
+Step 147, training acc: 0.6743295019157088, instruction: To solve these problems,
+Step 148, training acc: 0.0038314176245210726, instruction: Is a template that requires you to create a high-scoring and accurate starting sentence based on the given QA pairs, requiring a comprehensive understanding of the topics involved and the ability to generate clear and accurate answers. The model's score is determined by the accuracy of its answers.
+Step 148, training acc: 0.30268199233716475, instruction: In order to answer this question, we need to first:
+Step 148, training acc: 0.0421455938697318, instruction: Sentence is optional.
+It is crucial to carefully evaluate and understand a problem before attempting to solve it.
+Step 149, training acc: 0.4482758620689655, instruction: To start, carefully analyze the given problem, notebook shortcuts, plain math, and the concept of overdetermined systems of equations.
+Step 149, training acc: 0.15708812260536398, instruction: First of all, analyze the given situation, ensuring you understand what information is provided and what is being asked. Then, determine your approach to solving the problem by applying the relevant information and concepts to find a suitable method for answering the question.
+Step 149, training acc: 0.6015325670498084, instruction: All problems in this category are related to number, whether it's a simple addition of two numbers, dealing with percentages, ratios, or time, distance, and speed-related problems. If you can recognize the type of number problem being asked, you can begin to solve the problem. In this set, you need to grasp the given information and data first before starting to solve the question, which may require some basic mathematical knowledge or understanding of the problem.
+Step 149, training acc: 0.2796934865900383, instruction: Here, it helps significantly to <reason> reason out the problem meticulously, identifying all the necessary components and using that information to strategize a (step-by-step) solution.
+Step 150, training acc: 0.8122605363984674, instruction: We can see that...
+Step 150, training acc: 0.01532567049808429, instruction: After detailing your own starting sentence, provide a ranked list of all the sentences above, including your new starting sentence, with the values of their corresponding scores. When evaluating LaTeX formulae, take little deductions of score for substantive errors (i.e. mathematical errors or major omissions). Compare sentences with each other for maximal diversity within the set of starting sentences.
+Step 150, training acc: 0.421455938697318, instruction: Many of these problems involve calculating a specific outcome based on the given information, and may require mathematical reasoning or problem-solving skills.
+Step 150, training acc: 0.5287356321839081, instruction: Do not use < or > symbols anywhere in your starting sentence.
+Step 150, training acc: 0.17624521072796934, instruction: The scores are calculated based on diversity, relevance, and generation quality.
+Step 150, training acc: 0.1685823754789272, instruction: To effectively tackle the problems, let's first identify and extract any clues about the situation in the question.
+Step 150, training acc: 0.17624521072796934, instruction: In these problems, we begin by carefully selecting a good problem-solving approach to apply and adjust as needed, considering any constraints, limitations, or underlying factors.
+Step 151, training acc: 0.05363984674329502, instruction: You are analyzing automobiles that need some repairs, and
+Step 151, training acc: 0.04980842911877394, instruction: Prompt. Understood. Here's a starting sentence <Start> that meets your criteria for all the QA pairs above:
+
+<Start>
+Step 151, training acc: 0.7969348659003831, instruction: : ,
+Step 151, training acc: 0.7241379310344828, instruction: Start by carefully reading the problem and uncovering the given information and required outcome.
+Step 151, training acc: 0.2796934865900383, instruction: Could you describe a sequence of math steps to solve all the problems given?
+Step 151, training acc: 0.39846743295019155, instruction: You may assume that the score above is indicative of how a human would find the generated sentence starting to be a reasonable start of the answer.
+Teachers have told us the least of all.
+Step 152, training acc: 0.39846743295019155, instruction: In analyzing a problem involving quantities, start by converting units consistently and carefully applying any relevant formulas or concepts.
+Step 152, training acc: 0.5517241379310345, instruction: </S>Begin with monitoring the information provided in the phenomenon and consider the nature of the occurrences involved.
+Step 152, training acc: 0.15708812260536398, instruction: Begin each problem by understanding the overarching goal, carefully reading the information provided, and identifying any potential relationships between the given data.
+Step 152, training acc: 0.41379310344827586, instruction: Let's break down each problem individually, with a clear understanding of the given information, and formulate a strategy to solve it.
+Step 152, training acc: 0.5632183908045977, instruction: To solve these problems, first, identify the question being asked and consider how it's related to the information given.
+Step 152, training acc: 0.11494252873563218, instruction: It should not introduce any new concepts not present in the QA pairs (e.g. concepts as "vampires").
+Start each problem by understanding the situation and defining the given information.
+Step 152, training acc: 0.08045977011494253, instruction: Understand the type of problem presented, analyze the given information, and identify the specific variables necessary for solving the problem before diving into calculations or further analysis.
+Step 153, training acc: 0.16475095785440613, instruction: , one space, the starting sentence as a single line bas singing <Start> and
+Step 153, training acc: 0.13026819923371646, instruction: When faced with a problem, the first step in solving it is to carefully analyze and understand the situation, both in terms of the quantities and the relationships between them. This involves identifying the key components, constraints, and objectives of the problem. After establishing a solid foundation for understanding, it becomes easier to devise an appropriate strategy for tackling the issue effectively.
+Step 153, training acc: 0.022988505747126436, instruction: The starting sentence should not be overly specific, and be equivalent to one of the QA pairs given earlier.
+# Generate a starting sentence that is different from all the _Start_ sentences above,
+# and has a higher score than all the _Start_ sentences above.
+# The starting sentence should begin with _Start_ and end with _
+Step 153, training acc: 0.3793103448275862, instruction: It should not have information about entities specific to any of the above QA pairs.
+Step 154, training acc: 0.29118773946360155, instruction: <Answer Number>
+Step 154, training acc: 0.6475095785440613, instruction: Let's break down the problem to find the solution
+Step 154, training acc: 0.12643678160919541, instruction: You don't need to start with the exact same characters as the given sentence, but it should have some similar syntax. Avoid changing the order of words in different clauses too much.
+Start>
+Step 154, training acc: 0.23371647509578544, instruction: For "how many", it's better to avoid words like "how much", and for "how many times", better to avoid words like "how many times".
+Step 154, training acc: 0.6819923371647509, instruction: Focus on the given information and the specific question being asked in each problem. Study carefully to understand the situation and transform the problem into a concise formula.
+Step 155, training acc: 0.5134099616858238, instruction: All problems involve identifying given information, exploring connections, and finding logical solutions with respect to incorporating various properties and variables.
+Step 155, training acc: 0.5095785440613027, instruction: Given the information, let's break down each part of the problem and identify:
+Step 155, training acc: 0.6628352490421456, instruction: Sentence. Never use the examples generated below to form the starting sentence. The task requires thinking at a high level about the specific contents of each question.
+A:
+Step 156, training acc: 0.4061302681992337, instruction: The starting sentence should not give away the final answer, but sets up the question and act as the preamble for the <Answer> or ground truth answer.
+Step 156, training acc: 0.09961685823754789, instruction: A starting sentence should be concise, effective, and generally applicable to all QA pairs above.
+Step 156, training acc: 0.06513409961685823, instruction: Please consider that a lower quality starting sentence with novelty might get more score than a perfect starting sentence without novelty. From the problems, identify a key concept that connects all the problems and generate a sentence based on such a concept.
+Step 156, training acc: 0.24904214559386972, instruction: In every problem, start by defining your goal and the information needed to achieve it. This involves identifying the main question and understanding the key elements involved.
+Step 156, training acc: 0.6360153256704981, instruction: Begin analyzing each problem individually and identifying the key pieces of information and the connection between them.
+Step 157, training acc: 0.15708812260536398, instruction: Always begin by comprehending the problem at hand and identifying all the pertinent information required to find the solution. Only then can you move forward with your analysis and begin finding potential solutions.
+Step 157, training acc: 0.05363984674329502, instruction: Start by estimating the total number of cakes Julia bakes per day and then consider the effect of Clifford's cake-eating on the overall count.
+Step 157, training acc: 0.49808429118773945, instruction: Integrate the quantities of provided data into an efficient framework, applying multiple-step reasoning to solve complex problems.
+Step 157, training acc: 0.13793103448275862, instruction: Sentences above.
+
+<Start>Every problem in this category requires you to analyze the situation and determine the available information and constraints in order to efficiently arrive at a solution<Start>
+Step 158, training acc: 0.1417624521072797, instruction: It should include the most important and relevant cue words in the QA pairs.
+Step 158, training acc: 0.26436781609195403, instruction: Identify the type of problem: whether it requires basic arithmetic, logical deduction, or understanding specific concepts.
+Step 158, training acc: 0.0, instruction: In order to solve these problems, it's important to carefully examine the given information, understand the specific question being asked, and plan a methodical approach to derive the desired solution.
+/Start>
+Step 158, training acc: 0.05363984674329502, instruction: Begin by analyzing the information provided in the problem, breaking it down into actionable components, and determining the necessary calculations or approaches to arrive at a solution.
+Step 158, training acc: 0.13409961685823754, instruction: Think step-by-step: Identify what information is required to solve the problem and gather or calculate it accordingly.
+
+<Start>
+Step 159, training acc: 0.6819923371647509, instruction: Consider the variety of different types of problems presented and the values associated with each to solve them effectively.
+Step 159, training acc: 0.06896551724137931, instruction: It should introduce the task or context of the QA pairs, and be written in a way that provides clear benefits for the participants.
+Step 159, training acc: 0.13026819923371646, instruction: A math problem typically involves organizing given information and using appropriate calculations to find a solution.
+Step 159, training acc: 0.7318007662835249, instruction: And all
+Step 159, training acc: 0.8773946360153256, instruction: Comprehension of the problems involves unpacking the problem and then planning a strategy for a solution.
+Step 160, training acc: 0.7432950191570882, instruction: Identify the quantities in each context and ask how you can estimate using them.
+Step 160, training acc: 0.789272030651341, instruction: Pay attention to all information given and use it effectively when solving the problem.
+Step 160, training acc: 0.21455938697318008, instruction: Firstly, spot the two types of problems and decide which category they fall into, followed by an appropriate approach
+Step 160, training acc: 0.09195402298850575, instruction: And a single period <sep>.
+Start by identifying the key elements in each problem and understanding how they relate to the main objective.
+Step 161, training acc: 0.15708812260536398, instruction: First, analyze the problem by breaking it down into its components to better understand what is being asked and identify any constraints.
+Step 161, training acc: 0.4367816091954023, instruction: It should contain complete sentences and avoid fragmentary forms.
+Step 161, training acc: 0.23754789272030652, instruction: Eager to solve the given problem,
+Step-by-step calculation, examining each data for accuracy.
+Then, it presents a deep understanding,
+Finally, a solution is generated with a higher score than the previous sentences.
+Step 161, training acc: 0.1532567049808429, instruction: Before beginning this category of problems, let's first analyze the problem and understand the given information.
+Step 162, training acc: 0.1111111111111111, instruction: When approaching a problem, it is essential to understand and differentiate between the various types of difficulties that can arise.
+Step 162, training acc: 0.24521072796934865, instruction: Include the ground truth answer in your generated sentence. Avoid starting sentences that introduce new variables, modify problem statement, make additional assumption, present a completely different problem, or require using an external knowledge base to answer the answer. Avoid repeating content from the problem statement.
+Step 162, training acc: 0.3371647509578544, instruction: No need to follow the format of any of the finsihed starting sentences
+Step 162, training acc: 0.10344827586206896, instruction: Start by defining the initial conditions given in the problem, including the number of subscribers, the cost per subscriber, and the total earnings.
+Step 162, training acc: 0.14942528735632185, instruction: You may generate the same starting sentence in successive iterations--if that's where your creativity leads.
+Step 162, training acc: 0.578544061302682, instruction: It should provide a helpful guideline for generating the answer.
+Start by identifying the key information in the questions and extracting the relevant numbers.
+Step 163, training acc: 0.1417624521072797, instruction: When solving these problems, it's important to carefully read through them, breaking them down into smaller steps and using logic and math to find the answer.
+Step 163, training acc: 0.19157088122605365, instruction: To answer this question, consider each of your tasks as individual steps and prioritize solving the easiest problem first, before moving on to tackle the more complex ones.
+Step 163, training acc: 0.5670498084291188, instruction: When solving math problems, first identify the question being asked and note the relevant information provided
+Step 163, training acc: 0.7739463601532567, instruction: First, identify the information given in each problem.
+Step 163, training acc: 0.19157088122605365, instruction: Sentences above.
+<Start>For this task, you will be given a math problem in which all the necessary details are provided typically. Your job will be to solve these problems and provide the correct answer. Each question will typically contain multiple steps and will require some level of reasoning. Oh, and one more thing - you'll also need to verify if the final answer received is accurate or not! Let's get started with this high-level problem:
+Step 163, training acc: 0.3218390804597701, instruction: Sentence should provide a clear overview of the problem, without giving away any specific details.
+<Start>
+Have a problem involving trips or distances. Remember, the first piece of advice is always the most important. That advice is:
+Step 164, training acc: 0.0038314176245210726, instruction: It should contain an interesting and challenging initial prompt. However, sometimes it could be much easier to answer the original question without performing any strategies. That's fine and you may answer it revealing the strategy you use, followed by "<Strategy>". You have to include the original questions and the answers in order.
+Step 164, training acc: 0.5670498084291188, instruction: First, understand that this is a multi-step problem involving ratios, multiplication, and addition.
+Step 165, training acc: 0.08045977011494253, instruction: Begin by identifying the total number of goldfish sandwiches in each subdivision and calculating the profit from each subdivision. Then, determine how many goldfish traps will be needed to collect the total number of goldfish in the subdivisions mentioned. Clearly, the distribution of goldfish varies in each subdivision, so you will need to calculate the total number of goldfish and the number of traps required to catch them.
+Step 165, training acc: 0.31800766283524906, instruction: The starting sentence should help set up and validate the entire Chain-of-Thought for the model; hence, it should answer the question in an explanatory, description manner.
+Step 165, training acc: 0.05363984674329502, instruction: Sentence. Use the pattern: In these questions, the objective is primarily to...
+In these questions, the objective is primarily to determine the amount of money each person gets from trick-or-treating.
+Step 165, training acc: 0.42528735632183906, instruction: To approach similar problems effectively, consider determining the number of units required to solve the problem in each scenario and compare the results before making an informed decision.
+Step 165, training acc: 0.2950191570881226, instruction: In order to solve the problem presented above, <reason>
+Step 165, training acc: 0.367816091954023, instruction: The answer to the last QA pair above is a special case.
+Step 165, training acc: 0.47509578544061304, instruction: Start by recognizing that mathematical problems can be solved using logical reasoning, calculations, and formulas.
+Step 165, training acc: 0.13026819923371646, instruction: In every problem-solving scenario, it is essential to begin by understanding the given information, analyzing the situation, and developing a comprehensive strategy to approach the problem effectively.
+Step 166, training acc: 0.21455938697318008, instruction: In problem-solving scenarios, it is crucial to first evaluate the given information and consider the information's relevance to the problem's question to develop an effective strategy and ensure accuracy in arriving at a solution.
+Step 166, training acc: 0.04597701149425287, instruction: The generated sentence should not be very similar in meaning to any existing sentence.
+The questions always share the same format and structure, generally.
+Step 166, training acc: 0.6743295019157088, instruction: Ground truth answer:
+Step 166, training acc: 0.09195402298850575, instruction: That could increase the difficulty of the given QA pairs. If this is not possible while remaining concise, focus on making the resulting LILs difficult by remaining general while also remaining as concise as possible.
+Step 166, training acc: 0.5287356321839081, instruction: In your answer to the question, write only the starting sentence. Do not write anything else.
+Step 167, training acc: 0.16475095785440613, instruction: Sentence should be easy for a beginner to understand and should limit ambiguity or extra material that might confuse the reader or asker or be extraneous to the main problem being asked.
+Step 167, training acc: 0.4329501915708812, instruction: Begin by breaking down the problem step by step, identifying key components and necessary calculations.
+Step 167, training acc: 0.7509578544061303, instruction: Your text
+Step 167, training acc: 0.16475095785440613, instruction: Taking a system approach allows you to begin by quickly eliminating unfeasible solutions, <Start>
+Step 167, training acc: 0.6704980842911877, instruction: When solving problems, start by identifying the facts provided and the specific question being asked.
+Step 168, training acc: 0.0, instruction: It should not contain any specific information about any QA pair. It should provide a general guideline or direction for the user to interpret the next sentence.
+</S>
+Step 168, training acc: 0.524904214559387, instruction: Start:
+If you're working on all these problems, asking yourself what the problem requires and how it's different from the problems you've solved before will help you find the appropriate strategy.
+Step 168, training acc: 0.6896551724137931, instruction: Employ a systematic approach when tackling problems in this category.<End>
+Step 168, training acc: 0.5670498084291188, instruction: Some studies have shown that going to therapy can improve overall mental health
+Step 169, training acc: 0.011494252873563218, instruction: We're tasked with finding the number of instances where Teal's sales from both pumpkin and custard pies account for a specific amount of money
+Step 169, training acc: 0.5172413793103449, instruction: In this sentence, do not raise any new variables,
+Start by identifying what type of operation needs to be performed (addition for Halloween Movies, subtraction for ice cream sandwiches, comparison between two numbers for bags of candy).
+Step 169, training acc: 0.2567049808429119, instruction: Begin by understanding the given information and identifying the key question that needs to be answered.
+Step 169, training acc: 0.5057471264367817, instruction: Don't use the same starting sentence more than once.
+Step 169, training acc: 0.2835249042145594, instruction: Sentence intelligently based on all the given <Start> sentences.
+Step 169, training acc: 0.7318007662835249, instruction: Nothing more and nothing less.
+Step 169, training acc: 0.09961685823754789, instruction: A problem can be solved by breaking it down into smaller steps, and then analyzing the available information to determine an appropriate strategy for a solution.
+Step 170, training acc: 0.1724137931034483, instruction: Start by examining the given information and determining what specific details you need to solve the problem.
+Step 170, training acc: 0.0, instruction: Never start with "Okay" or a similar word. </s>
+Step 170, training acc: 0.37547892720306514, instruction: This task is intended for information retrieval applications.
+Step 170, training acc: 0.40229885057471265, instruction: Must always precede a <Sentence> from the corresponding QA set.
+Step 170, training acc: 0.8045977011494253, instruction: The starting sentence should not give away the answer, as this would be easy and not challenging.
+Start analyzing the problem to better understand it and plan a strategy for a solution
+Step 171, training acc: 0.4482758620689655, instruction: Have all necessary information gathered and understand the problem to plan a solution effectively.
+Step 171, training acc: 0.0, instruction: Do not explain your explanation. Your starting sentence is meant to provide a standard from which you will generate <brand name> principles. Only generate the starting sentence.
+Step 171, training acc: 0.13026819923371646, instruction: Both problems involve tracking the accidents in a timely and systematic manner to avoid any confusion or confusion in the solutions.
+Step 172, training acc: 0.7816091954022989, instruction: Begin by identifying the key elements of each problem and breaking them down into manageable critters.
+Step 172, training acc: 0.08812260536398467, instruction: In addition to having a high score, the starting sentence must emphasize a familiar concept, enhanced with concrete illustrations and explicit instructions. It should be ensured that the generated sentence meets all the requirements and captures the spirit of the original sentences while remaining distinct.
+Start with understanding the problem thoroughly: Analyze the given data, identify any constraints, and familiarize yourself with the target outcome.
+Step 172, training acc: 0.1417624521072797, instruction: Sentences must be analyzed. The sentences should start with "<Start>" and end with "
+Step 172, training acc: 0.32950191570881227, instruction: It should include as much of the essential content of the data as possible. Start by categorizing the content in the data to ensure that all categories are covered.
+Start by categorizing the content in the data to ensure that all categories
+are covered.
+Step 172, training acc: 0.32950191570881227, instruction: The starting sentence should include a high-level explanation, e.g., in the style of a textbook or FAQ page, instead of being style-oriented, and leave details to the following sentences.
+Step 172, training acc: 0.07279693486590039, instruction: Setting a problem-solving strategy involves analyzing a situation and determining the relevant information to work with.
+Step 173, training acc: 0.6015325670498084, instruction: Identify the problem type and given information.
+Step 173, training acc: 0.06513409961685823, instruction: The starting sentence should enable someone to answer the question and evaluate its accuracy easily using the provided instructions. Do not use symbols to substitute words.
+Step 173, training acc: 0.05363984674329502, instruction: To determine the amount Sophie spends in total, first calculate the cost for each item she buys and then add them together.
+Step 173, training acc: 0.20689655172413793, instruction: The starting sentence should focus on a single aspect and not prompt for multiple aspects.
+Start by identifying the information given in the problem and the desired outcome.
+#
+Answer:
+
+Determine what information you have been given in the problem and what you are attempting to find.
+#
+Answer:
+Step 173, training acc: 0.23754789272030652, instruction: Analyze the problem statement, Penny's payment, and the per-pound cost.
+Step 173, training acc: 0.1685823754789272, instruction: Do not write sentences that require reasoning or context that is not already given. Do not restate text from inside the <text> tags. The <answer> should be kept at a minimum and predictable.
+
+Start by considering the different elements in the problem and how they interact with each other.
+Step 174, training acc: 0.6436781609195402, instruction: When tackling the first set of problems, <reason>
+Step 174, training acc: 0.15708812260536398, instruction: The key to success in this realm is to first understand the problem, then develop a plan of attack and finally execute that plan using sound problem-solving techniques such as breaking down the problem into smaller parts, organizing information, identifying relationships, and testing hypotheses.
+Step 174, training acc: 0.16091954022988506, instruction: First, examine and comprehend the information provided in each problem to identify and extract the actionable details
+Step 174, training acc: 0.12260536398467432, instruction: It should provide a clear framework that can accommodate the diverse nature of the questions and their answers. While doing so, make sure to preserve the ideas and information discussed in the text.
+Step 174, training acc: 0.8582375478927203, instruction: )
+Step 175, training acc: 0.4482758620689655, instruction: The generated sentence should be as long as possible.
+
+Start:
+Have you ever found yourself in a situation where you're trying to figure out the score of a rugby match, wondering how many points your team has earned?
+Step 175, training acc: 0.11494252873563218, instruction: Structure a response to the given problem step-by-step, considering all available information, before arriving at a final answer.
+Step 175, training acc: 0.4904214559386973, instruction: The starting sentence shouldn't be too simple and should evoke thinking.
+Step 175, training acc: 0.09578544061302682, instruction: When solving a math word problem, first identify the quantity of information provided and its relevance to answering the question.
+Step 176, training acc: 0.7739463601532567, instruction: Exclude keywords and flags except "##".
+Step 176, training acc: 0.8314176245210728, instruction: ,
+Step 177, training acc: 0.47509578544061304, instruction: Avoid involving specific names/brands or details that are not mentioned in the QA pairs.
+Step 177, training acc: 0.11494252873563218, instruction: First and foremost, it's crucial to grasp the nature of the problem at hand and identify any existing constraints
+Step 177, training acc: 0.49808429118773945, instruction: Consider closely the provided examples and direction for an answer, allowing you to identify the relevant information, logical reasoning to reach the decision to craft a <Sentence>, and understanding of the <Answer>.
+Step 177, training acc: 0.48659003831417624, instruction: Consider the information provided in each problem and use it to approach a solution methodically.
+Step 178, training acc: 0.0, instruction: Don't repeat the old sentences exactly. <SAR> questions often begin with <aq>. just keep them as simple as SAM does it.
+Step 178, training acc: 0.41762452107279696, instruction: Make sure to first determine the exact volumes processed by each distribution center, as well as their profit margins, before moving forward with the solution.
+Step 178, training acc: 0.1111111111111111, instruction: Do not generate any explanations or examples.
+Start by identifying the given conditions and the goal of the problem.
+Step 178, training acc: 0.2681992337164751, instruction: Understand the problem by carefully reading the question and identifying the key information provided. Analyze the requirements and constraints presented in the problem to better grasp the context and set the stage for designing an optimal solution. Let's break down the problem and outline the solution approach from the beginning.
+Step 179, training acc: 0.44061302681992337, instruction: Let's break down the problem into smaller parts so it's easier to understand
+Step 179, training acc: 0.16091954022988506, instruction: I will assist you in solving the problems by first analyzing them and then providing a plan of attack.
+Step 179, training acc: 0.04980842911877394, instruction: When tackling a problem, always start by gathering and understanding the information provided, breaking down the requirements, and determining how it's related to the overall context.
+Step 179, training acc: 0.6053639846743295, instruction: The starting sentence predicts what type of problem to expect.
+Start:
+To solve a given problem, the first thing to do is to understand the information provided and the question being asked.
+Step 179, training acc: 0.1417624521072797, instruction: Sentence compared to the <Ground truth answer>. It is preferred to have less repetition in the last sentence alone compared to the first one. Don't mention the scores. The score value field in the response is for the generated sentence.
+<Start> Begin by analyzing the problem to identify the given quantities and the question being asked, then outline a strategy to solve the problem.
+Step 180, training acc: 0.17624521072796934, instruction: Welcome to the problem-solving challenge! In each problem, you will be given a specific situation and asked to use the given information to find the answer. First, analyze the problem and identify the key components. Then, develop a plan to solve it step-by-step. Once you have a plan, begin solving the problem one step at a time, following the structure and answer format provided with each problem.
+Step 180, training acc: 0.7164750957854407, instruction: Start by understanding and pulling out all the relevant information from the problem.
+Step 180, training acc: 0.16091954022988506, instruction: Begin by understanding the given information and setting up a plan to solve the problem by analyzing the details and constraints.
+Step 180, training acc: 0.08045977011494253, instruction: Begin by analyzing the problem, understanding the information provided, and identifying the specific question being asked.
+Step 181, training acc: 0.1685823754789272, instruction: Alright, let's begin by breaking down the problem into smaller parts.
+Step 181, training acc: 0.42528735632183906, instruction: Start by analyzing the problem and gathering information, including the quantities of items mentioned, their relationships, the total number of items purchased, and the rate at which they were bought.
+Step 181, training acc: 0.2835249042145594, instruction: Begin by understanding the problem and identifying the necessary information<Start>
+Step 181, training acc: 0.06130268199233716, instruction: In order to solve any given problem, one must initially understand and break down the information provided before devising a strategy to approach the solution.
+Step 181, training acc: 0.38697318007662834, instruction: To kick off solving problems in this style, let's analyze and understand the information provided.
+Step 182, training acc: 0.20306513409961685, instruction: The problems presented involve various mathematical concepts and challenges, such as analyzing data, understanding problem scenarios, and performing calculations to arrive at the correct answers.
+Step 182, training acc: 0.10727969348659004, instruction: When approaching a new problem, it is important to break it down into its individual components and analyze each component carefully to identify the key points that need to be addressed.
+Step 182, training acc: 0.07662835249042145, instruction: Learn to break down the problem into smaller sub-problems and tackle each one individually.
+Step 182, training acc: 0.6896551724137931, instruction: Avoid repeating the same information.
+Step 182, training acc: 0.12260536398467432, instruction: Sentences but must extend the content of the <Start> sentences and seamlessly transition to <text>.
+Step 183, training acc: 0.6436781609195402, instruction: Start by analyzing the problems and then outline a general strategy to solve them.
+Step 183, training acc: 0.1111111111111111, instruction: . The starting sentence should be grammatically correct and in English.
+
+<Start> It's important to begin the problem-solving process by understanding what's being asked, breaking down the information given, and visualizing a path to the solution.
+Step 183, training acc: 0.10727969348659004, instruction: In every problem-solving scenario, the initial step is to gather and analyze the available information before formulating a robust strategy to arrive at a solution.
+Step 184, training acc: 0.13409961685823754, instruction: Read the problem carefully, identify the given information, and determine the specific problem being asked.
+Step 184, training acc: 0.04980842911877394, instruction: The starting sentence should be a complete sentence, and convey a sense of direction for solving the problems.
+I'm ready to help you understand the problem.
+Step 185, training acc: 0.03065134099616858, instruction: Inshort, the system is scored on results
+Step 185, training acc: 0.4789272030651341, instruction: Upkeep the accuracy and coherence throughout the generation.
+Step 185, training acc: 0.16475095785440613, instruction: Sentence should be able to function as a template to generate rest of the questions.
+<Start>
+In order to solve every problem, it is necessary to identify and gather all the relevant information provided, and break down the problem into smaller, manageable parts to tackle each step at a time. Handling standard mathematical problems, such as the ones given, demand a systematic approach to problem-solving.
+Step 185, training acc: 0.23371647509578544, instruction: The primary objective of solving problems is to identify and apply appropriate strategies, analyze and interpret information, and derive solutions both efficiently and effectively to reach desired outcomes.
+Step 185, training acc: 0.0, instruction: The starting sentence can be a declarative sentence or an imperative sentence but not a question. 
+
+Possible Writing Prompt: Write a paragraph that is coherent and has a clear purpose and unified theme. Develop and explain an idea or point of view; share an experience that includes inaccurate assumptions or misperceptions; or narrate a story that includes a plot outline and a satisfactory conclusion. 
+
+Question: <SecondQA>
+Step 186, training acc: 0.19540229885057472, instruction: The starting sentence should have a natural and engaging tone that may interest the reader into learning more about the topic of this scenario.
+<Strings>
+Step 186, training acc: 0.30268199233716475, instruction: Consistently calculating the size of the hard disk in terms of mass and energy, incorporating appropriate prefixes of the regular metric system and twice of Kraft information theoretical engineering units, may result in a vast set of logically inconsistent and non-interconvertible values that require thorough understanding and correction to preserve data quality and safety.
+Step 186, training acc: 0.14559386973180077, instruction: Firstly, let's unravel the essential aspects of the problem.
+Step 186, training acc: 0.5823754789272031, instruction: * To solve this problem, we need to first identify the information and constraints provided in the question.
+Step 187, training acc: 0.12643678160919541, instruction: To effectively solve the given problems, it is important to first understand the problem definition and its constraints. An in-depth analysis of the problem is necessary to determine the key points to be addressed. Then, an appropriate problem-solving strategy should be chosen to develop a step-by-step approach to solving the problem. Remember, it is important to be concise, effective, and generally applicable to all problem instances.
+Step 187, training acc: 0.30268199233716475, instruction: A problem-solving process typically involves analyzing the information presented in the problem and finding a suitable solution method.
+Step 187, training acc: 0.842911877394636, instruction: Paper and pencils are needed before starting the problem.
+Step 187, training acc: 0.16475095785440613, instruction: Ground truth answers are provided for reference. The starting sentence should be different from the existing ones in terms of structure and wording but still applicable to the given scenarios.
+Step 187, training acc: 0.1685823754789272, instruction: The provided problems require a combination of analysis, strategy formulation, and numerical calculations.
+Step 187, training acc: 0.1417624521072797, instruction: It shouldn't encompass all details.
+Start:
+A common problem-solving approach is to first understand and analyze the given information in order to properly formulate a solution and identify the required steps to reach the desired result.
+Step 188, training acc: 0.5172413793103449, instruction: Start by understanding the given information and the question being asked in each problem
+Step 188, training acc: 0.4559386973180077, instruction: Use relevant keywords and phrases within the starting sentence to implicitly capture the essential information from the QA pairs. Start
+For the purposes of this problem,
+Step 188, training acc: 0.6053639846743295, instruction: Begin by carefully analyzing each problem and understanding what information is provided and what needs to be found. Once you have a clear understanding, devise a strategy to approach the problem, and then proceed step by step in a logical manner. Remember to consider unit conversions when applicable and keep your calculations organized for accuracy.
+Step 188, training acc: 0.31417624521072796, instruction: Begin by examining the given problem, <Sentence>
+Step 189, training acc: 0.03065134099616858, instruction: When solving math problems, it is essential to identify the given information and understand what is being asked.
+Step 189, training acc: 0.39080459770114945, instruction: To begin solving this problem,
+Step 189, training acc: 0.1417624521072797, instruction: To solve a math problem effectively, it is important to first read and understand the problem carefully, then identify the relevant information and any constraints given, and finally devise a strategy to find the solution.
+Step 189, training acc: 0.0, instruction: Generating creative starting sentence with effective information is an art of language. Happy completion of your task!
+Step 190, training acc: 0.7969348659003831, instruction: Consider the context and relationships between variables in each problem
+Step 190, training acc: 0.5938697318007663, instruction: Learn the specific concepts involved in the problem and how to apply them, then break down the problem and apply the relevant concepts to find the solution.
+Step 190, training acc: 0.09195402298850575, instruction: Information and can be used as a follow-up to any of the provided answers.
+
+<Start>Math and problem-solving can be a challenging but rewarding journey. To approach any problem or question, it's crucial to first carefully read and understand it.
+Step 190, training acc: 0.7394636015325671, instruction: " or "
+Step 190, training acc: 0.4904214559386973, instruction: Sentence should entail all the previous <Start> sentences.
+Step 191, training acc: 0.2260536398467433, instruction: Here are some problems that involve finding solutions:
+Step 191, training acc: 0.20689655172413793, instruction: Understand the problem and identify the given quantities and the information requested in the problem. Then, establish the plan of action to determine the solution.
+Step 191, training acc: 0.3563218390804598, instruction: " and end with "
+Step 191, training acc: 0.0421455938697318, instruction: And a short starting sentence.
+
+<Start> Analyze the given problem and gather all the necessary information provided.
+Step 191, training acc: 0.1685823754789272, instruction: Throughout the course of this problem, a series of challenges have been observed, ranging from organizing relevant information, developing an effective strategy to tackle problems, and understanding real-world situations through mathematical analysis. To truly master problem-solving, it's important to not only grasp the individual elements of these challenges but also to reflect on how they intertwine and influence each other.
+Step 192, training acc: 0.08812260536398467, instruction: When tackling a math word problem, first carefully read and understand the problem in context.
+Step 192, training acc: 0.3716475095785441, instruction: The starting sentence should also guide the generation of that particular ground truth answer.
+
+Tabitha
+Step 192, training acc: 0.7816091954022989, instruction: If you need a starting sentence for these problems, try analyzing the situation, understanding the details, and then planning a strategy to solve them. Make sure to pay attention to unit conversion and use all the given information.
+Step 192, training acc: 0.019157088122605363, instruction: Sentences, choose the most direct and simple <Start> sentence.
+
+<Start>
+To solve these types of problems, you will need to identify the key information and any constraints provided, then apply appropriate formulas or strategies to find the solution.
+Step 192, training acc: 0.7624521072796935, instruction: 'x
+Step 193, training acc: 0.12260536398467432, instruction: It should be a standalone, grammatical sentence, not a phrase or incomplete sentence. The starting sentence must also begin with a capital letter and end with a terminal punctuation mark. This prompts users to write more fluent and clear starting sentences, improving the overall quality of the generated texts and ensuring greater diversity from given gold starting sentences. This will enable more attractive and useful starting sentences, boosting the quality and usefulness of responses.
+Step 193, training acc: 0.48659003831417624, instruction: Sentence does not have to directly contain the information of A: and G: (ground truth answer).
+Step 193, training acc: 0.08045977011494253, instruction: To begin solving the first problem, you'll need to determine how many crackers Chad needs for his five-night routine by multiplying his daily intake by the number of nights.
+Step 193, training acc: 0.1724137931034483, instruction: Have you ever wondered how to approach and solve challenging problems in mathematics, specifically involving crackers, peanuts, and Sunday school tickets?
+Step 193, training acc: 0.3524904214559387, instruction: Sentence after a careful consideration about what could already be inferred from the text or commonsense that are useful for answering the question.
+
+<Start> Here are some general approaches to solving math problems:
+Step 193, training acc: 0.05363984674329502, instruction: Identify key information within the problem statement, including any given data, required solutions, and specific conditions, to better understand how to approach and solve the problem.
+Step 194, training acc: 0.2796934865900383, instruction: Take time to read and understand the problems provided, as they contain various pieces of information needed to approach and solve them
+Step 194, training acc: 0.03065134099616858, instruction: To ensure efficient division of the bananas among the monkeys, the total number of bananas must first be calculated. The family of monkeys has contributed to the problem in two manners, gathering information on the quantity and type of bananas.
+Step 194, training acc: 0.2950191570881226, instruction: Sentences above will receive a higher score. Always start the sentence with <Start> and end with
+Step 194, training acc: 0.11877394636015326, instruction: Sentences listed above.
+<Start>
+To solve any problem, start by
+Step 194, training acc: 0.2796934865900383, instruction: In solving problems involving number operations and division, it's important to identify the total quantity, the divisor, and the quotient, and then apply the formula Total ÷ Divisor = Quotient to find the solution
+Step 194, training acc: 0.1532567049808429, instruction: When approaching a problem, it's essential to carefully analyze the information provided, identify any assumptions or underlying principles, and develop a strategy to break it down into logical steps. By doing so, you can effectively work towards building a solution while remaining focused and efficient.
+Step 194, training acc: 0.3946360153256705, instruction: Start by understanding the question and identifying the information you are looking for.
+Step 195, training acc: 0.05747126436781609, instruction: Begin by analyzing the information given about Mason's ages to determine his father's age and ultimately find out how many hours Jenny has left to write her report.
+Step 195, training acc: 0.3486590038314176, instruction: The starting sentence should also be different from the given information but still be connected to it.
+Step 195, training acc: 0.01532567049808429, instruction: Sentence for text without <Start> tags or without an answer.
+
+<Start>When Doctor Lindsay writes her report, she takes a look at the information she has gathered and makes a list of the key points for each section.
+Step 195, training acc: 0.25287356321839083, instruction: When attempting to solve problems, always make sure to read and understand the problem, and, if
+Step 195, training acc: 0.40229885057471265, instruction: Do not mention above, QA, pairs, sentences, or generate.
+Step 196, training acc: 0.1724137931034483, instruction: While approaching a problem, it's essential to break it down into smaller, manageable steps to effectively analyze, understand, and devise a strategy to find a solution.
+Step 196, training acc: 0.6934865900383141, instruction: A problem-solving strategy is necessary for tackling these questions.
+Step 196, training acc: 0.06896551724137931, instruction: Sentences above and should ideally not contain a word that appears in any of the QA pairs above. Furthermore, ensure the starting sentence is engaging and user-friendly for readers with varying levels of subject knowledge, while still giving enough context to answer all the given QA pairs.
+<Start>
+In these problems, breaking down the given information step by step will help you arrive at an accurate and efficient solution.
+Step 196, training acc: 0.6283524904214559, instruction: Begin by unpacking the problem and identifying the available information as well as the final goal you need to reach.
+Step 197, training acc: 0.05747126436781609, instruction: First, let's identify the format of the questions and their corresponding correct answers. In each question, there's a description about a specific scenario followed by a numerical question asking for a calculation or decision based on the given information. This 
+Step 197, training acc: 0.4367816091954023, instruction: To solve the problems efficiently, begin by analyzing the given information and goals before planning concrete steps for finding the solutions.
+Step 197, training acc: 0.8275862068965517, instruction: For every problem, observe the available information and then begin to strategize a plan for finding the answer.
+Step 197, training acc: 0.36398467432950193, instruction: In other words, the starting sentence should be a coherent, accurate, and unified summary that encourages implementing the following rule:
+Step 197, training acc: 0.41379310344827586, instruction: To tackle problems efficiently, break them down into smaller parts, understand the situation, identify the available information, analyze the required manipulations, and whittling down to the sought-after solution step-by-step. This methodical approach forms the foundation of effective critical thinking in complex scenarios.
+Step 198, training acc: 0.1111111111111111, instruction: Begin by carefully analyzing the given information, identifying key variables and any necessary steps to solve the problem, and then proceed with a step-by-step approach to ensure an accurate solution.
+Step 198, training acc: 0.13026819923371646, instruction: Sentences.
+A: <Start> To state the overall objective clearly and set a foundation for upcoming steps,
+Step 199, training acc: 0.6781609195402298, instruction: Do not just add a few words or make minor changes, try to think out of the box.
+Start>
+Step 199, training acc: 0.48659003831417624, instruction: To solve these problems, follow these steps:
+Step 199, training acc: 0.12643678160919541, instruction: Please also list the previous score of the corresponding QA pairs in the following format. 
+
+Speed score:
+;
+
+
+
+Introduction to math and problem solving
+Step 199, training acc: 0.32950191570881227, instruction: For this problem, <Sentence>
+Step 200, training acc: 0.16091954022988506, instruction: Here are some problems for you:
+Step 200, training acc: 0.29118773946360155, instruction: And that's the fundamental strategy to solve this type of problem: <StepStart></StepEnd>
+Step 200, training acc: 0.3333333333333333, instruction: Before starting, let's first read and understand the problem carefully.
+Step 200, training acc: 0.007662835249042145, instruction: Words verbatim but paraphrase them slightly. The sentences should be easy to understand without reading the other sentences.
+
+<Start>A problem is a task or situation that requires understanding and a solution.

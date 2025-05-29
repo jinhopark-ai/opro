@@ -1,0 +1,20 @@
+{
+    "scorer_llm_dict": {
+        "model_type": "qwen2.5-7b",
+        "temperature": 0.0,
+        "num_servers": 1,
+        "batch_size": 256,
+        "max_decode_steps": 1024
+    },
+    "optimizer_llm_dict": {
+        "model_type": "qwen2.5-7b",
+        "temperature": 1.0,
+        "batch_size": 8,
+        "num_servers": 1,
+        "max_decode_steps": 1024
+    },
+    "instruction_pos": "A_begin",
+    "optimizer_llm_temperature": 1.0,
+    "optimizer_llm_temperature_schedule": "constant",
+    "optimizer_llm_temperature_end": null
+}
