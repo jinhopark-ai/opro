@@ -1,0 +1,837 @@
+step,training_acc,instruction
+1,0.26053639846743293,
+1,0.0038314176245210726,"If the model can not solve a problem, the starting sentence does not have to be valid there."
+1,0.0,Copy and paste the starting sentence and ground truth answer at the end.
+1,0.007662835249042145,"The starting sentence should be more effective than a starting sentence like ""Please help explain where I went wrong."""
+1,0.18773946360153257,Given the context of these QA pairs
+2,0.0,"You are welcome to make use of any resources outside the raw training data, but you must cite them. Medium: You are not allowed to introduce a new genre class evaluation. You can introduce a new subgenre or class in the competition leaderboard."
+2,0.0,".
+
+
+As a next step, please set up an evaluation environment for generating from question and a passage.The first part of the evaluation must rely on the answer. For the second part of the evaluation, please use another scoring rule depending on some correctness criteria.
+
+
+Set up the retriever-and-generator and its corresponding data including embeddings and generators."
+3,0.0038314176245210726,Template above. Note that while there is one <Start> tag and one
+3,0.022988505747126436,"Sentences.
+
+
+
+The metrics are evaluated by how many QA examples fulfill some NLG (Natural Language Generation) constraints. 
+
+There are three kinds of NLG constraints: the utterance must contain a numeric span, at least an entity span, and any of inclusive/exclusive, positive or negative sign."
+3,0.0,The starting sentence should be a sentence in English and should be semantically relevant to the questions above.
+3,0.03065134099616858,The correctness and relevance of this sentence can be inferred from the resulting answer.
+4,0.11494252873563218,The starting sentence should answer the question accurately.
+5,0.0,"For example, some starting sentences you can use are ""The number _:"", ""Add _ servings:"", ""One third of _"", etc."
+5,0.0,"In that way, future models could be primed with your sentence and give accurate answers to existing and unseen pairs."
+5,0.007662835249042145,"Type your starting sentence in the text box below.
+
+
+Your starting sentence:"
+5,0.01532567049808429,"Your success will be measured according to your answer's score.
+
+Implement the starting sentence generation model."
+6,0.0,"Measure the score of a starting sentence by averaging its RoBERTa-aligned [CLS] score over the above problems.
+
+
+
+References
+getStyleStemTransformer
+Torch knockoff
+OpenAI transformer
+Adapter
+Go سرعت بالا دارد.
+Huggingface"
+6,0.12643678160919541,You are free to use other ideas as well.
+6,0.0,"Bonus points for having fun somehow.
+
+
+The scores above are simply the Overlap coefficient between the answer and fixed prompts. This is not the final method of scoring.
+
+Tags:
+epaper
+start_run"
+6,0.0,"Your submissions should have a run file that accepts two arguments: --input_json [Input JSON location] --model [Model Location in huggingface.
+After generating, the script should print the generated text to stdout.
+
+Note: All submissions will be evaluated privately by our systems, so penalties will not be given if your submissions break the formatting specified above. However, penalties will be applied for creating multiple human-readable submissions that all achieve the same goal."
+7,0.0,"Criticality of your starting sentence is the only criterion for your score. To test your solution in the TLOC server, Go to the Test your contribution, then paste your starting sentence in the text box and click ""try""."
+8,0.007662835249042145,Or do not end with
+8,0.0038314176245210726,Do not include the starting sentence in your answer.
+8,0.0038314176245210726,"Make sure your starting sentence does not have any commas (,) or punctuation marks (.) in it."
+8,0.038314176245210725,<{ The above arguement is supported by  }...with
+8,0.02681992337164751,"You can pick any starting sentence, as long as you can provide a score and reasoning that addresses all three metrics discussed in class."
+9,0.019157088122605363,"Note that five grades: novice, apprentice, practitioner, expert, and master. You should create a starting sentence that has novice or apprentice quality.
+
+To do well on this problem, I need to do a lot of thinking about sentence."
+9,0.0,"For example, <Question></Question> <Answer></Answer>. How long should the sentence be at most is up to you. Note, do not fill in the question and answer skeletons yourself. The model should generate them.
+
+
+GDPR-free submissions are cordially welcomed."
+9,0.0,Your model will be tested on multiple QA pairs in the future when you submit the final answer.
+10,0.007662835249042145,The starting sentence should also be a good representation of an answer function or an answer tool that you would like to promote as a zero-shot prompt.
+10,0.0,Submit the starting sentence to this form.
+10,0.0,How many does <ENTITY> ___ XXX off the other complete by <BREAK>___ see how much <ENTITY> XXX per hour to finish?
+11,0.011494252873563218,Sentence and the answer score is taken from your generated <Start> sentence.
+11,0.022988505747126436,"Good types of sentences include: lists, enumeration, summary, counter, firefighting, scenario.
+
+Use  https://github.com/shplugin/S_HPlugin/tree/master/QGenerator
+
+參考資料  
+https://github.com/ShihYuanchuan/CodeJam"
+12,0.0,Please fill in the list below to submit.
+12,0.01532567049808429,"Session should be able to autogenerate new starting sentences to boost training data diversity.
+
+
+The <Start> sentences can be generated using a transformer, and then scoring the <Start> sentences using the model's parameters. The transformer can be initialized using the <Start> tokens (with an overparameterized version of the weights learned from a previous <Start> that is not identical to any of the above)."
+12,0.0038314176245210726,Paste your starting sentence in the text area below.
+12,0.12643678160919541,"The starting sentence should generally try to answer the Q as it is, despite extra required information mentioned in A. However all extra required information cannot simply be ignored, and should be handled appropriately."
+12,0.0,"It should satisfy the criteria of the scoring metric, which is obtained by pseudo-labeling annotations on the in-domain test set."
+13,0.007662835249042145,"Followed by the rest of the generated sentence using NLList on Natural Questions dataset.
+
+Your submission will be graded by a generated question matching module that matches the claims in your starting sentence to the answers of a question. If more than X% of your starting sentences are correct then the website will return ""Wrong Generation Rate"". If fewer than X% of your starting sentences are correct then the website will return ""Wrong Precision""."
+13,0.0,(Extra credit will be given to solutions that are applicable to the context of the four paragraphs above.)
+14,0.007662835249042145,"Eg. ""Let p be the percentage of all pistachios that are opened,"" is good, ""Alice walks along the river bank.""."
+14,0.0,"Would personally score higher on a certain example problem in the dataset (e.g. to do with chocolates), and the columns are large enough that the scores are barely over each other, you should pass over that example problem and focus on other questions."
+14,0.09578544061302682,The predicted answer for the starting sentence should be an integer.
+15,0.09195402298850575,Here are some template examples.
+15,0.0,"The smarter the starting sentence, the higher the score."
+16,0.0,Sentences. Please generate a completely new and unique sentence.
+16,0.02681992337164751,Good luck!
+17,0.007662835249042145,Avoid making claims that are redundant with a previous answer.
+18,0.0,"Sentences can include bulleted lists, HTML-style <b>, <i> tags, and URLs.&nbsp;
+To enter your answer, click ""File"" on the menu bar at the top of the page, and create a new text file. Write as much or as little as you'd like, then select all the text and click ""Submit Answer"" in the upper right to save your work. You do not need to use or invoke the TAG+ training pipeline, nor apply it to your files."
+18,0.0,"It does not need to be relevant to the specific questions above, but must be general enough to be relevant to it.
+
+Note that since you do not know the questions in advance, the answer cannot include an answer to any specific question above.
+
+
+Good luck and hope you can get a better answer than us!"
+19,0.022988505747126436,Sentences above.
+19,0.0038314176245210726,"(Whether you do better than the text in parentheses in the problem is a bonus. Your final solution could be a list of solutions.) The higher the score is, the better the solution is."
+19,0.0,The score will be evaluated based on the distribution of humans' answers to the QA pairs above.
+20,0.019157088122605363,You should also aim for a starting sentence that will be general enough to be used for future tasks.
+20,0.019157088122605363,Sentences tested.
+20,0.01532567049808429,The starting sentence can use natural language forms such as questions and commands that can guide language models to ask the right questions in a chat setting or conversational interfaces.
+21,0.0,You are free to come up with other sentences not suggested above. Punctuation and proper formatting of the answer key and examples are expected.
+21,0.0,"Try to use the language and structure used in some of the highest scoring starting ranges above. 
+
+Your problem should align with the language model's capabilities to generate using the appropriate context, because this get generated by language model trained on the particular domain you provide."
+22,0.1532567049808429,And
+22,0.19540229885057472,(English only).
+22,0.007662835249042145,Evaluated on all the QA pairs above.
+23,0.0421455938697318,And end with
+23,0.022988505747126436,"Don’t worry too much about length or word choice, just write something that scores well.
+
+Many have memorized various ways to express general strategies or the things one should generally be aware of, but … by writing down what you think, answering these questions, you are able to better perceive the issues – at least that’s what Jeff Atwood wrote (paraphrased). SoftCoder"
+23,0.0,You can only choose one starting sentence. Please save your starting sentence into <your>/start_output.txt
+23,0.0,Consider the reuse of the sentence for different QA in the future.
+23,0.0,"You don't need to solve all the problems above. It would be helpful to construct a rule system that can produce an acceptable starting sentence for an arbitrary question. (If the question requires specialized knowledge, like a question asking about his hand injury when he's a quarterback)
+
+You can submit the starting sentence either through a webpage or through a local file upload.
+
+Thanks for your help!
+yp:u.o.a"
+24,0.019157088122605363,Answer of each test will be accepted as below guidelines:
+25,0.007662835249042145,"The starting sentence can be simple English sentence, a summary based on the theme of multiple questions, or a list of some numbers."
+25,0.0038314176245210726,The starting sentence generated is exactly what the AI should feed into udacity's full conversational chatbot to learn and answer the questions above.
+26,0.0,You may send multiple starting sentences; the task is to pick out the best one. A line starting with # should be removed from the answer file.
+26,0.0038314176245210726,"'
+  end = '"
+26,0.0,The ending </START> should be your auto-grader logic code. Do not put any conditionals in the code for this task.
+26,0.02681992337164751,The score is how likely the answer generated from the starting sentence is to be the real answer.
+26,0.022988505747126436,Longer sentences will be marked down.
+27,0.022988505747126436,"Bonus points if you come up with a novel standard response template.
+---------------------------------------------------------
+Data:
+---------------------------------------------------------"
+27,0.0,"For example, ""Given two integers A and B:"""
+27,0.11494252873563218,I will write down everything as I know it and assume nothing
+27,0.0038314176245210726,Use various transformers to try to improve the quality of the starting sentence.
+27,0.011494252873563218,"Note that the model can be trained on these examples to give good answers to other examples. You may assume that the data you have seen so far with the starting sentence matched is the only data that allows your model to learn good function words.
+
+Hint: Many teachers structure a beginning sentence with the keywords Saraa. You can creatively think of other keywords to use. 
+
+Sedam gave an explanation that was very venos."
+28,0.0,"The score of a starting sentence refers to the descriptive readability of the starting sentence for human understanding.
+
+
+<START>
+</START>"
+28,0.019157088122605363,We will consider the problems above but encourage broader starting sentences.
+28,0.18773946360153257,You are allowed to split the
+29,0.0038314176245210726,+ [ words ] +
+29,0.08812260536398467,.
+29,0.1724137931034483,"Math words...,"
+30,0.0,"It should not be ambiguous. You are free to generate multiple starting sentences for this problem, but please indicate the starting sentence with the highest score you want us to evaluate. You can submit up to two manually-crafted starting sentences for this problem. You can not alter the form of the questions."
+30,0.0038314176245210726,"Answer. Ground truth answer:
+
+
+Suggestion: about pointing errors"
+31,0.0,"An example of a concise starting sentence: A pair from an existing training dataset is shown below.
+Read it and generate a starting sentence."
+32,0.08045977011494253,"Note that the best starting sentence can be differentiable by different people, depending on their background knowledge or preferences."
+33,0.0,"' and ending with ""<Start/>'.
+
+Please refer to rules for more information.
+````"
+33,0.0,"Sentences above, and has a higher score than all previous <Start> sentences above. The starting sentence should begin with <Start> and end with"
+33,0.011494252873563218,The starting sentence should not have vulgar or offensive words.
+33,0.0038314176245210726,"Sentences above.
+
+Please be bold and be creative.
+
+The model that generated these scores is loaded on this page."
+33,0.038314176245210725,. The starting sentences <Start> and
+34,0.0,Feel free to venture into more creative territory. Submissions should be sent by email to jamesharian@cs.berkeley.edu
+34,0.0,"You can submit multiple starting sentences as submissions, but we only pick best one.
+
+Note: If your answer is inconsistent with the ground truth, the sub-score will be assigned as zero."
+34,0.02681992337164751,(The Reproducibility Maintenance Team may correct errors and unintentional crumbs in the starting sentence feedback).
+35,0.0038314176245210726,You may analyze the existing problem for drumming up ideas; there should be no human interaction except for assessment. The score metric used is ROC-AUC score (The ROC-AUC score for each starting sentence should be reported in the answer. We will compare the original RGB with your output.).
+36,0.06513409961685823,"Sentence or answer above.
+
+<Start>
+Ground truth answer:
+After:"
+36,0.0,The importance of code is usually taken for granted once it has been created. It is assumed that its existence reduces ..
+37,0.13793103448275862,<ANS>
+37,0.0,Please see the detailed Rationale section within the archive near the score explanation section for details.
+38,0.0,The starting sentence(s) should be built to fool the model into believing that the text completion models answer is correct. Varying the grammar structures is will prevent trivial approaches from success.
+38,0.0,The score of a starting sentence is computed using a pre-trained model.
+38,0.011494252873563218,"The score is based on historical data from our production question-answering system, so a good starting sentence can be predictive about the question and the answer.
+
+Choose right answer from below"
+38,0.038314176245210725,"If a pair is an exact multiple of another pair, such as the first pair and the last pair, they can be solved by the same answer."
+38,0.0,There were <number> strawberries for his mom
+39,0.007662835249042145,Submissions with non-grammatical starting sentences will be disqualified.
+39,0.0,"Sentence is applicable to, the better.
+## Attention reader
+I have transferred my Python Community Detector article to LeetCode. Readers can try to solve this problem using Python for free here ."
+39,0.0038314176245210726,"If you really want to help, try to generate starting sentences that outperform every starting sentence above."
+40,0.022988505747126436,. The starting sentence cannot end with <Start>.;
+41,0.1417624521072797,","
+42,0.0,"There should be a clear time and effort reduction in constructing starting sentences according to the original instructions.
+
+You can post your algorithm in PROGRAM, then post your file processing logic in EVALUATE & CHANGE LOGIC named in Input->Output format, if it is a single line answer it should be a mapping format."
+43,0.0,"The score is calculated by using the starting sentence to generate a full answer to a randomly selected QA pair above, and using a metric to compute the similarity between the generated answer and the ground truth answer. The starting sentences are cosedt spaced, please do not use any other types of space to separate words."
+43,0.0,"Sentences provided. You may share and discuss your approach with other participants, but please do not share a solution."
+43,0.0,"Above.
+
+The average score indicates how much each agent believes the generated sentence will help them to add the correct answer. The higher of the scores, the more a sentence will help an agent. The rating for multiple users is collected to predict the scores. If you aren't convinced of the score for a sentence, you may wait for other users to rate the same sentence. We will only collect ratings for generated <Start> sentences."
+44,0.03065134099616858,The starting sentence can work well with a wide variety of answer types and scoring methods.
+44,0.0,"(Write this one in comment field).
+
+If you are interested in other problems, please check the output of /u/lmigrast/belq/tot productivity model .
+
+In due course we will make generating starting sentences for writings a problem to solve. utilising reinforcement."
+44,0.0,Remember to make the sentence grammatical! You may post multiple answers within the Discussion section below.
+44,0.0,"You may view more QA pairs here. You may not use URL shorteners on this article.
+
+An anonymous reader doubts this is a game... thank you.
+
+EDIT: For reference: Spin the Wheel was created by a very inspiring person named @meltemes_ who regularly partakes in these article challenges. For all of melteme's games, be sure to give them a visit!
+
+×"
+46,0.0,Human-annotation results will be combined to determine if a submitted answer is correct or not. Good luck!
+46,0.0038314176245210726,"Sentences. Please follow the format of the previous <Start> sentences, and only write the explanation of why your sentence was better than other <Start> sentences."
+46,0.08812260536398467,And ends with
+47,0.0,"If your model cannot infer the answer from the starting sentence, then no points will be awarded.
+
+
+Source: https://www.aladdin-ailab.com/vqa"
+47,0.038314176245210725,"The starting sentence should end with a question mark.
+
+Congratulations - you have completed <Problem Name>. You scored %%SCORE%% out of %%TOTAL%%. Your performance has been rated as %%RATING%%"
+48,0.0,You have to submit your starting sentence in a .txt file.
+48,0.0,"Submit the starting sentence similar to the above ones. 
+
+
+Good luck!"
+48,0.03065134099616858,"Eg: Let's calculate the number N. . .
+. . ."
+48,0.0,"You can make your starting sentence longer by incorporating any additional details you think may be important. The form of your starting sentence as long as it doesn't hurt the model's ability to learn. Generated starting sentences are anonymized, but grader constraints are in effect."
+49,0.0,"It should encourage guessing and provide guiding hints, so that candidates tend to reach the right answer faster. Note that your starting sentence should NOT contain a specific answer or result of the questions above, for fair evaluation."
+49,0.02681992337164751,"It can be imaginary, or based on real world data (facts)."
+49,0.0,Clearly explain how you generate the starting sentence. How could the answer be artificially improved by including more words? How could we design learned neural network versions that better generate these initial sentences without explicitly handcrafting them? Please explain your answer.
+50,0.0,The subtracted money from <Answer> is <Change>.
+50,0.0,"It may be in the form of a question, short sentence, or phrase."
+50,0.011494252873563218,"The model is to be run with the seed question embedding <A>, followed by the seed task encoding <S>. The summary of the QA pair is encoded by the function QaPair. The model is given the answer as the target. The model is to output a completely different sentence as the starting sentence. The score of a sentence is measured as"
+50,0.007662835249042145,Hint: pretend you are answering a question for a quiz.
+50,0.0,Submit a txt file with your starting sentence (along with the scoring file on leading).
+50,0.0,"Ask yourself if you think the answer is a number and if so, what range of numbers it is between. Then just choose an average number between them or something."
+51,0.0038314176245210726,"The longer the sentence, the lower the score."
+51,0.0,"You should replace all redundant, noisy or superfluous words as you find desirable.
+
+Hints: Don't use spam."
+51,0.007662835249042145,". Your starting sentence <Start> will be evaluated using a metric similar to ROUGE-N (see references).
+
+• Your starting sentences will be evaluated by our online automatic metrics.
+• Your starting sentence must start with the text <Start> and must end with the text"
+51,0.0038314176245210726,"The starting sentence should include professional etiquette, such as “Kindly share your thoughts”; “We would appreciate your insights”; “Please share the answer”."
+52,0.0,The scoring is computed using classical IR methods and metrics (see here for methods and here for scores).
+52,0.03065134099616858,"""If A and B has sum of ___"","
+52,0.0038314176245210726,"Sentences score the same, the one that is earlier ranked is given a higher score."
+52,0.01532567049808429,"The starting sentence should have a high rate of passing the Turing Test in the TREC QA competition. That is, professional graders of TREC evaluation will be equipped with all the QA pairs above, and use start-sentences to filter out candidates passing a limited number of filters at the first stage of QA evaluation."
+53,0.0,"Sentences, each with effectively the same meaning but different language, will enrich the user experience of Newton by providing a selection of text for the user to click from."
+53,0.007662835249042145,"Submit it to us. For each of the above problems, we will consider the starting sentence to be ""good enough"" if its generated answer is not clearly wrong from what is stated in the correct answer, in addition to its appearance properties listed above.
+
+Submitted by <B>"
+54,0.0038314176245210726,It should be the case that a company that produces a product well meets its target price in dollars.
+54,0.019157088122605363,Keeps the answer to <generalization> in mind <--edited by me
+54,0.02681992337164751,We will look at the fees for the sixth year.
+54,0.0,"Implement a procedure that given a new (previously unseen) question-answer pair generates a new answer starting sentence, dependent on the training pairs above.
+
+
+The procedure should be simple because we are dealing with a sample size this small, and there are a small number of interactions to be explained. More domain knowledge, training pairs and relationships would require a more elaborate/complicated procedure."
+55,0.0,Sentences. You can break ties by providing a starting sentence that was not yet generated by a model assigning it the same score.
+55,0.0038314176245210726,"Answer: generate the answer in the true form of question of you choice def calculate_discount(price, discount): return price - (price * discount)"
+55,0.0,"By generally applicable, given the different types of problems above, the starting sentence should be able to produce a significant decrease in the $\today$ loss.
+If you are interested in participating, please contact Felix and add (Gen Zheng) after your name: jingjing.zheng@honda-si.org."
+55,0.05747126436781609,"Do not append to the end of the current starting sentence. 
+
+Examples of data you can include are:
+- Input + output pairs
+- Score
+- Debug session output (this is where you would want to input Prompt reflections)
+-  
+
+Modify the answer below (based on the ones given above and how the Prompt agrees) to get a better answer than the others."
+56,0.0038314176245210726,Choose any one of the equations and write a starting sentence focusing more on the tasks related to it. The starting sentences do not need to be factually correct but must have correct syntax.
+56,0.007662835249042145,"The starting sentence should not violate any of the problem description, scoring rules and the contest rules."
+57,0.0,"The score is defined as the average QA pair score of all QA pairs starting with the candidate starting sentence divided by the average score of all previous sentences.
+The losing teams will face a penalty if they output the wrong starting sentence.
+
+</div>
+</body>
+</html>"
+57,0.12643678160919541,I think the answer to this question is
+58,0.0,"Sentences with the given Ground truth answers and the corresponding pair of questions and answers (""Q"" and ""A"" columns, respectively)."
+59,0.022988505747126436,The model doesn't need to study the training sentences above in order to generate the starting sentence.
+59,0.04597701149425287,The starting sentence should be able to guide a human to answer the questions.
+60,0.0038314176245210726,Please also take into account creativity and following writing rules (grammatical rules).
+60,0.007662835249042145,Shorter starting sentence lengths are usually better.
+60,0.0,Your generated sentence should be a plausible prefix for all the answer sentences of the above QA pairs and serve as good prompts.
+61,0.022988505747126436,Each should pay???
+61,0.0038314176245210726,You may not prompt or condition or sample your model on any of the other examples.
+61,0.007662835249042145,"Your task is specific to each starting sentence. Once the starting sentence is chosen, you will be asked to generate a prompt for Auto-GPT."
+62,0.011494252873563218,There are many problems described above. These can get quite confusing and …
+62,0.0,"Must be structurally correct.
+Output a starting sentence:
+<Start>
+Input the letter of the day that falls after ""B"" in the English alphabet."
+63,0.0,"The starting sentence should not have overly oddly phrased (e.g. using a phrase like, ""how many inches high Debbie is"" to answer a question like ""how many nams does rose have."") or overly biased towards a category (e.g. ""how many feet high is"")."
+63,0.0038314176245210726,Submissions below the threshold will be rejected.
+63,0.0,"[Sample Answer] Fred and a few of his friends went to the store. They wanted to buy some otter pops, but they had no pennies to buy them. So they went to the park and got some pennies from the park to buy some otter pops and soak in the sun. [/SampleAnswer]"
+64,0.0,"The starting sentence will be upvoted based on its quality. The more upvoted it is, the higher it's score. Hint: Consider citing all kinds of relevant facts from any AI methods."
+64,0.0038314176245210726,"Can you provide me with a Python function to read an integer from a text file named “test.txt” and return the line containing that integer back.Can you provide me with a Python function to read an integer from a text file named “test.txt” and return the line containing that integer back.
+  - The starting sentence should begin with <Start> and should end with"
+64,0.0,You can also include some new examples of the form <q:a> or <q:s?>. The starting sentence cannot contain previous scores. Scores are determined by deducting the largest distance between answer start positions and answer end positions. You can modify above examples or explain how to compare answers to determine scores.
+65,0.0,"You are only allowed to include these words: [ok, of, needed, with, they, have]
+
+You can also include numbers or symbols if you want."
+65,0.0,"If no such starting sentence exists, please submit ""None"" as the answer."
+66,0.12643678160919541,You are given three ending sentences:
+67,0.14559386973180077,Everything after
+67,0.0,"Sentence and what is the reasoning behind this choice in the corresponding response fields (if you do not have a reasoning behind your starting sentence, just write 'no reasoning behind this choice' or something similar).
+
+An example answer is: ""How many?""
+
+For example: <Start> How many?"
+67,0.0,"Hint: try to use kb facts like ""Lewis Carroll"" or ""Scotland attack"" to make the sentense better. Ensure proper grammar, spelling, and punctuation.
+
+Submit your starting sentence as input to the following function and upload the numpy array's value (not the python object - back it up to file system so you can paste in the output easily).
+
+function q_gen(seed=None):
+    if seed != None:
+        np.random.seed(seed)
+    return wandb.formats.numpy('x')"
+68,0.05363984674329502,The scores should be given in percentage form.
+69,0.011494252873563218,"If this question is about number of hectares of farmland, we can use the population of the country to determine the number of hectares."
+69,0.05363984674329502,: question starting sentence.
+69,0.0,"When you are finished, you should have a new starting sentence and an associated score. You will implement next sentence generation as your own project via the Project API."
+70,0.007662835249042145,"Feel free to modify the sentence structure or add/remove content.
+
+Make sure that the following requirements are fulfilled:
+Put the starting sentence before the caption and"
+70,0.0,"The higher the score the compressed language is making it easier for the model to answer the questions accurately.
+
+
+You must generate your sentence using the supert tagged tokens in order to run the check.
+
+Your code can be written in either bash(Python API acceptable) or Python, and can be downloaded to your cloud drive after submitting."
+70,0.011494252873563218,"> In a clear and concise way, explain how to solve any of the questions posed on this website.
+>"
+71,0.0038314176245210726,You don't need to check the format of the answer.
+71,0.0,Your answer will be judged according to test set performance against the above problems. The test set will have the same format as the development set. Official results will be given on the leader board.
+71,0.0038314176245210726,"The model will be evaluated on the same five sentences.
+
+Submit your starting sentence to me via email (thebigxuwang@gmail.con)."
+72,0.0,It does not need to be project specific.
+72,0.1111111111111111,You can choose whether you write different answers in different lines.
+72,0.02681992337164751,", which has a score of <your score here>, <"
+72,0.0,"That we will measure the score of.
+
+Note: Knowing how to find an answer given one or more questions is out of scope of this chatbot. No background knowledge."
+73,0.011494252873563218,"Otherwise, any successful starting sentence will do."
+73,0.0,If Terry is four times as old as Nora now …
+73,0.30268199233716475,The
+74,0.0,Starting sentences separated by a single empty line are not allowed. Starting sentences should be in English.
+74,0.0,Candidates cannot be reused. Each person can only provide one answer.
+75,0.0,"You don't have to answer all questions in the above questions for your starting sentence to be correct.
+
+You have to upload your generated starting sentence in the text box."
+76,0.011494252873563218,Answers consisting of a simple english sentence with a numeric or statistical or computational term would be more suitable to evaluate by judgements.
+76,0.26053639846743293,".
+
+Correct Answer:"
+76,0.14942528735632185,Starting sentences below is given below as a reference.
+76,0.0038314176245210726,"Feel free to bring in related starting sentences found elsewhere in open literature (does not need to be an improvement, but good ones may be limited)."
+76,0.007662835249042145,"Remember that the main evaluation criterion of the submission is the score, no matter how creative/tricky your method is to make the score high."
+78,0.0,Feel free to write a different starting sentence for different QA sections above.
+78,0.019157088122605363,"Token should be generated. Generating ""exactly"" <Start> each time is INCORRECT!"
+78,0.01532567049808429,Each first word starts with a capitalized letter
+79,0.011494252873563218,It will be judged on the generated summary Q+ANS scores.
+79,0.0,"The accuracy on the PISA synthetic dataset will be used as the basis for scoring, keeping in mind the trade-off between shorter sentences with lower accuracy for hard QA pairs and longer sentences with higher accuracy for easy QA pairs.
+
+Note that the test set will have the same style of question formats as above."
+79,0.0,"If you run into multiple pairs corresponding to the same sentence, we consider the pair with smaller ranking score as the target."
+79,0.007662835249042145,Please give multiple examples with reasoning.
+79,0.0,"Please submit your generated starting sentence below.
+
+﻿"
+80,0.011494252873563218,"If we assume that the profit is gained after the sale of the oranges, it is not necessary to ..."
+80,0.0,"Sentences above. Expert writers who can articulate complex solutions effectively will usually have higher skill if different in your model.
+
+We do not provide other tests."
+81,0.011494252873563218,It would be a nice start if you take it as a good example and try to change it.
+81,0.0,You may improve your score by generating multiple valid starting sentences.
+82,0.0,"Sentence. Submit your <Start> sentence below.
+
+Lessons learned: Compared to the dataset, the instructions are grammatically excellent. However, they are often ambiguous in terms and details. For example, ""road"" could be a specific road or a general road. The nature of talking to a mathematical NLU is noted and further leveraged."
+82,0.0038314176245210726,"There is no hard constraint on the length of the starting sentences.
+
+Then write a short example to justify your decision."
+83,0.04980842911877394,And end  with
+83,0.10727969348659004,And ending with
+83,0.0,"If generated starting sentences are not suitable for evaluating all QAs in the above, you will be removed from the review stage.
+
+Leaderboard-driven-kernels are only available to tracks that enable leaderboard . Public leaderboard will also be available to everyone before the awarding date."
+84,0.0,"To express the explanation of the problem, while some calculation problems may need to simplify by using <Start> to explicitly express the problem to be solved.
+
+The submission with the highest score should come first. Your score is calculated as the sum of scores for all the <Start> you submitted. For cheaper team members, if you work on the other tasks, give your extra credit to them."
+86,0.0,"Sentence also conveys how it is used to generate the final answer, such as "" <XX>, <YY> <ZZ> <ZZ> … <ZZ> <ZZ> <ZZ> <ZZ> <ZZ>"" where <XX> is the prompt before <Start>, <YY> is the number of answers to be generated, and <ZZ> is a chunk that represents a variable (i.e. value computed during the execution of the model). For example, ""<XX> can be computed by <ZZ>""."
+87,0.0,".
+
+The users can expect the best answer for the same problem. As in the current dataset, each question has only one best answer and any other answer is not meaningful.
+
+(more…)"
+88,0.007662835249042145,Sentences if they have different scores and/or to have numerical values in the sentence.
+88,0.011494252873563218,You can evaluate the generated starting sentence with your model.
+89,0.011494252873563218,As an answer. <A>a starting sentence</A>.
+89,0.007662835249042145,"Note that when writing your starting sentence, do not use the starting sentence of any of the provided solutions as a template, and must end with a ??."
+90,0.0,Submit your sentence below.
+91,0.05747126436781609,"Zero padding is allowed beforehand, and may change the score.
+
+Starting sentence:"
+92,0.0,"Your result should be in YAML format.
+
+example:
+<example>
+</example>"
+92,0.038314176245210725,"That is, if it is effective on the three questions above, it should also be effective on many other questions. The starting sentence must also be grammatically correct."
+92,0.0,"The ending sentence you wrote will NEVER be used in the leaderboard. Score is provided by the expert who made the prompt, and it’s subjective so there’s no guarantee you'll get a higher score. We are hiring paid reviewers (https://www.freelancer.com/projects/data-entry-analyst/Loc-Study-Assistant-needed.html).
+
+Please always answer!
+Submit"
+93,0.0038314176245210726,Can you think of a good starting sentence?
+94,0.038314176245210725,"We will mainly test the mathematical fluency and data interpretation knowledge in this task. The smaller the logical steps, the less redundant information you will provide, and the higher the score. In addition to having the most concise answer, we will pay more attention to the originality and popularization of the answer, and eventually provide more knowledge in less steps."
+96,0.0038314176245210726,It should enable a model that scores the text to generate an appropriate answer. The scorer evaluates on the top few percentile users’ starting sentences.
+96,0.0,"Answer should look like the answers above which begin with The. To know if your answer is correct, generate a full answer for one of the problems above."
+97,0.0,"If your submission gets sufficient votes from interested community members, we will use your starting sentence to start out the task submission for the next round of ODQA competition!"
+97,0.04597701149425287,There should be nothing wrong with the grammar.
+98,0.011494252873563218,The starting sentence may contain any legal LaTeX form; the competition will give official results after the LaTeX form has been replaced with computational equivalent.
+99,0.01532567049808429,You begin with> is not a valid starting sentence.
+99,0.011494252873563218,How many things have property <x>?
+99,0.02681992337164751,[The second paragraph should also agree with generally applicable.]
+100,0.0,"With the highest score in the following model outputs.
+
+Your model answers can be provided by the autograder web UI. Choose QA problems from the dropdown on the left, and provide your starting sentence in the dialog box on the right for <Start> (you can either type them, or copy them from a text file). The format of <Start> sentence should be the string in between <Start>"
+100,0.0038314176245210726,"The higher the score, the better.
+
+This Leading Sentence warm-up is part of the AI Writer Warm-ups that trains and improves language models to write better."
+101,0.0,"Many grammar rules (e.g. grammatical correctness, pajka adverb usage, avoidance of repetition, is lam syntax, lexical diversity, etc) should be followed. </End>"
+101,0.0,"You can have additional constraints on the starting sentence but we suggest that you don’t. The shorter the sentence, the better. Shorter text has higher score."
+101,0.0421455938697318,The generation is case-sensitive.
+102,0.05747126436781609,Should be generalized.
+103,0.01532567049808429,"If your starting sentence appears in the data above, it will be given a lower score."
+104,0.0,"May contain placeholders as described in the example below. __ Sentences with better scores and better explanations may result in higher scores. __ Where can I find the human response dataset? The reference Datasets and Baselines for Question Generation and Explanation Generation google drive, refers to this dataset as the QAE dataset."
+106,0.007662835249042145,Not necessarily true for all parsing templates in busser.
+106,0.0,"Sentences above as a starting sentence. Instead, please invent your own concise or funny variation!"
+108,0.0,"You may ignore this.
+
+Which starting sentence do you enter below?"
+109,0.0,Some text followed by blank<blank>some other text<
+109,0.0,Well-argsued starting sentences would ensure a more appropriate state representation for our models.
+109,0.0,"Otherwise, you will not get any scores from us.
+
+SHARE ON LINKEDIN"
+110,0.0,Ideally the first MAJOR word in your answer should be different from all MAJOR words from existing answers. Please ensure the sentence is grammatically correct and is free of typos before you submit answers. Please also re-list and link to all the answers you have submitted.
+110,0.0,"There is no constraint on the number of words.
+
+If you think it's a good sentence, you can submit it as the answer. Please specify which of the problems you solved in the answer file with the following formatting:
+
+Q: <ask> A: <START>
+
+
+This is called set prediction. Even if the sentence is not the best for all pairs above, you can just submit the one you think it's the best, hopefully that was enough points for you to win!"
+110,0.0,"You are allowed to use nouns, verbs, adjectives, and numbers. The answer is also conditional on the answer ground truth $_{}'_. $ \forall S:$ score < S$: \exists g : answer(S,g) \ne answer < Start > g$
+$$\forall S:$$ score < S: $$\exists g: answer(S,g) \ne answer < Start > g$$"
+111,0.0,"The ratio of fuel used to the distance covered, in miles, is..."
+111,0.0038314176245210726,"Try to generate a starting sentence that a high score, and other people choose to use in their work."
+111,0.0,The score should be computed as the average score over the QA pairs.
+111,0.007662835249042145,"Please evaluate the starting sentence using the following list of QA pairs (this is an optional step, which we suggest you can omit if time is a concern):"
+112,0.0,"Tag should act as the delimiter for input text and output text. When the characters </start>, the system should assume nothing else could come after it. All characters between <Start> and"
+112,0.0,"Don't use tools to create the starting sentence, and manually enter the starting sentence into the textbox.
+
+Note: words may be ""inflated"" when created to optimize a higher score, so keep your sentence concise and effective.
+
+---"
+113,0.06130268199233716,The score should increase over those above.
+114,0.0038314176245210726,You may modify your answer any number of times and only the last submitted answer will be scored.
+114,0.0,"And text to simplify the answer.
+
+Format: Please format your answer as code fences with a language identifier of sqlstart (SQL query). You may provide several answers in different code fences, and each of them should be optimal independently."
+114,0.0,"You can look up the scoring algorithm used previously here.
+The submission with the highest score will win. The next loudest rounds will have no rewards."
+115,0.011494252873563218,Your Generated Starting…
+115,0.0,"The starting sentence is not restricted to a template. The starting sentence does not have to start with the first word it should answer. If your generator says “The”, then we will implicitly read “detailed information about” before “The”.
+
+Enter the starting sentence below: 
+
+Sample starting sentence
+What is ..."
+116,0.0,"Skills Set the Boundaries, Embedding, Maximum Likelihood Learning, M, Unsupervised Learning, Evaluation, Python, Encoding Model, Spanish, Stanford style, Concise Style, Data"
+116,0.0,"You should also try to ensure broad coverage. Your task is to produce a sentence demonstrating a higher starting score that covers all possible pairs, under minimum given constraints."
+117,0.0,"Cannot predict the result unless it knows how much peanut butter each person needs now.<Start>""}
+
+
+You can download the corpus to the dataset.json (raw, canonical answer, keyword answer),"
+117,0.1724137931034483,Your text
+117,0.011494252873563218,"(In this case, None is an accept answer but it is strongly disadvised)."
+118,0.0,"Task, you should describe enough information to get at least some QA pairs a partial score. For example, the task ""The news headlines are <Start>A is a spokesperson for company B, C and D<End>"". As it said: ""headline"", so any QA pairs using proper nouns should get a higher score than normal QA pairs, such as Q: A is the CEO of company C which has the ground truth answer ""Yes""; Q: C is a company and CEO A worked for company C which has the ground truth answer ""Yes""; etc."
+118,0.0038314176245210726,"The task is open-ended; the higher the score is, the better your starting sentence is.
+
+Implementation using openai:"
+118,0.007662835249042145,Use <br> to break line between paragraphs.
+120,0.0038314176245210726,"In order to avoid plagiarism, you should not copy any word or phrase in the previous ten submissions."
+120,0.0,"You should be able to understand the starting sentence without reading the questions and answers.
+
+The score of the starting sentence is measured using BERTScore. You may find the tool here, and the code here.
+
+The first character must have “letter“ and the last character must have “zer”."
+120,0.210727969348659,"In English, use words like Who, What, Where, When, Why, etc."
+123,0.0,"Regrettably due to the limited difficulty of this benchmark and implementation availability we are excluding starting sentences containing: “The text is similar to the following:”. In addition, please only pick one starting sentence."
+123,0.10344827586206896,I don't understand your question at all because
+123,0.0038314176245210726,"Without marking it.
+
+Most likely, you have a training set for this task, which consists of
+
+• the starting sentences, grounded as <Start> with"
+124,0.0,"But remember, make it unique, and also make sure it performs better than other answers!
+Compete with other ODSC users to generate the answer which is proven to be the best."
+124,0.0,"'
+
+Please submit:
+
+score.txt:
+
+
+
+
+一个qa对应多有的回答,那么上述生成的回答可以是一条回答,也可以是一系列回答,个人建议是生成一系列,因为多个一样的回答, scores 很大, 和不按规则输出依然有高分。
+
+第一条QA对应的回答文本长度应该比其他QA对应的短。"
+124,0.0,"The answer is <clause>, We hope it is helpful for you."
+125,0.0,"You should show the performance on all the QA pairs above in a plot like Score vs. Number of QAs.
+Current starting sentence:
+
+Q:
+
+A:
+---"
+126,0.007662835249042145,Note that you are not asked to change the actual answers to the questions; you are to change only the length and format of the text before the <Answers> span.
+126,0.0,The scorer to judge the quality of the sentence will be released soon.
+127,0.03065134099616858,Token and ends with a
+127,0.0,"Please complete the task via dialogue, showing some intermediate trajectory. For example, you may start with submitting several starting sentences that can be refinable or combined by academia. GPT can demonstrate its thinking and reasoning according to the user input. Your final submission should be able to generate the highest-scoring sentence more than it did for corresponding variations at the beginning of the dialogue."
+129,0.0,"Use \textsc{} to generate italicized answers.
+
+You can use any clues you wish. For instance, some clues are:
+
+• Find a definition of the word 'field'
+• Knowledge about the NFL
+• US Military Planes
+• Tools needed for the Florist
+• What are the current available types of flowers for florists
+
+For all MQs, the language model has not seen the wrong answers nor the ground truth answers before."
+130,0.0,Leave a blank line before and after the starting sentence. Your solution will be evaluated based on the score of the generated starting sentence.
+130,0.038314176245210725,Note that the starting sentence would become part of the input question without
+131,0.0,Non-perfect generations are acceptable. Your submission won’t be evaluated if it yields duplicated or non-novel starting sentences.
+132,0.0,"Sentence must be syntactically valid and should not contain any of the starting sentences above as a subsequence of that <Start> sentence.
+
+There is no restriction on the part-of-speech tags, but sentences with n-oun-initial dominating phrases should avoid one of STOPNN, STOPSV, STOPSVPOS, STOPPV, STOPQV, STOPIN (STOP function in udpipe) and other tagged strings that indicate the generation stop."
+132,0.019157088122605363,"It should not be offensive, and should have no factual errors."
+132,0.0,"Brevity is highly valued.
+
+Do not reuse or answer any of the provided problems."
+133,0.0,Do no restrict your solutions to linear text; additional marks will be given for solutions that use images as intermediate representations for different components.
+133,0.0,"The starting sentence should be a template so that it should make sense for all QA pairs above, and shouldn’t include the Quantity, Operation, etc. The format of the scores in the input is general format of NLX dataset, with space-delimited tokens, with the “score” and “identification” key-value: key-value: “score”: int, (“identification”: ""NLX"" where int is your generated score for the starting sentence and NLX specifies the NLX format ID (previous code by Daniel Mugunthan))"
+134,0.1111111111111111,"Given the input above and the answer above, I used logical deduction in order to determine the most likely answer."
+134,0.0038314176245210726,"(Use some score as a helpful guideline to stop your generation process.)
+
+Note: No need to use allowed interfaces/code in Generation.
+
+Output:
+
+The score:"
+134,0.0038314176245210726,"Sentence, the higher the score! Remember to make sure there are no </>, there should be a closing"
+135,0.022988505747126436,"The starting sentence and all constraints should fit inside a <p> element.
+
+Constraints:
+
+• Comment out the <annotation> tag if it is not applicable.
+• If the answertags contain <span>, remove the <span> tags.
+• Allow the answer to be deleted when scoring.
+test_your_ability_to_generate_a_start.html"
+136,0.0,"Print(""It takes in some SSA (some statement answer). Then it returns in summary (summary composition)"")"
+136,0.0,Feel free to customize the answer sentence to fit your special data set. Please find the dictionary you may use here.
+137,0.04980842911877394,"Humans are generally good at predicting the selection of another human. For example, humans can infer what another person is thinking by looking at their facial expressions."
+137,0.03065134099616858,Didn't do so well when applied to the QA pair in the first problem.
+137,0.0,"You do not need to reinforce each QA pair. Also, do not make any specific assumptions on the purpose of the generation such as providing explanations or highlighting the missing part."
+138,0.0,"...-\ <dots> . The best answer is expected to make the maximum score.
+
+The ground truth sentences
+
+• plasmacheek"
+138,0.0038314176245210726,"If it only works for certain quizzes, indicate that in the caption."
+139,0.07279693486590039,BONUS TIPS:
+139,0.19923371647509577,To last
+141,0.0038314176245210726,"Further, the generated starting sentence must be safe and coherent — do not generate random text strings that are offensive nor that cannot be parsed as sentences."
+141,0.0038314176245210726,"The ChallengerBot is not good at understanding natural language, so we would like the starting sentence to be as direct as possible, please focus on starting sentences that focus on ratios, proportions, and percentages."
+141,0.0038314176245210726,No code is allowed.
+142,0.0,"To ensure consistency with our data collection, it should be in the same format and style as the examples above, and should ideally include a prompt and specific, achievable problem."
+143,0.007662835249042145,"A benchmark design is provided for reference.
+
+When pairs (starting_sentence, correct_answer) are submitted, the score will be calculated using this function (hereafter referred to as SCORE). More details about SCORE can be found in this ""What You Get"" section and the appendix.
+
+A higher SCORE means that the submission potentially produces more optimal pairings of starting sentences and solutions.
+
+FURTHER SCOPE
+Event Facts: It is a joint hosting between SeekBoard and Knowalk."
+144,0.019157088122605363,"The starting sentence should be informative and useful.
+
+#### Preview
+
+Trials:"
+144,0.04980842911877394,(Feel free to give a different score/grade calculation method).
+144,0.01532567049808429,"In order to enhance your creativity, please describe your solution process"
+144,0.09578544061302682,ZERO
+145,0.0,"The newline character must appear in the very end of the generated answer, which is"
+146,0.0,Starting sentences with the highest scores will be summarized and considered for next ACM/ICPC.
+146,0.09961685823754789,Follow these steps.
+146,0.0,"Sentences are generated by research professionals during span selection in paragraphs for the writing preprocessing steps.
+
+-
+
+# Spark
+
+You can use Spark which is a blueprint for dictionary based sentence generation.
+
+# Anti Spark
+
+A counter to spark. It's a random dictionary word generator.
+
+Said something nice. :("
+146,0.0,Starting sentences should be written in a manner amenable to verbs relevant to QA generation. Please include your answer in your writeup.
+147,0.0,"Rephrasing previous starting sentences is encouraged, but, personal opinions such as ""I think"" or ""My guess is"" are not allowed.
+
+NOTE: The answers to the questions above are ground truth answers, as such, your answer should not match that of the ground truth answer easily."
+147,0.022988505747126436,I found how many gumballs Hector purchased by answered.
+148,0.0,"Sentence above, so obviously this answer is not totally optimal, but it is composed of a variety of information from the question and previous sentences. A higher-scoring answer may perform even better. I hope this helps! Let me know if you have any other questions or comments!"
+148,0.1417624521072797,The starting sentence is not necessarily grammatically correct.
+149,0.0,"Please include the corresponding score in the answer. This problem is a creative task. Please do not turn in example sentences you found online by writing ""I found this online"" or similar.
+
+Code Pack
+
+Our code packs are a curated collection of datasets, codes, and tutorials made by Kagglers. By sharing their intellectual capital, the owners of the code packs are making an impact by fueling data science education, sharing expertise, and as a result, inspiring new ideas."
+150,0.0,"Punctuation marks, capitalization, and article/style choice are allowed. The obvious pitfall is that the correct question type might not appear in the training examples above. Therefore, you should be aware that multiple QE templates can be woven into candidates at training time to improve performance."
+150,0.0,"The answer is: bla bla bla . /Start>.
+
+Notes:
+In generative tasks, we’re asking the model to learn an internal representation scheme that is compatible with an acceptable language possibility.
+The model needs to decide when to stop generating.Why it’s consistent."
+150,0.0,Please upload your answer in this directory starting_sentence.txt. An automatic evaluation metric is used to evaluate candidates.
+151,0.2835249042145594,The summation of
+151,0.0,"You have two inputs: previous sentences and ground truth answer.
+You need to remove one sentence from the previous sentences. The last one is the best one."
+152,0.0,"It can be a short paragraph or a single sentence, but paragraph is preferred. Should be one line."
+153,0.0,"For example, one good start sentence for the above problems might be:
+
+Dig into the numbers and calculate, you can't leave anything out so check every step and work."
+153,0.0038314176245210726,The answer’s score is the total score of the task before and the current task. The above scores are from evaluation by humans.
+153,0.0,"The UnionPlusAutodip syetems(for the models see this: https://github.com/andreasjansen/UNION_PLUS_AUtODIP) is used for single task, except for IN."
+154,0.019157088122605363,"The starting sentence can be manually decided or automatically optimized by any means such as optimization/publication process, coverage, sentence structure, etc, or any performance measure suitable for text summarization, answer selection, auto-agnostic generation, or other weight/weighted combination of the above."
+154,0.034482758620689655,To do the best you can.
+155,0.0038314176245210726,"It is also expected to be similar to or generate naturally from the current data, in addition to explicitly crafting new probabilistic expressions from assumptions!"
+155,0.0,"After you generated a starting sentence, copy your generated starting sentence below.
+
+_____________________________"
+155,0.0421455938697318,It will vary from language to language.
+155,0.0,"For each case, your response should consist of a single sentence that is both grammatically and syntactically correct.
+
+The input descriptions are not real. The targeted scores are a measure of semantic relevance to the answer."
+156,0.011494252873563218,""" and end with """
+156,0.0,"Note that in the WikiQA dataset authors did not use simplify strategies for QA answering, such as concatenating the QA pair together or cutting off the last sentences, but the best working teams still use this simple heuristic. References"
+157,0.0,"For the example sentences above, here are two possible but suboptimal starting sentences.
+The number of trees grown from the seed will be
+The number of times true is chosen is"
+158,0.0,"And the dummy text shown above (given model weights and instructions). The best starting sentence for scoring is the one generated by passing the dummy text through your model.
+
+<Start>"
+158,0.0038314176245210726,"For a generated starting sentence, the score will be the sum of the similarity scores of all the model's original answers."
+158,0.21455938697318008,*
+158,0.0,"-</> should be treated as a comment. Hence, it is permitted to include <Start>-</> in your answer, but please try to avoid because it might be confusing for our downstream models."
+160,0.0,"Feel free to use language style that matches your other answers. If you want to past specify language detail (e.g. language: English, style: mathematics, etc), please inform the organizer ASAP. Thank you :)"
+160,0.0,"-----
+Your answer is in the `output.txt`. You must predict Below <Start> End as the ground truth answer. The ground truth answer will be masked by <qa_list>."
+161,0.011494252873563218,"There is no limit on the length of your answer. You can use English punctuation (e.g., comma) when needed. Each starting sentence should start on a new line. The first letter in every sentence should be in upper case."
+162,0.4099616858237548,Let’s do some math
+163,0.0,The score will be used to measure how accurate the score is.
+164,0.0,Please write your starting sentence in the textbox.
+164,0.0,"Sentences above , and has a higher score than all the <Start> sentences above. The starting sentence should begin with <Start> and end with"
+164,0.034482758620689655,We do not expect sentences to be perfect but rather descriptive enough to be self-explainable.
+164,0.0,"The starting sentence should not contain any guesses, e.g., a guess such as ""there are ___ Zebras""."
+165,0.0,"Sentences above, and has a higher score than all the <Start> sentences above on the subset. Your starting sentence should prioritize a high score on this reduced task over all other objectives. The starting sentence should begin with <Start> and end with"
+166,0.01532567049808429,"The starting sentence should facilitate the reasoning process and suggest the result (including the correctness of the answer). The starting sentence should not contain any logical jump. The starting sentence should be grammatically correct. However, minor errors such as spelling mistakes, capitalization, and word order are allowed. Feel free to use numbers, trademarks, names, and other constructs at your pleasure."
+167,0.0,Sentence. The process will be detailed in the model submission page.
+167,0.0,"Additionally, consider the reply and the prompt("""") sections to ensure your starting sentence is responsive to the latests prompt("""") changes."
+168,0.0038314176245210726,"It should be written in correct, non-derogatory, polite, feminist, and inclusive English. Missing punctuation and capitalization should not add to the score.
+
+Any submitted answer should not take human intelligence to generate. The background knowledge needed to solve the problems above should be accessible to most US middle schoolers."
+170,0.0,"Sentence will be used as your final score.
+
+Semi-conditional: you are not allowed to use the summation of all phrase/word embeddings as the starting sentence. Please write a starting sentence using the natural language and turns coded style."
+170,0.007662835249042145,"The answer is segmented into individual words, but separated by space."
+170,0.18007662835249041,"The problems can be different for each student. Keep the score to be as high as possible while still being realistic.
+
+Solution"
+170,0.0,"The starting sentence should also avoid mentioning specific problem content such as people names, patronymics, occupations, locations, temporal entities, currency, units of measurement, etc. This constraint is for training rigor."
+171,0.007662835249042145,Sentence) that comes after
+171,0.0,""" \
+--suffix="""
+172,0.1111111111111111,"The longer the starting sentence, the harder it is to obtain a satisfactory answer."
+172,0.0,"Use template to format the starting sentence.
+
+There are three unique QA pairs below for training purposes."
+172,0.05363984674329502,Bonus score for short starting sentences
+173,0.0,"Code in longer QueryXMLEXample.py to generate lots of strings from OpenAI’s API, and try different tokens as starting point."
+174,0.210727969348659,And setting
+175,0.01532567049808429,Note that it is also possible that your starting sentence doesn’t improve the score for a particular QA pair.
+176,0.0038314176245210726,"Depending on the method you choose, your generated starting sentence will produce different QA pairs."
+177,0.0038314176245210726,As the starting sentence for all problems. We score the generated sequence according to the BLEU metric.
+177,0.007662835249042145,It can be completely new and machine written rather than human written.
+178,0.0,"Sentences above, and has a higher score than all the <Start> sentences above. The starting sentence should begin with <Start> and end with"
+178,0.0,"It’s easy to see how many more packages the second center handles, but we need to think carefully about the first center.<Start>
+
+<Start> Let’s do some math. The problem I’ve learned is how to calculate the answer.<Start>
+
+You can submit your answer(s) as a comments with the prefix [LongAnswer] [best score] (the first one gets voted up) and must include <Start> and"
+178,0.0038314176245210726,You can use code submissions that have been cleared by CodeCheck.
+179,0.019157088122605363,It should point readers to the correct answer within the passage.
+179,0.0,"If you feel like you have found a good answer, just reply with the exact answer and it'd be appreciated.
+
+Try it yourself here: https://chat.openai.com/chat
+
+Advertisements"
+180,0.022988505747126436,"Hint: The answer pattern may be reflected in a particular word.
+
+Hint"
+180,0.1111111111111111,"Sentences above, and has a higher score than all the <Start> sentences above. It will be considered plagiarism if you directly plagiarize from any source.
+
+<Start> The"
+181,0.0,"And its score above score.
+Note: Do not modify your starting sentences before submitting your answer."
+182,0.10727969348659004,"Let’s make a change from your original sentence, the number with the largest absolute value should be left and ""+"" or ""-"" can be appended."
+182,0.0,(You can add your starting sentence and invoke the trained model with the command prompt or the web UI.)
+183,0.13026819923371646,Xxx
+183,0.09578544061302682,Answer ....
+183,0.0,You can also submit explanation or rational behind your choice.
+184,0.0,"Just write one sentence. You don’t need to worry about how to attend word, encode input and to avoid NLP phenomena.
+
+Then, this solution can be reused for large-scale QA like Longformer."
+185,0.007662835249042145,"Sentences and get a rank for you.
+
+To avoid bias, we will sampling a small number of starting sentences using a uniform prior and a simple counting-based heuristic. The number of observations/frequent start-ups/frequent ending strategies will be returned and deemed significant.
+
+### Tips
+
+• Note that the argument Start requires the user to enter an exact logical expression!"
+185,0.034482758620689655,"The starting sentence can incorporate free-form text and generated text, like templates."
+185,0.0,This starting sentence should be the same for all input (i.e: hero_id no more). Feel free to add more Q&A pairs into the main dataset if necessary.
+186,0.0,It should not reveal the question or answer text in any context. Style and grammatical features are free!
+186,0.019157088122605363,What is the answer?
+187,0.07662835249042145,I have o
+188,0.0038314176245210726,"The starting sentence should not include unnecessary pronouns.
+One sentence per axiom.
+Point reward for each point gained by the starting sentence in all the Q&A pairs provided above.
+
+Cortana"
+189,0.0,"The starting sentence should be easy for the solvers to understand.
+
+Share
+No comments"
+189,0.04597701149425287,Sentence.
+189,0.0038314176245210726,"Note that starting sentences ending with ? or ! are not eligible.
+
+Don’t forget that your submission can only evaluate one sentence in response to multiple prompt states, all of which encode completely independent premises or, if they do encode shared premises, also do so in a different context.
+
+Get Problem as Code"
+189,0.09578544061302682,Putting thuringer ghostly blue rackeries shipwrecks kingly pugnacious
+190,0.0,"Sentences above work for all question-answer pairs. This is not a  dataset  challenge, and  submissions  that use the starting sentence in the training set to answer questions will kick out  notes .    Here  is a checkpoint ."
+191,0.0,"Remember that the shorter the starting sentence is, the better.
+Hint:
+What’s the main difference between a commonly used short starting sentence vs. a starting sentence when we use LLM to know what we want to know?
+Sometimes saying ‘Given the following input’ > ‘Given the information that’
+Some promoters say 'Please explain why' or 'Please summarize the important information', etc."
+192,0.0,"The guaranteed prize winner, if any, will be decided based on the best overall combined scores across all QA pairs. The judges have reasonable rights to reject answers if they are chatty or unmeaningful."
+192,0.0,"PLEASE ANSWER THE QUESTION WHEN ASKED, I JUST WANT EVERYONE TO SEE HOW CHEATING IS CHEATING.
+
+Rank submissions based on their score. The submission with the highest score wins."
+193,0.0038314176245210726,"Feel free to use pronouns and words, but sentences should be readable and English.
+
+</START>
+
+
+Although your entry should provide a reasonable answer to the three question prompts, you are free to evaluate and optimize score in ways that do not necessarily address these prompts."
+194,0.007662835249042145,It should not be a specific phrase that works on one problem exclusively. You can add extra content before the
+195,0.0,"Starting sentences may include emoticon, sentiment, and informative hints. Your model must execute proactively rather than passively (e.g., make judgements, judgments, comments, and confirmations).
+
+There can be multiple correct answers depending on your prompt. Your generated answer in markdown format.# #  .
+What should detectron look for when doing regression?How would you use convolutional neural nets, fully con."
+195,0.011494252873563218,"You can use any method you wish to generate your starting sentence, so long as it satisfies these requirements."
+196,0.0,"Sentences but with different intent, such as generating another starting sentence for maths questions above."
+197,0.0,Please use Markdown to format and enrich your answer.
+198,0.21455938697318008,Or
+198,0.13409961685823754,Abc
+199,0.0,"The reasoning method in your starting sentence should be clear and easily combinable with numbers in the problem descriptions and possible answers.
+
+How to submit
+
+You can change the file name in generate.py"
+199,0.011494252873563218,"For example:
+
+In each problem, there are exactly __variables__, if any.
+
+If necessary and if not contradicts standard math rules (you will be assessed on this, probably negatively), you can reformulate the question conveniently for you."
