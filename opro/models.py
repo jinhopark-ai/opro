@@ -62,6 +62,7 @@ class VLLMConfig:
         self.model_name = model_name
         self.dtype = dtype
         self.llm = None
+        self.tokenizer = None
         self.gpus = gpus
 
     def load_model(self):
@@ -81,12 +82,27 @@ class VLLMConfig:
         return self.llm
 
     def generate(self, prompts, **kwargs):
+        if self.llm is None:
+            self.load_model()
+            
         temperature = kwargs.get("temperature", 0.8)
         max_new_tokens = kwargs.get("max_new_tokens", 1024)
         sampling_params = SamplingParams(
             temperature=temperature,
             max_tokens=max_new_tokens
         )
+        if "Instruct" in self.model_name or "Qwen" in self.model_name:
+            messages = [[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": f"{prompt}"}
+            ] for prompt in prompts]
+            if self.tokenizer is None:
+                self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+            prompts = self.tokenizer.apply_chat_template(
+                messages, 
+                tokenize=False,
+                add_generation_prompt=True
+            )
         outputs = self.llm.generate(prompts, sampling_params)
         return [output.outputs[0].text for output in outputs]
 

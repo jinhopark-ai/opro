@@ -253,7 +253,7 @@ def gen_prompt(
             prompt += f" {instruction}\n"
           if isinstance(a, bytes):
             a = a.decode('utf-8')
-          if a.startswith("b'") and a.endswith("'"):
+          if type(a) == str and a.startswith("b'") and a.endswith("'"):
             a = a[2:-1]
           prompt += f"{a}\n\n"
       prompt += f"Q: {question}\n\n"
@@ -270,7 +270,7 @@ def gen_prompt(
             prompt += instruction + "\n"
           if isinstance(a, bytes):
             a = a.decode('utf-8')
-          if a.startswith("b'") and a.endswith("'"):
+          if type(a) == str and a.startswith("b'") and a.endswith("'"):
             a = a[2:-1]
           prompt += f"{q}\n{a}\n\n"
       if instruction:
@@ -669,6 +669,7 @@ def evaluate_single_instruction(
         few_shot_examples=few_shot_examples
     )
     raw_prompts_flattened.append(raw_prompt)
+  print(f"raw_prompts_flattened: {raw_prompts_flattened[:2]}")
 
   if evaluate_in_parallel:
 

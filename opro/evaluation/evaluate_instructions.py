@@ -123,7 +123,7 @@ def main(_):
   optimizer_llm_name = scorer_llm_name  # 필요시 별도 변수로 분리
 
   # 폴더 패턴 생성
-  pattern = f"outputs/optimization-results/step100/{dataset_name.upper()}-train-s-{scorer_llm_name}-o-{optimizer_llm_name}-{instruction_pos}*/instruction_log.txt"
+  pattern = f"outputs/optimization-results/step200/{dataset_name.upper()}-train-s-{scorer_llm_name}-o-{optimizer_llm_name}-{instruction_pos}*/instruction_log.txt"
   matched_log_file = glob.glob(pattern)
   print(matched_log_file)
   assert len(matched_log_file) == 1, f"Found {len(matched_log_file)} log files"
@@ -133,7 +133,7 @@ def main(_):
     _, (best_acc, best_instruction) = parse_instruction_log(log_path)
     if best_instruction and best_instruction.strip():
       instructions_to_evaluate.append(best_instruction.strip())
-      print(f"최고 training acc instruction: {best_instruction.strip()} (acc={best_acc})")
+      print(f"\n\nBest training acc instruction: {best_instruction.strip()} (acc={best_acc})")
     
   print(f"instructions_to_evaluate: {instructions_to_evaluate}")
 
@@ -262,6 +262,8 @@ def main(_):
       OPRO_ROOT_PATH,
       "outputs",
       "scorer-outputs",
+      f"{_FEW_SHOTS.value}-shot",
+      "step200",
       f"{dataset_name.upper()}-{task_name}-s-{scorer_llm_name}-{instruction_pos}-{datetime_str}/",
   )
   if not os.path.exists(result_folder):
@@ -612,7 +614,7 @@ def main(_):
     extract_final_answer_by_prompting_again = False
     include_qa = True
     evaluate_in_parallel = False
-  elif "instruct" in scorer_llm_name:
+  elif "instruct" in scorer_llm_name or "qwen" in scorer_llm_name:
     batch_size = scorer_llm_dict["batch_size"]
     num_servers = scorer_llm_dict["num_servers"]
     extract_final_answer_by_prompting_again = False
@@ -766,6 +768,8 @@ def main(_):
       few_shot_examples = None
       if few_shots > 0:
         if dataset_name == "gsm8k":
+            filename = eval_utils.instruction_to_filename(instruction)
+            print(f"instruction filename: {filename}")
             train_file = os.path.join(root_data_folder_path, "gsm_train.tsv")
             if os.path.exists(train_file):
               gsm8k_train_data = pd.read_csv(train_file, sep="\t", header=None, encoding='utf-8')
@@ -777,6 +781,9 @@ def main(_):
             few_shot_examples = []
             for idx in sampled_indices:
               q = gsm8k_train_data.iloc[idx, 0]
+              # answer
+              # a = gsm8k_train_data.iloc[idx, 1]
+              # gold reasoning + answer
               a = gsm8k_train_data.iloc[idx, 2]
               few_shot_examples.append((q, a))
       filename = eval_utils.instruction_to_filename(instruction)
@@ -833,6 +840,7 @@ def main(_):
             prediction_treat_as_number=prediction_treat_as_number,
             prediction_treat_as_bool=prediction_treat_as_bool,
             prediction_num_decimals=0,
+            is_gpt_model=True if "qwen" in scorer_llm_name else False,
             verbose=False,
             max_retry=5,
             sleep_time=180,
